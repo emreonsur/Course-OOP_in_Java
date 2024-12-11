@@ -1813,7 +1813,7 @@ class App {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı `double` türden iki noktaya ilişkin koordinat bilgilerine göre iki nokta arasındaki Euclid uzaklığına geri dönen `distance` isimli metodu `PointUtil` isimli sınıf içerisinde yazınız ve aşağıdaki kod ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `double` türden iki noktaya ilişkin koordinat bilgilerine göre iki nokta arasındaki Euclid uzaklığına geri dönen `distance` isimli metodu `PointUtil` isimli sınıf içerisinde yazınız ve aşağıdaki kod ile test ediniz.
 > 	
 > Euclid Uzaklığı fomulü:
 > 
@@ -1854,7 +1854,7 @@ class PointUtil {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı `double` türden iki noktaya ilişkin koordinat bilgilerine göre iki nokta arasındaki Euclid uzaklığına geri dönen `distance` isimli metodu `PointUtil` isimli sınıf içerisinde yazınız ve aşağıdaki kod ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `double` türden iki noktaya ilişkin koordinat bilgilerine göre iki nokta arasındaki Euclid uzaklığına geri dönen `distance` isimli metodu `PointUtil` isimli sınıf içerisinde yazınız ve aşağıdaki kod ile test ediniz.
 > 	
 > Euclid Uzaklığı fomulü:
 > 
@@ -2516,7 +2516,7 @@ class App {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı int türden 3 basamaklı bir sayının basamakları toplamına geri dönen `sumOf3Digits` metodunu `NumberUtil` isimli sınıf içerisinde aşağıdaki açıklamalara göre yazınız ve test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı int türden 3 basamaklı bir sayının basamakları toplamına geri dönen `sumOf3Digits` metodunu `NumberUtil` isimli sınıf içerisinde aşağıdaki açıklamalara göre yazınız ve test ediniz.
 > 
 > **_Açıklamalar_**:
 > - Metot sayının 3 basamaklı olup olmadığı kontrolünü yapmayacaktır
@@ -2556,7 +2556,7 @@ class NumberUtil {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı int türden 3 basamaklı bir sayının basamakları toplamına geri dönen `sumOf3Digits` metodunu `NumberUtil` isimli sınıf içerisinde aşağıdaki açıklamalara göre yazınız ve test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı int türden 3 basamaklı bir sayının basamakları toplamına geri dönen `sumOf3Digits` metodunu `NumberUtil` isimli sınıf içerisinde aşağıdaki açıklamalara göre yazınız ve test ediniz.
 > 
 > **_Açıklamalar_**:
 > - Metot sayının 3 basamaklı olup olmadığı kontrolünü yapmayacaktır
@@ -4298,7 +4298,7 @@ class App {
 }
 ```
 
-> **Sınıf Çalışması:** Katsayıları klavyeden girilen ikinci dereceden denklemin köklerini bulan ve ekrana basan programı yazınız.
+> ***Sınıf Çalışması:*** Katsayıları klavyeden girilen ikinci dereceden denklemin köklerini bulan ve ekrana basan programı yazınız.
 > 
 > **_Not:_** Örnek şu ana gördüklerimiz kullanılarak, daha genel yazılmaya çalışılmıştır. İleride daha iyisi yazılacaktır
 > 
@@ -4388,7 +4388,7 @@ class EquationSolver {
 }
 ```
 
-> **Sınıf Çalışması:** Katsayıları klavyeden girilen ikinci dereceden denklemin köklerini bulan ve ekrana basan programı yazınız.
+> ***Sınıf Çalışması:*** Katsayıları klavyeden girilen ikinci dereceden denklemin köklerini bulan ve ekrana basan programı yazınız.
 > 
 > **_Not:_** Örnek şu ana gördüklerimiz kullanılarak, daha genel yazılmaya çalışılmıştır. İleride daha iyisi yazılacaktır
 > 
@@ -4624,7 +4624,7 @@ class App {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı int türden bir sayının basamak sayısını döndüren `countDigits` metodunu `NumberUtil` sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı int türden bir sayının basamak sayısını döndüren `countDigits` metodunu `NumberUtil` sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz.
 
 ```java
 package csd;
@@ -4668,7 +4668,7 @@ class NumberUtil {
 
 ## 26 Mart 2024
  
-> **Sınıf Çalışması:** Parametresi ile aldığı int türden bir sayının basamakları toplamına geri dönen `sumDigits` isimli metodu `NumberUtil` sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı int türden bir sayının basamakları toplamına geri dönen `sumDigits` isimli metodu `NumberUtil` sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz.
 > 
 > **_Açıklama:_** Sayı negatif ise basamakları toplamı pozitif olarak elde edilecektir.
 
@@ -4732,7 +4732,7 @@ class App {
 }
 ```
 
-> **Sınıf Çalışması:** Klavyeden sıfır girilene kadar alınan sayılardan pozitif olanlarının ve negatif olanlarının ayrı ayrı sayılarını ve toplamlarını bulan programı yazınız. Programın mesajlarına ilişkin örnekler şunlardır:
+> ***Sınıf Çalışması:*** Klavyeden sıfır girilene kadar alınan sayılardan pozitif olanlarının ve negatif olanlarının ayrı ayrı sayılarını ve toplamlarını bulan programı yazınız. Programın mesajlarına ilişkin örnekler şunlardır:
 > 	
 > 		Girilen 3 tane pozitif sayının toplamı: 45
 > 		Girilen 4 tane negatif sayının toplamı: -56
@@ -4805,7 +4805,7 @@ class PosNegCountTotalApp {
 			<deyim> 
 > Bu while döngüsünde, deyim içerisinde döngüden çıkışa yol açacak bir deyim varsa sonsuz döngü sonlanmış olur. Örneğin return deyimi sonsuz döngü içerisinde kullanıldığında metodu sonlandırdığından, döngüden de çıkılmış olur. Bu durumda hiç sonlanmadan dönen döngü bir sonsuz döngüdür ancak her sonsuz döngü belirli durumlarda sonlanabilir
 
-> **Sınıf Çalışması:** Parametresi ile aldığı int türden bir sayının tersine geri dönen reverse isimli metodu NumberUtil sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı int türden bir sayının tersine geri dönen reverse isimli metodu NumberUtil sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz.
 > 
 > Örnek:
 > 
@@ -5332,7 +5332,7 @@ class App {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı `int` türden a ve b değeri için a'nın b-inci kuvvetini döndüren `pow` isimli metodu `NumberUtil` sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `int` türden a ve b değeri için a'nın b-inci kuvvetini döndüren `pow` isimli metodu `NumberUtil` sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz.
 > 
 > **Açıklamalar:**
 > - `Math` sınıfının `pow` metodu kullanılmayacaktır
@@ -5379,7 +5379,7 @@ class NumberUtil {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı `int` türden a ve b değeri için a'nın b-inci kuvvetini döndüren `pow` isimli metodu `NumberUtil` sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `int` türden a ve b değeri için a'nın b-inci kuvvetini döndüren `pow` isimli metodu `NumberUtil` sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz.
 > 
 > **Açıklamalar:**
 > - `Math` sınıfının `pow` metodu kullanılmayacaktır
@@ -5425,7 +5425,7 @@ class NumberUtil {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı `int` türden bir sayının Armstrong sayısı olup olmadığını test eden `isArmstrong` metodunu `NumberUtil` sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `int` türden bir sayının Armstrong sayısı olup olmadığını test eden `isArmstrong` metodunu `NumberUtil` sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz.
 > 
 > **Açıklamalar:**
 > - Metot sayı Armstrong sayısı ise `true`, değilse `false` değerine geri dönecektir
@@ -5501,7 +5501,7 @@ class NumberUtil {
 
 ## 4 Nisan 2024
  
-> **Sınıf Çalışması:** Parametresi ile aldığı `int` türden n değerinin faktoriyel değerine geri dönen `factorial` isimli metodu `NumberUtil` sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `int` türden n değerinin faktoriyel değerine geri dönen `factorial` isimli metodu `NumberUtil` sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz.
 > 
 > **Açıklamalar:**
 > - Faktoriyel işlemi aşağıdaki şekilde betimlenebilir:
@@ -5672,7 +5672,7 @@ class App {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı `long` türden bir sayının asal olup olmadığını test eden `isPrime` isimli metodu `NumberUtil` sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `long` türden bir sayının asal olup olmadığını test eden `isPrime` isimli metodu `NumberUtil` sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz
 > 
 > (Yavaş versiyon)
 
@@ -5718,7 +5718,7 @@ class NumberUtil {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı `long` türden bir sayının asal olup olmadığını test eden `isPrime` isimli metodu `NumberUtil` sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `long` türden bir sayının asal olup olmadığını test eden `isPrime` isimli metodu `NumberUtil` sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz
 > 	
 > **_Kural:_** Bir sayı, karekökünden küçük olan hiç bir asal sayıya tam olarak bölünemiyorsa asaldır.
 > 
@@ -5868,7 +5868,7 @@ class NumberUtil {
 
 ## 16 Nisan 2024
  
-> **Sınıf Çalışması:** Parametresi ile aldığı `int` türden n değeri için n-inci asal sayıyı döndüren `nthPrime` metodunu `NumberUtil` sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `int` türden n değeri için n-inci asal sayıyı döndüren `nthPrime` metodunu `NumberUtil` sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz.
 > 
 > **Açıklamalar:**
 > - `isPrime` metodunun `hızlı` versiyonu kullanılacaktır.
@@ -5943,7 +5943,7 @@ class NumberUtil {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı `long` türden bir sayıdan büyük ilk asal sayıyı döndüren `nextClosestPrime` metodunu yazınız ve aşağıdaki kod ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `long` türden bir sayıdan büyük ilk asal sayıyı döndüren `nextClosestPrime` metodunu yazınız ve aşağıdaki kod ile test ediniz.
 > 
 > **Açıklamalar:**
 > - `isPrime` metodunun `hızlı` versiyonu kullanılacaktır.
@@ -6015,7 +6015,7 @@ class NumberUtil {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı `long` türden bir sayıdan büyük ilk asal sayıyı döndüren `nextClosestPrime` metodunu yazınız ve aşağıdaki kod ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `long` türden bir sayıdan büyük ilk asal sayıyı döndüren `nextClosestPrime` metodunu yazınız ve aşağıdaki kod ile test ediniz.
 > 
 > **Açıklamalar:**
 > - `isPrime` metodunun `hızlı` versiyonu kullanılacaktır.
@@ -6161,7 +6161,7 @@ class App {
 		break [etiket (label) ismi];
 > break deyiminin etiketsiz kullanımda akış ilgili döngüden sonrasından devam eder. Yani döngü sonlanmış olur. break deyiminin döngü deyimi ve switch deyimi dışında kullanımı error oluşturur. break deyimi hangi döngü deyimi içerisinde kullanılmışsa o döngü deyimini sonlandırır. break deyimi algoritmaya göre her durumda kullanılabileceği gibi tipik olarak sonsuz döngü içerisinde de kullanılabilir
  
-> **Sınıf Çalışması:** Parametresi ile aldığı `long` türden bir sayıdan büyük ilk asal sayıyı döndüren `nextClosestPrime`
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `long` türden bir sayıdan büyük ilk asal sayıyı döndüren `nextClosestPrime`
 metodunu yazınız ve aşağıdaki kod ile test ediniz.
 > 
 > **Açıklamalar:**
@@ -6289,7 +6289,7 @@ class App {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı `int` türden pozitif bir n değeri için n-inci Fibonacci sayısını döndüren `fibonacciNumber` isimli metodu yazınız ve aşağıdaki kod ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `int` türden pozitif bir n değeri için n-inci Fibonacci sayısını döndüren `fibonacciNumber` isimli metodu yazınız ve aşağıdaki kod ile test ediniz.
 > 	
 > **Açıklamalar:**
 > - 0 1 1 2 3 5 8 13 21 ... serisinin sayılarına Fibonacci sayıları denir
@@ -6346,7 +6346,7 @@ class NumberUtil {
 
 ## 18 Nisan 2024
  
-> **Sınıf Çalışması:** Parametresi ile aldığı `int` türden sayıdan büyük ilk Fibonacci sayısını döndüren `nextFibonacciNumber` isimli metodu `NumberUtil` sınıfı içerisinde yazınız ve test ediniz
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `int` türden sayıdan büyük ilk Fibonacci sayısını döndüren `nextFibonacciNumber` isimli metodu `NumberUtil` sınıfı içerisinde yazınız ve test ediniz
 
 ```java
 package csd;
@@ -6398,7 +6398,7 @@ class NumberUtil {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı int türden sayıdan büyük ilk Fibonacci sayısını döndüren `nextFibonacciNumber` isimli metodu `NumberUtil` sınıfı içerisinde yazınız ve test ediniz
+> ***Sınıf Çalışması:*** Parametresi ile aldığı int türden sayıdan büyük ilk Fibonacci sayısını döndüren `nextFibonacciNumber` isimli metodu `NumberUtil` sınıfı içerisinde yazınız ve test ediniz
 
 ```java
 package csd;
@@ -7153,7 +7153,7 @@ class DemoMenuApp {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı `int` türden bir yıl bilgisinin artık yıl olup olmadığını test eden `isLeapYear`	isimli metodu yazınız ve aşağıdaki kod ile test ediniz
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `int` türden bir yıl bilgisinin artık yıl olup olmadığını test eden `isLeapYear`	isimli metodu yazınız ve aşağıdaki kod ile test ediniz
 
 ```java
 package csd;
@@ -7182,7 +7182,7 @@ class DateUtil {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı `int` türden gün, ay ve yıl bilgilerine ilişkin tarihin geçerli bir tarih olup olmadığını test eden `isValidDate` isimli metodu yazınız ve aşağıdaki kod ile test ediniz
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `int` türden gün, ay ve yıl bilgilerine ilişkin tarihin geçerli bir tarih olup olmadığını test eden `isValidDate` isimli metodu yazınız ve aşağıdaki kod ile test ediniz
 
 ```java
 package csd;
@@ -7251,7 +7251,7 @@ class DateUtil {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı `int` türden gün, ay ve yıl bilgilerine ilişkin tarihin yılın kaçıncı günü olduğunu döndüren `getDayOfYear` isimli metodu yazınız ve aşağıdaki kod ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `int` türden gün, ay ve yıl bilgilerine ilişkin tarihin yılın kaçıncı günü olduğunu döndüren `getDayOfYear` isimli metodu yazınız ve aşağıdaki kod ile test ediniz.
 > 
 > **Açıklamalar:** Metot tarihin geçerli olup olmadığını kontrol etmeyecektir
 
@@ -7357,7 +7357,7 @@ class DateUtil {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı `int` türden gün, ay ve yıl bilgilerine ilişkin tarihin haftanın hangi günü olduğu bilgisine geri dönen `getDayOfWeek` isimli metodu ve uygulamayı aşağıdaki açıklamalara göre yazınız
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `int` türden gün, ay ve yıl bilgilerine ilişkin tarihin haftanın hangi günü olduğu bilgisine geri dönen `getDayOfWeek` isimli metodu ve uygulamayı aşağıdaki açıklamalara göre yazınız
 > 	
 > **Açıklamalar:**
 > - getDayOfWeek metodu tarih geçerlilik kontrolü yapmayacaktır.
@@ -7879,7 +7879,7 @@ class DemoMenuApp {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı `int` türden gün, ay ve yıl bilgilerine ilişkin tarihin haftanın hangi günü olduğu bilgisine geri dönen `getDayOfWeek` isimli metodu ve uygulamayı aşağıdaki açıklamalara göre yazınız
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `int` türden gün, ay ve yıl bilgilerine ilişkin tarihin haftanın hangi günü olduğu bilgisine geri dönen `getDayOfWeek` isimli metodu ve uygulamayı aşağıdaki açıklamalara göre yazınız
 > 
 > **Açıklamalar:**
 > - getDayOfWeek metodu tarih geçerlilik kontrolü yapmayacaktır.
@@ -9419,7 +9419,7 @@ class App {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı `int` türden bir sayının Armstrong sayısı olup olmadığını test eden `isArmstrong` metodunu `NumberUtil` sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `int` türden bir sayının Armstrong sayısı olup olmadığını test eden `isArmstrong` metodunu `NumberUtil` sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz.
 > 
 > **Açıklamalar:**
 > - Metot sayı Armstrong sayısı ise true, değilse false değerine geri dönecektir	
@@ -9473,7 +9473,7 @@ class NumberUtil {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı `int` türden gün, ay ve yıl bilgilerine ilişkin tarihin haftanın hangi günü olduğu bilgisine geri dönen `getDayOfWeek` isimli metodu ve uygulamayı aşağıdaki açıklamalara göre yazınız
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `int` türden gün, ay ve yıl bilgilerine ilişkin tarihin haftanın hangi günü olduğu bilgisine geri dönen `getDayOfWeek` isimli metodu ve uygulamayı aşağıdaki açıklamalara göre yazınız
 > 
 > **Açıklamalar:**
 > - getDayOfWeek metodu tarih geçerlilik kontrolü yapmayacaktır.
@@ -12382,7 +12382,7 @@ class App {
 }
 ```
 
-> **Sınıf Çalışması:** Hilesiz bir paranın yazı gelme olasılığının yaklaşık olarak 0.5 olduğunu hesaplayan basit simülasyon programını yazınız.
+> ***Sınıf Çalışması:*** Hilesiz bir paranın yazı gelme olasılığının yaklaşık olarak 0.5 olduğunu hesaplayan basit simülasyon programını yazınız.
 > 
 > **_Not:_** İleride daha iyisi yazılacaktır.
 
@@ -12428,7 +12428,7 @@ class CoinTailProbabilitySimulation {
 }
 ```
 
-> **Sınıf Çalışması:** Hilesiz bir paranın yazı gelme olasılığının yaklaşık olarak 0.5 olduğunu hesaplayan basit simülasyon programını yazınız.
+> ***Sınıf Çalışması:*** Hilesiz bir paranın yazı gelme olasılığının yaklaşık olarak 0.5 olduğunu hesaplayan basit simülasyon programını yazınız.
 > 
 > **_Not:_** İleride daha iyisi yazılacaktır.
 
@@ -12474,7 +12474,7 @@ class CoinTailProbabilitySimulation {
 }
 ```
 
-> **Sınıf Çalışması:** Hilesiz iki zarın atılması deneyinde zarların çift gelmesi (ikisinin de aynı) olasılığını yaklaşık olarak hesaplayan simülasyonu yazınız.
+> ***Sınıf Çalışması:*** Hilesiz iki zarın atılması deneyinde zarların çift gelmesi (ikisinin de aynı) olasılığını yaklaşık olarak hesaplayan simülasyonu yazınız.
 > 
 > **_Not:_** İleride daha iyisi yazılacaktır.
 
@@ -12525,7 +12525,7 @@ class SameDiceProbabilitySimulation {
 }
 ```
 
-> **Sınıf Çalışması:** Hilesiz iki zarın atılması deneyinde zarların her ikisinin birden çift sayılar gelmesi olasılığını yaklaşık olarak hesaplayan simülasyonu yazınız.
+> ***Sınıf Çalışması:*** Hilesiz iki zarın atılması deneyinde zarların her ikisinin birden çift sayılar gelmesi olasılığını yaklaşık olarak hesaplayan simülasyonu yazınız.
 > 
 > **_Not:_** İleride daha iyisi yazılacaktır.
 
@@ -13195,7 +13195,7 @@ class App {
 }
 ```
 
-> **Sınıf Çalışması:** Klavyeden elma girilene kadar alınan yazıları aralarına `-` koyacak şekilde birleştirilmiş yeni bir yazı (yani String referansı) elde eden programı yazınız
+> ***Sınıf Çalışması:*** Klavyeden elma girilene kadar alınan yazıları aralarına `-` koyacak şekilde birleştirilmiş yeni bir yazı (yani String referansı) elde eden programı yazınız
 > 
 > **Açıklamalar:**
 > - Programda dizi kullanılmayacaktır. Zaten gerek de yoktur
@@ -13234,7 +13234,7 @@ class ConcatWithHyphenApp {
 }
 ```
 
-> **Sınıf Çalışması:** Klavyeden elma girilene kadar alınan yazıları aralarına `-` koyacak şekilde birleştirilmiş yeni bir	yazı (yani String referansı) elde eden programı yazınız.
+> ***Sınıf Çalışması:*** Klavyeden elma girilene kadar alınan yazıları aralarına `-` koyacak şekilde birleştirilmiş yeni bir	yazı (yani String referansı) elde eden programı yazınız.
 > 
 > **Açıklamalar:**
 > - Programda dizi kullanılmayacaktır. Zaten gerek de yoktur
@@ -13327,7 +13327,7 @@ class App {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı iki yazıdan birinci içerisinde ikincisinden kaç olduğuna geri dönen `countString` isimli metodu `StringUtil` isimli bir sınıf içerisinde yazınız ve aşağıdaki kod ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı iki yazıdan birinci içerisinde ikincisinden kaç olduğuna geri dönen `countString` isimli metodu `StringUtil` isimli bir sınıf içerisinde yazınız ve aşağıdaki kod ile test ediniz.
 
 ```java
 package csd;
@@ -13377,7 +13377,7 @@ class StringUtil {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı iki yazıdan birinci içerisinde ikincisinden kaç olduğuna geri dönen `countString` isimli metodu `StringUtil` isimli bir sınıf içerisinde yazınız ve aşağıdaki kod ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı iki yazıdan birinci içerisinde ikincisinden kaç olduğuna geri dönen `countString` isimli metodu `StringUtil` isimli bir sınıf içerisinde yazınız ve aşağıdaki kod ile test ediniz.
 
 ```java
 package csd;
@@ -13423,7 +13423,7 @@ class StringUtil {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı iki yazıdan birinci içerisinde ikincisinden kaç olduğuna geri dönen `countString` isimli metodu `StringUtil` isimli bir sınıf içerisinde yazınız ve aşağıdaki kod ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı iki yazıdan birinci içerisinde ikincisinden kaç olduğuna geri dönen `countString` isimli metodu `StringUtil` isimli bir sınıf içerisinde yazınız ve aşağıdaki kod ile test ediniz.
 
 ```java
 package csd;
@@ -13468,7 +13468,7 @@ class StringUtil {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı iki yazıdan birinci içerisinde ikincisinden kaç olduğuna geri dönen `countString` isimli metodu `StringUtil` isimli bir sınıf içerisinde yazınız ve aşağıdaki kod ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı iki yazıdan birinci içerisinde ikincisinden kaç olduğuna geri dönen `countString` isimli metodu `StringUtil` isimli bir sınıf içerisinde yazınız ve aşağıdaki kod ile test ediniz.
 
 ```java
 package csd;
@@ -13515,7 +13515,7 @@ class StringUtil {
 
 ## 18 Temmuz 2024
 
-> **Sınıf Çalışması:** Parametresi ile aldığı iki yazıdan birinci içerisinde ikincisinden kaç olduğuna geri dönen ve case insensitive olarak çalışan `countStringIgnoreCase` isimli metodu yazınız ve aşağıdaki kod ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı iki yazıdan birinci içerisinde ikincisinden kaç olduğuna geri dönen ve case insensitive olarak çalışan `countStringIgnoreCase` isimli metodu yazınız ve aşağıdaki kod ile test ediniz.
 
 ```java
 package csd;
@@ -13583,7 +13583,7 @@ class App {
 }
 ```
 
-> **Sınıf Çalışması:** Aşağıdaki açıklamalara göre parametresi ile aldığı bir yol ifadesine (path) ilişkin dosyanın yalnızca ismine geri dönen `getFileName` isimli metodu yazınız.
+> ***Sınıf Çalışması:*** Aşağıdaki açıklamalara göre parametresi ile aldığı bir yol ifadesine (path) ilişkin dosyanın yalnızca ismine geri dönen `getFileName` isimli metodu yazınız.
 > 
 > **Açıklamalar:**
 > - Metot yol ifadesi geçerliliği yapmayacaktır.
@@ -13795,7 +13795,7 @@ class StringCharactersReportApp {
 }
 ```
 
-> **Sınıf Çalışması:** parametresi ile aldığı bir yazının ilk karakteri büyük diğer karakterleri küçük harf olan biçimine geri dönen `capitalize` isimli metodu `StringUtil` sınıfı içerisinde yazınız ve test ediniz. Örneğin yazı:
+> ***Sınıf Çalışması:*** parametresi ile aldığı bir yazının ilk karakteri büyük diğer karakterleri küçük harf olan biçimine geri dönen `capitalize` isimli metodu `StringUtil` sınıfı içerisinde yazınız ve test ediniz. Örneğin yazı:
 > 
 > 		bugün hava ÇOK güzel
 > ise elde edilecek yazı
@@ -14242,7 +14242,7 @@ class App {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı bir yazının pangram olup olmadığını test eden `isPangramTR` ve `isPangramEN` isimli metotları yazınız ve aşağıdaki kod ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı bir yazının pangram olup olmadığını test eden `isPangramTR` ve `isPangramEN` isimli metotları yazınız ve aşağıdaki kod ile test ediniz.
 > 
 > **Açıklamalar:**
 > - İlgili dilin alfabesindeki tüm karakterler kullanılarak oluşturulan ve içerisinde özel isim olmayan anlamlı 
@@ -14460,7 +14460,7 @@ class StringUtil {
 
 ## 25 Temmuz 2024
 
-> **Sınıf Çalışması:** Aşağıdaki metotları açıklamalara göre StringUtil sınıfı içerisinde yazınız ve test ediniz.
+> ***Sınıf Çalışması:*** Aşağıdaki metotları açıklamalara göre StringUtil sınıfı içerisinde yazınız ve test ediniz.
 > 
 > 		public static String padLeading(String s, int n, char ch);
 > 		public static String padLeading(String s, int n);
@@ -14558,7 +14558,7 @@ class StringUtil {
 }
 ```
 
-> **Sınıf Çalışması:** Aşağıdaki metotları açıklamalara göre StringUtil sınıfı içerisinde yazınız ve test ediniz.
+> ***Sınıf Çalışması:*** Aşağıdaki metotları açıklamalara göre StringUtil sınıfı içerisinde yazınız ve test ediniz.
 > 
 > 		public static String padLeading(String s, int n, char ch);
 > 		public static String padLeading(String s, int n);
@@ -14787,7 +14787,7 @@ class StringUtil {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı bir yazının palindrome olup olmadığını test eden `isPalindrome` isimli metodu `StringUtil` sınıfı içerisinde yazınız ve test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı bir yazının palindrome olup olmadığını test eden `isPalindrome` isimli metodu `StringUtil` sınıfı içerisinde yazınız ve test ediniz.
 > 
 > **Açıklamalar:**
 > - Alfabetik olmayan karakterleri çıkartıldığında tersi kendisine eşit olan yazılara pandrom denir.
@@ -15522,7 +15522,7 @@ class App {
 }
 ```
 
-> **Sınıf Çalışması:** Aşağıdaki metodu açıklamalara göre yazınız.
+> ***Sınıf Çalışması:*** Aşağıdaki metodu açıklamalara göre yazınız.
 > 
 > 		public static String repeat(int count, char ch);
 > **Açıklamalar:**
@@ -15548,7 +15548,7 @@ class StringUtil {
 }
 ```
 
-> **Sınıf Çalışması:** Aşağıdaki metodu açıklamalara göre yazınız.
+> ***Sınıf Çalışması:*** Aşağıdaki metodu açıklamalara göre yazınız.
 > 
 > 		public static String repeat(int count, char ch);
 > **Açıklamalar:**
@@ -15574,7 +15574,7 @@ class StringUtil {
 }
 ```
 
-> **Sınıf Çalışması:** Aşağıdaki metodu açıklamalara göre yazınız.
+> ***Sınıf Çalışması:*** Aşağıdaki metodu açıklamalara göre yazınız.
 > 
 > 		public static String repeat(int count, char ch);
 > **Açıklamalar:**
@@ -17415,7 +17415,7 @@ class App {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı `int` türden bir dizinin elemanları toplamına geri dönen `sum` metodunu `ArrayUtil` sınıfı içerisinde yazınız. Metodunuzu rassal olarak üretilmiş diziler ile test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `int` türden bir dizinin elemanları toplamına geri dönen `sum` metodunu `ArrayUtil` sınıfı içerisinde yazınız. Metodunuzu rassal olarak üretilmiş diziler ile test ediniz.
 
 ```java
 package org.csystem.util.array.test;
@@ -17505,7 +17505,7 @@ class Util {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı `int` türden bir dizinin en büyük elemanına geri dönen `max` ve en küçük elemanına geri dönen `min` isimli metotları `ArrayUtil` sınıfı içerisinde yazınız ve aşağıdaki kodlarla test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `int` türden bir dizinin en büyük elemanına geri dönen `max` ve en küçük elemanına geri dönen `min` isimli metotları `ArrayUtil` sınıfı içerisinde yazınız ve aşağıdaki kodlarla test ediniz.
 
 ```java
 package org.csystem.util.array.test;
@@ -17542,7 +17542,7 @@ public class ArrayUtilMinMaxTest {
 }
 ```
 
-> **Sınıf Çalışması:** Sayısal loto kupon üreten programı yazınız.
+> ***Sınıf Çalışması:*** Sayısal loto kupon üreten programı yazınız.
 > 
 > **_Açıklama:_** Bir sayısal loto kuponu birbirinden farklı 6 tane küçükten büyüğe sıralanmış `[1, 49]` aralığındaki sayılardan oluşur
 > 
@@ -17628,7 +17628,7 @@ public class NumericLottery {
 
 ## 27 Ağustos 2024
 
-> **Sınıf Çalışması:** Sayısal loto kupon üreten programı yazınız.
+> ***Sınıf Çalışması:*** Sayısal loto kupon üreten programı yazınız.
 > 
 > **_Açıklama:_** Bir sayısal loto kuponu birbirinden farklı 6 tane küçükten büyüğe sıralanmış `[1, 49]` aralığındaki sayılardan oluşur
 > 
@@ -17720,7 +17720,7 @@ public class NumericLottery {
 }
 ```
 
-> **Sınıf Çalışması:** Sayısal loto kupon üreten programı yazınız.
+> ***Sınıf Çalışması:*** Sayısal loto kupon üreten programı yazınız.
 > 
 > **_Açıklama:_** Bir sayısal loto kuponu birbirinden farklı 6 tane küçükten büyüğe sıralanmış `[1, 49]` aralığındaki sayılardan oluşur
 > 
@@ -17985,7 +17985,7 @@ public class ArrayUtilPartitionTest {
 ```
 
 
-> **Sınıf Çalışması:** Parametresi ile aldığı long türden bir sayının basamaklarından oluşan diziye geri dönen getDigits isimli metodu NumberUtil sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz. 
+> ***Sınıf Çalışması:*** Parametresi ile aldığı long türden bir sayının basamaklarından oluşan diziye geri dönen getDigits isimli metodu NumberUtil sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz. 
 > ***Açıklama:*** Metot negatif bir argüman için basamak değerlerini pozitif olarak verecektir
 
 ```java
@@ -18024,7 +18024,7 @@ public class NumberUtilGetDigitsTest {
 
 ## 5 Eylül 2024
 
-> **Sınıf Çalışması:** Aşağıda prototipi verilen metodu açıklamalara göre yazınız ve test ediniz:
+> ***Sınıf Çalışması:*** Aşağıda prototipi verilen metodu açıklamalara göre yazınız ve test ediniz:
 > `public static int [] histogramData(int [] a, int n);`
 > **Açıklamalar:** 
 > - Metot ArrayUtil sınıfı içerisinde yazılacaktır.
@@ -18110,7 +18110,7 @@ class App {
 
 
 
-> **Sınıf Çalışması:** StringUtil sınıfı içerisinde daha önceden yazılmış olaran changeCase metodunu char türden dizi kullanarak Util isimli bir sınıf içerisinde yazınız. Util sınıfını, test kodlarını ve entry point'i içeren sınıfı tek bir derleme biriminde yazabilirsiniz
+> ***Sınıf Çalışması:*** StringUtil sınıfı içerisinde daha önceden yazılmış olaran changeCase metodunu char türden dizi kullanarak Util isimli bir sınıf içerisinde yazınız. Util sınıfını, test kodlarını ve entry point'i içeren sınıfı tek bir derleme biriminde yazabilirsiniz
 
 
 ```java
@@ -18294,7 +18294,7 @@ class App {
 
 
 
-> **Sınıf Çalışması:** Parametresi ile aldığı `int` türden gün, ay ve yıl bilgilerine ilişkin tarihin haftanın hangi günü olduğu bilgisine geri dönen `getDayOfWeek` isimli metodu ve uygulamayı aşağıdaki açıklamalara göre yazınız
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `int` türden gün, ay ve yıl bilgilerine ilişkin tarihin haftanın hangi günü olduğu bilgisine geri dönen `getDayOfWeek` isimli metodu ve uygulamayı aşağıdaki açıklamalara göre yazınız
 > 	
 > **Açıklamalar:**
 > - JavaSE'de bulunan veya başka bir kütüphanedeki tarih zaman işlemlerine ilişkin sınıflar ve metotlar kullanılmayacaktır.
@@ -18427,7 +18427,7 @@ public class DateUtil {
 }
 ```
 
-> **Sınıf Çalışması:** Aşağıda prototipi verilen metodu StringUtil sınıfı içerisinde açıklamalara göre yazınız ve aşağıdaki kod ile test ediniz:
+> ***Sınıf Çalışması:*** Aşağıda prototipi verilen metodu StringUtil sınıfı içerisinde açıklamalara göre yazınız ve aşağıdaki kod ile test ediniz:
 > `public static String join(String [] s, String delimiter)` 
 > **Açıklamalar:**
 > - Metot birinci parametresi ile aldığı String dizisi ile tutulan yazıları ikinci parametresi ile aldığı separator ile birleştirilmiş bir yazıya geri dönecektir.
@@ -18547,7 +18547,7 @@ class App {
 ```
 
 
-> **Sınıf Çalışması:** Klavyeden aşağıdaki formatta girilen yazıyı açıklamalara göre ayrıştırınız.
+> ***Sınıf Çalışması:*** Klavyeden aşağıdaki formatta girilen yazıyı açıklamalara göre ayrıştırınız.
 > öğrenci no:ad soyad:doğum tarihi:ders adı:arasınav notu:final notu
 > **Açıklamalar:**
 > - Yazının format geçerlilik kontrolü yapılmayacaktır.
@@ -19838,7 +19838,7 @@ class App {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı bir dizi dizisinin matris olup olmadığını test eden `isMatrix` isimli metodu ve parametresi ile aldığı bir dizi dizisinin bir kare matris olup olmadığını test eden `isSquareMatrix` metodunu `MatrixUtil` isimli sınıfın içerisinde yazınız ve test ediniz
+> ***Sınıf Çalışması:*** Parametresi ile aldığı bir dizi dizisinin matris olup olmadığını test eden `isMatrix` isimli metodu ve parametresi ile aldığı bir dizi dizisinin bir kare matris olup olmadığını test eden `isSquareMatrix` metodunu `MatrixUtil` isimli sınıfın içerisinde yazınız ve test ediniz
 
 ```java
 package org.csystem.util.matrix.test; 
@@ -19898,7 +19898,7 @@ public class MatrixUtilIsSquareMatrixTest {
 }
 ```
 
-> **Sınıf Çalışması:*** Parametresi ile aldığı bir kare matrisin esas köşegeni (diagonal) üzerindeki elemanların toplamına geri dönen `sumDiagonal` isimli metodu MatrixUtil içerisinde yazınız ve test ediniz.
+> ***Sınıf Çalışması:**** Parametresi ile aldığı bir kare matrisin esas köşegeni (diagonal) üzerindeki elemanların toplamına geri dönen `sumDiagonal` isimli metodu MatrixUtil içerisinde yazınız ve test ediniz.
 > **Açıklamalar:**
 > - Metot parametresi ile aldığı referansa ilişkin dizi dizisinin kare matris olup olmadığını kontrol etmeyecektir.
 > - Bir kare matrisin esas köşegeni üzerindeki elemanlar, matrisin n x n lik ise sırasıyla `a[0][0], a[1][1], ..., a[n - 1][n - 1]` elemanlarıdır.
@@ -20012,7 +20012,7 @@ public class MatrixUtilMinMaxTest {
 
 ## 24 Eylül 2024
 
-> **Sınıf Çalışması:** Parametresi ile aldığı int türden iki matrisin toplamından oluşan matrise geri dönen add isimli metodu MatrixUtil sınıfı içerisinde yazınız ve test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı int türden iki matrisin toplamından oluşan matrise geri dönen add isimli metodu MatrixUtil sınıfı içerisinde yazınız ve test ediniz.
 > **Açıklamalar:**
 > - Metot matris olup olmama kontrolü yapmayacaktır.
 > - Metot matrislerin toplanıp toplanmayacağını kontrol etmeyecektir.
@@ -20066,7 +20066,7 @@ public class MatrixUtilAddTest {
 
 
 
-> **Sınıf Çalışması:** Parametresi ile aldığı int türden iki matrisinin farkında oluşan matrise geri dönen subtract isimli metodu MatrixUtil sınıfı içerisinde yazınız ve test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı int türden iki matrisinin farkında oluşan matrise geri dönen subtract isimli metodu MatrixUtil sınıfı içerisinde yazınız ve test ediniz.
 > **Açıklamalar:**
 > - Metot matris olup olmama kontrolü yapmayacaktır.
 > - Metot matrislerin çıkartılıp çıkartılamayacağını kontrol etmeyecektir.
@@ -20118,7 +20118,7 @@ public class MatrixUtilSubtractTest {
 ```
 
 
-> **Sınıf Çalışması:** Parametresi ile aldığı int türden bir matris ile, ikinci parametresi ile aldığı int türden bir sayıyı çarpan multiplyBy metodunu yazınız ve test ediniz.
+> ***Sınıf Çalışması:*** Parametresi ile aldığı int türden bir matris ile, ikinci parametresi ile aldığı int türden bir sayıyı çarpan multiplyBy metodunu yazınız ve test ediniz.
 > **Açıklamalar:**
 > - Metot matris olup olmama kontrolü yapmayacaktır.
 > - Bir matrisin bir sayı (scalar) ile çarpımı matrisin tüm elemanlarını o sayı ile çarpmaktır.
@@ -20168,7 +20168,7 @@ public class MatrixUtilMultiplyByTest {
 ```
 
 
-> **Sınıf Çalışması:** Parametresi ile aldığı int türden bir matrisin devriğine (transpose) geri dönen transpose isimli metodu MatrixUtil sınıfı içerisinde yazınız ve test ediniz
+> ***Sınıf Çalışması:*** Parametresi ile aldığı int türden bir matrisin devriğine (transpose) geri dönen transpose isimli metodu MatrixUtil sınıfı içerisinde yazınız ve test ediniz
 > **Açıklamalar:**
 > - Metot matris olup olmama kontrolü yapmayacaktır.
 > - Bir matrisin devriği satırların sütun sütunların yapılmış halidir.
@@ -20243,7 +20243,7 @@ class App {
 ```
 ## 1 Ekim 2024
 
-> **Sınıf Çalışması:** Parametresi ile aldığı int türden iki matrisin çarpımından oluşan matrisi döndüren multiply isimli metodu MatrixUtil içerisinde yazınız ve aşağıdaki kod test ediniz
+> ***Sınıf Çalışması:*** Parametresi ile aldığı int türden iki matrisin çarpımından oluşan matrisi döndüren multiply isimli metodu MatrixUtil içerisinde yazınız ve aşağıdaki kod test ediniz
 > **Açıklamalar:**
 > - Metot matris olup olmama kontrolü yapmayacaktır.
 > - Metot matrislerin çarpılıp çarpılmayacağını kontrol etmeyecektir
@@ -21050,7 +21050,7 @@ public class Complex {
 
 ## 10 Ekim 2024 - 15 Ekim 2024
 
-> **Sınıf Çalışması:** Bir okulda ortak olarak Fizik sınavı yapılıyor olsun. Sınav n tane şube için yapılsın. n sayısını klavyeden isteyiniz. Her bir şubedeki öğrenci sayısını da klavyeden isteyiniz. Bu sınavdan alınan notları rassal olarak belirleyiniz. Bu işlemlerden sonra ilgili notlara göre her bir şubenin ayrı ayrı Fizik dersi ortalaması ve okulun Fizik dersi ortalamasını hesaplayan simülasyonu yazınız.
+> ***Sınıf Çalışması:*** Bir okulda ortak olarak Fizik sınavı yapılıyor olsun. Sınav n tane şube için yapılsın. n sayısını klavyeden isteyiniz. Her bir şubedeki öğrenci sayısını da klavyeden isteyiniz. Bu sınavdan alınan notları rassal olarak belirleyiniz. Bu işlemlerden sonra ilgili notlara göre her bir şubenin ayrı ayrı Fizik dersi ortalaması ve okulun Fizik dersi ortalamasını hesaplayan simülasyonu yazınız.
 > **Açıklamalar:**
 > - Bir öğrencinin not `[0, 10]` aralığında bir tamsayı olabilir.
 > - Programı mümkün olduğunca nesne yönelimli olarak ve genel olarak tasarlayınız.
@@ -22085,22 +22085,20 @@ Kutupsal koordinatlara ilişkin detaylı bilgiye [buradan](https://en.wikipedia.
 - Sınıf bildirimlerinde (final classes)
 - Metot bildirimlerinde (final methods)
 
-#### `final` Değişkenler (`final` Variables)
+### `final` Değişkenler (`final` Variables)
 
 Anımsanacağı gibi Java'da 3 çeşit değişken vardır:
-- local variables
-- parameter variables
-- member variables
+- yerel değişkenler (local variables)
+- metot parametre değişkenleri (parameter variables)
+- sınıf veri elemanları (member variables)
 
-Değişkenler `final` olarak bildirilebilir. Bir değişkenin `final` olması durumunda, o değişkene scope'u boyunca yalnızca bir kez değer verilebilir. Yani değişkenin değeri değiştirilemez. Değerinin değiştirilmeye çalışması error oluşturur.
+Değişkenler `final` olarak bildirilebilir. Bir değişkenin `final` olması durumunda o değişkene scope'u boyunca yalnızca bir kez değer verilebilir. Yani değişkenin değeri değiştirilemez. Değerinin değiştirilmeye çalışılması durumunda error oluşturur.
 
 Bazı değişkenler `final` anahtar sözcüğü kullanılmasa bile belirli koşullar altında `final` etkisinde olabilmektedir. Bu kavrama **effectively final** denir. Bu kavram ileride ele alınacaktır.
 
-*Java 8* ile birlikte yerel değişkenlerin ve parametre değişkenlerinin `final` olarak bildirilmesi gerekliliği ortadan kalkmıştır. Bunun nedeni *Java ile Uygulama Geliştirme 1* kursunda ele alınacaktır. Ancak veri elemanlarını final olarak bildirilmesi oldukça önemlidir.
+*Java 8* ile birlikte yerel değişkenlerin ve parametre değişkenlerinin `final` olarak bildirilmesi gerekliliği ortadan kalkmıştır. Bunun nedeni *Java ile Uygulama Geliştirme 1* kursunda ele alınacaktır. Ancak veri elemanlarının `final` olarak bildirilmesi oldukça önemlidir.
 
-`final` bir yerel değişkene scope'u içerisinde ya initialize yapılarak ya da atama yapılarak **toplamda bir kez** değer verilebilir. Bir metodun parametre değişkeni de `final` olabilir. Bu durumda metot içerisinde o parametre değişkeninin değeri değiştirilemez.
-
-> Aşağıdaki demo örneği inceleyiniz.
+> `final` bir *yerel değişkene* scope'u içerisinde ya initialize yapılarak ya da atama yapılarak **toplamda bir kez** değer verilebilir.
 
 ```java
 package org.csystem.app;  
@@ -22115,8 +22113,12 @@ class App {
         ++b; // error  
         a += 3; // error  
     }  
-}  
-  
+}
+```
+
+Bir *metodun parametre değişkeni de* `final` olabilir. Bu durumda metot içerisinde o parametre değişkeninin değeri değiştirilemez.
+
+```java
 class Sample {  
     public static void foo(int a, final double b)  
     {  
@@ -22126,7 +22128,7 @@ class Sample {
 }
 ```
 
-> Bir veri elemanı `final` olarak bildirilebilir. `final` veri elemanlarına default değerler otomatik olarak verilmez. 
+> Bir veri elemanı `final` olarak bildirilebilir. **`final` veri elemanlarına default değerler otomatik olarak verilmez.** 
 
 ```java
 class Sample {  
@@ -22135,7 +22137,7 @@ class Sample {
 }
 ```
 
-***Anahtar notlar:*** Sınıf veri elemanı için erişim belirleyici, `static` anahtar sözcüğü ve `final` anahtar sözcüğü aynı sentaks seviyesinde olduklarından istenilen sırada yazılabilirler. Ancak okunabilirlik/algılanabilirlik açısından bildirimde şu sırayla yazılması uygundur:
+***Anahtar notlar:*** Sınıf veri elemanı bildirimi için *erişim belirleyici*, `static` anahtar sözcüğü ve `final` anahtar sözcüğü aynı sentaks seviyesinde olduklarından istenen sırada yazılabilirler. Ancak okunabilirlik/algılanabilirlik açısından bildirimin şu sırayla yazılması uygundur:
 	`[erişim belirleyici] [static] [final]`
 
 Sınıfın non-static ve `final` olarak bildirilmiş bir veri elemanına aşağıdaki 3 yerden yalnızca birinde değer verilebilir:
@@ -22147,9 +22149,11 @@ Sınıfın `static` ve `final` olarak bildirilmiş bir veri elemanına aşağıd
 - Bildirim noktasında (initialization)
 - static initializer içerisinde
 
-**Not:** `static` ve non-static initializer elemanları ileride ele alınacaktır.
+**Not:** Sınıfların `static` ve non-static initializer elemanları ileride ele alınacaktır.
 
 > Aşağıdaki demo örneği inceleyiniz.
+>
+> **Not:** `switch` statement/expression'ın `case` değerleri sabit ifadesi olmak zorundadır.
 
 ```java
 package org.csystem.app;  
@@ -22195,8 +22199,8 @@ class Sample {
   
     public Sample()  
     {  
-        // a = 0;   
-}  
+        // a = 0;  
+    }  
   
     public Sample(int x)  
     {  
@@ -22205,255 +22209,255 @@ class Sample {
 }
 ```
 
-`final` bir değişkene sabit ifadesi (constant expression) ile değer verilmesi zorunlu değildir. Sınıfın `static` ve `final` olarak bildirilmiş bir veri elemanına sabit ifadesi ile değer verildiğinde o veri elemanı sabit ifadesi olarak kullanılabilir. Sınıfın `public`, `static` ve `final` olarak bildirilmiş bir veri elemanı için (özellikle de sabit ifadesi ile değer veriliyorsa) bir convention olarak tamamı büyük harflerden oluşacak ve birden fazla kelimeden oluşuyorsa kelimeler alt tire karakteri ile ayrılacak şekilde isimlendirme yapılır.
+`final` bir değişkene sabit ifadesi (constant expression) ile değer verilmesi zorunlu değildir.
+
+Sınıfın `static` ve `final` olarak bildirilmiş bir veri elemanına sabit ifadesi ile değer verildiğinde o veri elemanı sabit ifadesi olarak kullanılabilir.
+
+Sınıfın `public`, `static` ve `final` olarak bildirilmiş bir veri elemanı için (özellikle de sabit ifadesi ile değer veriliyorsa) bir convention olarak tamamı büyük harflerden oluşacak ve birden fazla kelimeden oluşuyorsa kelimeler alt tire karakteri ile ayrılacak şekilde isimlendirme yapılır.
 
 > Aşağıdaki demo örneği inceleyiniz.
-buradayım
+
 ```java
-package org.csystem.app; 
- 
-class App { 
-  public static void main(String[] args) 
-  { 
-    Window w = new Window(); 
- 
-    w.setVisibility(Visibility.GONE); 
- 
-    //... 
-  } 
-} 
- 
-class Window { 
-  //... 
-  public void setVisibility(int value) 
-  { 
-    //... 
-    switch (value) { 
-      case Visibility.VISIBLE -> System.out.println("Visible"); 
-      case Visibility.INVISIBLE -> System.out.println("Invisible"); 
-      case Visibility.GONE -> System.out.println("Gone"); 
-    } 
-  } 
-} 
- 
-class Visibility { 
-  public static final int VISIBLE = 1; 
-  public static final int INVISIBLE = 0; 
-  public static final int GONE = 2; 
+package org.csystem.app;  
+  
+import java.sql.SQLOutput;  
+  
+class App {  
+    public static void main(String[] args)  
+    {  
+        Window w = new Window();  
+  
+        w.setVisibility(Visibility.GONE);  
+    }  
+}  
+  
+class Window {  
+    public void setVisibility(int value)  
+    {  
+        switch (value) {  
+            case Visibility.VISIBLE -> System.out.println("Visible");  
+            case Visibility.INVISIBLE -> System.out.println("Invisible");  
+            case Visibility.GONE -> System.out.println("Gone");  
+        }  
+    }  
+}  
+  
+class Visibility {  
+    public static final int VISIBLE = 1;  
+    public static final int INVISIBLE = 0;  
+    public static final int GONE = 2;  
 }
 ```
 
-> `final` bir referans değişkenin gösterdiği nesnenin (yani içerisinde tuttuğu adresteki nesne) içeriği değiştirilebilir. Burada referansın içerisinde tuttuğu adres değiştirilemez. Bu durumda nesne final olamaz. Bir nesnenin içeriğinin değiştirilememesi için o sınıfın immutable olarak yazılmış olması gerekir. Bu durumda da nesneyi gösteren bir referansın final olup olmamasının nesnenin içeriğinin değiştirilip değiştirilememesi anlamında bir önemi yoktur.
+`final` bir referans değişkeninin gösterdiği nesnenin (yani içerisinde tuttuğu adresteki nesne) içeriği değiştirilebilir. Burada referansın içerisinde tuttuğu adres değiştirilemez. Bu durumda bir nesne `final` olamaz. Bir nesnenin içeriğinin değiştirilememesi için o sınıfın immutable olarak yazılmış olması gerekir. Bu durumda da nesneyi gösteren bir referansın `final` olup olmamasının nesnenin içeriğinin değiştirilip değiştirilememesi anlamında bir önemi yoktur.
 
-> Aşağıdaki dmo örneği inceleyiniz
+> Aşağıdaki demo örneği inceleyiniz.
 
 ```java
-package org.csystem.app; 
- 
-class App { 
-  public static void main(String[] args) 
-  { 
-    final Sample s = new Sample(20); 
- 
-    s.x = 10; 
-  } 
-} 
- 
-class Sample { 
-  public int x; 
- 
-  public Sample(int a) 
-  { 
-    x = a; 
-  } 
+package org.csystem.app;  
+  
+import java.sql.SQLOutput;  
+  
+class App {  
+    public static void main(String[] args)  
+    {  
+        final Sample s = new Sample(20);  
+          
+        s.x = 10;  
+    }  
+}  
+  
+class Sample {  
+    public int x;  
+  
+    public Sample(int a)  
+    {  
+        x = a;  
+    }  
 }
 ```
 
-
-> Aşağıdaki `RandomStringArrayGenerator` sınıfında `m_texts` veri elemanı gizlenmiştir. `m_texts` referansının içerisindeki adres dışarıya verildiği için ve referans da bir dizi gösterdiği için client code içerisinde dizinin elemanları değiştirilmiştir. Dolayısıyla sınıf içerisinde tutulan dizi de bundan etkilenmiştir. Yani referans değişkeni gizlemek (hatta onu final yaparak atama yapılmasını engellemek) dizi nesnesinin değiştirilmesini engellememiştir. Çünkü diziler immutable değildir. Bu durumda sınıfı yazan programcı da getTexts metodunun dokümantasyonunda bu durumu belirtmelidir. Ya da dökümanın yazım biçiminden bu anlaşılmalıdır,
+> Aşağıdaki `RandomStringArrayGenerator` sınıfında `m_texts` veri elemanı gizlenmiştir. `m_texts` referansının içerisindeki adres dışarıya verildiği için ve referans da bir dizi gösterdiği için client code içerisinde dizinin elemanları değiştirilmiştir. Dolayısıyla sınıf içerisinde tutulan dizi de bundan etkilenmiştir. Yani referans değişkeni gizlemek (hatta onu `final` yaparak atama yapılmasını engellemek) dizi nesnesinin değiştirilmesini engellememiştir. Çünkü diziler immutable değildir. Bu durumda sınıfı yazan programcı `getTexts` metodunun dokümantasyonunda bu durumu belirtmelidir. Ya da dokümanın yazım biçiminden bu anlaşılmalıdır.
 
 ```java
-package org.csystem.app; 
- 
-import org.csystem.generator.random.string.RandomStringArrayGeneratorTR; 
- 
-import java.util.Random; 
- 
-class App { 
-  public static void main(String[] args) 
-  { 
-    RandomStringArrayGeneratorTR generator = new RandomStringArrayGeneratorTR(new Random(), 10, 4, 11); 
-    String [] texts = generator.getTexts(); 
- 
- 
-    System.out.println("Texts:"); 
-    for (String text : texts) 
-      System.out.println(text); 
-    System.out.println("---------------------------------------------------------------"); 
- 
- 
-    for (int i = 0; i < texts.length; ++i) 
-      texts[i] = texts[i].toUpperCase(); 
- 
-    System.out.println("Texts:"); 
-    for (String text : texts) 
-      System.out.println(text); 
-    System.out.println("---------------------------------------------------------------"); 
- 
- 
-    System.out.println("Generated Texts:"); 
-    for (String text : generator.getTexts()) 
-      System.out.println(text); 
-    System.out.println("---------------------------------------------------------------"); 
-  } 
+package org.csystem.app;  
+  
+import org.csystem.generator.random.string.RandomStringArrayGeneratorTR;  
+  
+import java.util.Random;  
+  
+class App {  
+    public static void main(String[] args)  
+    {  
+        RandomStringArrayGeneratorTR generator = new RandomStringArrayGeneratorTR(new Random(), 3, 4, 11);  
+        String[] texts = generator.getTexts();  
+  
+        System.out.println("Texts: ");  
+        for (String text : texts)  
+            System.out.println(text);  
+        System.out.println("----");  
+          
+        for (int i = 0; i < texts.length; ++i)  
+            texts[i] = texts[i].toUpperCase();  
+  
+        System.out.println("Texts: ");  
+        for (String text : texts)  
+            System.out.println(text);  
+        System.out.println("----");  
+  
+        System.out.println("Generated Texts: ");  
+        for (String text : generator.getTexts())  
+            System.out.println(text);  
+    }  
 }
 ```
 
 ```java
-package org.csystem.generator.random.string; 
- 
-import org.csystem.util.string.StringUtil; 
- 
-import java.util.Random; 
- 
-public class RandomStringArrayGeneratorTR { 
-  private final String [] m_texts; 
- 
-  public RandomStringArrayGeneratorTR(Random random, int count, int origin, int bound) 
-  { 
-    m_texts = StringUtil.generateRandomTextsTR(random, count, origin, bound); 
-  } 
- 
-  public String [] getTexts() 
-  { 
-    return m_texts; 
-  } 
+package org.csystem.generator.random.string;  
+  
+import java.util.Random;  
+  
+import org.csystem.util.string.StringUtil;  
+  
+public class RandomStringArrayGeneratorTR {  
+    private final String[] m_texts;  
+  
+    public RandomStringArrayGeneratorTR(Random random, int count, int origin, int bound)  
+    {  
+        m_texts = StringUtil.generateRandomTextsTR(random, count, origin, bound);  
+    }  
+  
+    public String[] getTexts()  
+    {  
+        return m_texts;  
+    }  
 }
 ```
 
-> Yukarıdaki sınıf aşağıdaki gibi yazıldığında artık içsel olarak tutulan dizinin doğrudan adresi değil, kopyasının (yeni yaratılmış olan bir dizinin) adresi dışarıya verilmektedir. Bu durumda sınıfı yazan programcı da getTexts metodunun dokümantasyonunda bu durumu belirtir. 
+> Yukarıdaki sınıf aşağıdaki gibi yazıldığında artık içsel olarak tutulan dizinin doğrudan adresi değil, kopyasının (yeni yaratılmış başka bir dizinin) adresi dışarıya verilmektedir. Bu durumda sınıfı yazan programcı `getTexts` metodunun dokümantasyonunda bu durumu belirtir. 
 > 
-> ***Anahtar notlar:*** Arrays sınıfının copyOf metodu birinci parametresi ile aldığı dizinin, ikinci parametresi ile aldığı newLength tane elemanından oluşan yeni bir (newly allocated) dizi referansına geri döner. Bu durumda ikinci parametreye argüman olarak dizinin uzunluğu geçilirse dizinin tüm elemanlarından bir kopyası çıkartılmış olur
+> ***Anahtar notlar:*** `Arrays` sınıfının `copyOf` metodu birinci parametresi ile aldığı dizinin, ikinci parametresi ile aldığı newLength tane elemanından oluşan yeni bir (newly allocated) dizi referansına geri döner. Bu durumda ikinci parametreye argüman olarak dizinin uzunluğu geçilirse dizinin tüm elemanlarından bir kopyası çıkartılmış olur
 
 
 ```java
-package org.csystem.app; 
- 
-import org.csystem.generator.random.string.RandomStringArrayGeneratorTR; 
- 
-import java.util.Random; 
- 
-class App { 
-  public static void main(String[] args) 
-  { 
-    RandomStringArrayGeneratorTR generator = new RandomStringArrayGeneratorTR(new Random(), 10, 4, 11); 
-    String [] texts = generator.getTexts(); 
- 
- 
-    System.out.println("Texts:"); 
-    for (String text : texts) 
-      System.out.println(text); 
-    System.out.println("---------------------------------------------------------------"); 
- 
- 
-    for (int i = 0; i < texts.length; ++i) 
-      texts[i] = texts[i].toUpperCase(); 
- 
-    System.out.println("Texts:"); 
-    for (String text : texts) 
-      System.out.println(text); 
-    System.out.println("---------------------------------------------------------------"); 
- 
- 
-    System.out.println("Generated Texts:"); 
-    for (String text : generator.getTexts()) 
-      System.out.println(text); 
-    System.out.println("---------------------------------------------------------------"); 
-  } 
+package org.csystem.app;  
+  
+import org.csystem.generator.random.string.RandomStringArrayGeneratorTR;  
+  
+import java.util.Random;  
+  
+class App {  
+    public static void main(String[] args)  
+    {  
+        RandomStringArrayGeneratorTR generator = new RandomStringArrayGeneratorTR(new Random(), 3, 4, 11);  
+        String[] texts = generator.getTexts();  
+  
+        System.out.println("Texts: ");  
+        for (String text : texts)  
+            System.out.println(text);  
+        System.out.println("----");  
+          
+        for (int i = 0; i < texts.length; ++i)  
+            texts[i] = texts[i].toUpperCase();  
+  
+        System.out.println("Texts: ");  
+        for (String text : texts)  
+            System.out.println(text);  
+        System.out.println("----");  
+  
+        System.out.println("Generated Texts: ");  
+        for (String text : generator.getTexts())  
+            System.out.println(text);  
+    }  
 }
 ```
 
 ```java
-package org.csystem.generator.random.string; 
- 
-import org.csystem.util.string.StringUtil; 
- 
-import java.util.Arrays; 
-import java.util.Random; 
- 
-public class RandomStringArrayGeneratorTR { 
-  private final String [] m_texts; 
- 
-  public RandomStringArrayGeneratorTR(Random random, int count, int origin, int bound) 
-  { 
-    m_texts = StringUtil.generateRandomTextsTR(random, count, origin, bound); 
-  } 
- 
-  public String [] getTexts() 
-  { 
-    return Arrays.copyOf(m_texts, m_texts.length); 
-  } 
+package org.csystem.generator.random.string;  
+  
+import java.util.Arrays;  
+import java.util.Random;  
+  
+import org.csystem.util.string.StringUtil;  
+  
+public class RandomStringArrayGeneratorTR {  
+    private final String[] m_texts;  
+  
+    public RandomStringArrayGeneratorTR(Random random, int count, int origin, int bound)  
+    {  
+        m_texts = StringUtil.generateRandomTextsTR(random, count, origin, bound);  
+    }  
+  
+    public String[] getTexts()  
+    {  
+        return Arrays.copyOf(m_texts, m_texts.length);  
+    }  
 }
 ```
 
-> Aşağıdaki örnekte sınıfı kullanna programcı bir dizi referansını zaten elde edememektedir
+> Aşağıdaki örnekte sınıfı kullanan programcı bir dizi referansını zaten elde edememektedir.
 
 ```java
-package org.csystem.app; 
- 
-import org.csystem.generator.random.string.RandomStringArrayGeneratorTR; 
- 
-import java.util.Random; 
- 
-class App { 
-  public static void main(String[] args) 
-  { 
-    RandomStringArrayGeneratorTR generator = new RandomStringArrayGeneratorTR(new Random(), 10, 4, 11); 
-    int size = generator.size(); 
- 
-    for (int i = 0; i < size; ++i) 
-      System.out.println(generator.get(i)); 
-  } 
+package org.csystem.app;  
+  
+import org.csystem.generator.random.string.RandomStringArrayGeneratorTR;  
+  
+import java.util.Random;  
+  
+class App {  
+    public static void main(String[] args)  
+    {  
+        RandomStringArrayGeneratorTR generator = new RandomStringArrayGeneratorTR(new Random(), 3, 4, 11);  
+        int size = generator.length();  
+  
+        for (int i = 0; i < size; ++i)  
+            System.out.println(generator.get(i));  
+    }  
 }
 ```
 
 ```java
-package org.csystem.generator.random.string; 
- 
-import org.csystem.util.string.StringUtil; 
- 
-import java.util.Random; 
- 
-public class RandomStringArrayGeneratorTR { 
-  private final String [] m_texts; 
- 
-  public RandomStringArrayGeneratorTR(Random random, int count, int origin, int bound) 
-  { 
-    m_texts = StringUtil.generateRandomTextsTR(random, count, origin, bound); 
-  } 
- 
-  public int size() 
-  { 
-    return m_texts.length; 
-  } 
- 
-  public String get(int index) 
-  { 
-    return m_texts[index]; 
-  } 
+package org.csystem.generator.random.string;  
+  
+import java.util.Random;  
+  
+import org.csystem.util.string.StringUtil;  
+  
+public class RandomStringArrayGeneratorTR {  
+    private final String[] m_texts;  
+  
+    public RandomStringArrayGeneratorTR(Random random, int count, int origin, int bound)  
+    {  
+        m_texts = StringUtil.generateRandomTextsTR(random, count, origin, bound);  
+    }  
+  
+    public int length()  
+    {  
+        return m_texts.length;  
+    }  
+  
+    public String get(int index)  
+    {  
+        return m_texts[index];  
+    }  
 }
 ```
 
 ## 26 Ekim 2024
 
-> ***Anahtar notlar:*** Bir veri elemanının final olması algoritmik açıdan kodu değiştirimiyorsa ve final yapılması sentaks olarak error oluşturmuyorsa, final olarak bildirilmesi her zaman iyi bir tekniktir. Pek çok static kod analizi aracı da default olarak final yapma uyarısı verir. Ancak programcının nasılsa uyarı verir düşüncesiyle değil, iyi bir teknik olarak bunu tasarımda düşünmesi ve ona göre kodu yazması gerekir
+***Anahtar notlar:*** Bir veri elemanının `final` olması algoritmik açıdan kodu değiştirmiyorsa ve `final` yapılması sentaks olarak error oluşturmuyorsa, `final` olarak bildirilmesi her zaman iyi bir tekniktir. Pek çok static kod analizi aracı da default olarak `final` yapma uyarısı verir. Ancak programcının "nasılsa static kod analizi aracı uyarı verir" düşüncesiyle değil, iyi bir teknik olarak bunu tasarımda düşünmesi ve ona göre kodu yazması gerekir.
 
- > **Sınıf Çalışması:** Bir okulda ortak olarak Fizik sınavı yapılıyor olsun. Sınav n tane şube için yapılsın. n sayısını klavyeden isteyiniz. Her bir şubedeki öğrenci sayısını da klavyeden isteyiniz. Bu sınavdan alınan notları rassal olarak belirleyiniz. Bu işlemlerden sonra ilgili notlara göre her bir şubenin ayrı ayrı Fizik dersi ortalaması ve okulun Fizik dersi ortalamasını hesaplayan simülasyonu yazınız.
+ > ***Sınıf Çalışması:*** Bir okulda ortak bir Fizik sınavı yapılıyor olsun. Sınav n tane şube için yapılsın. İlgili notlara göre her bir şubenin ayrı ayrı ve genel olarak da okulun Fizik dersi ortalamasını hesaplayan simülasyonu yazınız.
+ > 
 > **Açıklamalar:**
-> - Ders adını komut satırı argümanı olarak alınız
-> - Bir öğrencinin not `[0, 10]` aralığında bir tamsayı olabilir.
-> - Programı mümkün olduğunca nesne yönelimli olarak ve genel olarak tasarlayınız.
-> - Her bir şubenin not dağılımına ilişkin histogram'ları ve okulun Fizik notlarına ilişkin histogramı (düşey olarak) çiziniz.
+> - Şube adedini temsil eden n sayısını klavyeden isteyiniz.
+> - Her bir şubedeki öğrenci sayısını klavyeden isteyiniz.
+> - Bu sınavdan alınan notları rastgele belirleyiniz.
+> - Ders adını komut satırı argümanı olarak alınız.
+> - Bir öğrencinin notu $[0, 10]$ aralığında bir tam sayı olabilir.
+> - Programı mümkün olduğunca nesne yönelimli ve genel olarak tasarlayınız.
+> - Her bir şubenin not dağılımına ilişkin histogram'ları ve genel okul notlarına ilişkin histogramı (düşey olarak) çiziniz.
+>
 > **Not:** İleride daha iyisi yazılacaktır.
 
 ```java
@@ -22799,58 +22803,58 @@ public class Classroom {
 }
 ```
 
-> Aşağıdaki NumericLottery ve final veri elemanını inceleyiniz
+> Aşağıdaki `NumericLottery` sınıfını ve `final` veri elemanını inceleyiniz.
 
 ```java
-package org.csystem.app.lottery.numeric; 
- 
-import java.util.Random; 
- 
-public class NumericLottery { 
-  private final Random m_random; 
- 
-  private boolean [] getFlags() 
-  { 
-    boolean [] flags = new boolean[50]; 
- 
-    for (int i = 0; i < 6; ++i) { 
-      int val; 
- 
-      do 
-        val = m_random.nextInt(1, 50); 
-      while (flags[val]); 
- 
-      flags[val] = true; 
-    } 
- 
-    return flags; 
-  } 
- 
-  private int [] getNumbers(boolean [] flags) 
-  { 
-    int [] a = new int[6]; 
-    int idx = 0; 
- 
-    for (int i = 1; i < flags.length; ++i) 
-      if (flags[i]) 
-        a[idx++] = i; 
- 
-    return a; 
-  } 
- 
-  public NumericLottery(Random r) 
-  { 
-    m_random = r; 
-  } 
- 
-  public int [] getNumbers() 
-  { 
-    return getNumbers(getFlags()); 
-  } 
+package org.csystem.app.lottery.numeric;  
+  
+import java.util.Random;  
+  
+public class NumericLottery {  
+    private final Random m_random;  
+  
+    private boolean[] getFlags()  
+    {  
+        boolean[] flags = new boolean[50];  
+  
+        for (int i = 0; i < 6; ++i) {  
+            int val;  
+  
+            do {  
+                val = m_random.nextInt(1, 50);  
+            } while (flags[val]);  
+  
+            flags[val] = true;  
+        }  
+  
+        return flags;  
+    }  
+  
+    private int[] getNumbers(boolean[] flags)  
+    {  
+        int[] numbers = new int[6];  
+        int idx = 0;  
+  
+        for (int i = 1; i < flags.length; ++i)  
+            if (flags[i])  
+                numbers[idx++] = i;  
+  
+        return numbers;  
+    }  
+  
+    public NumericLottery(Random random)  
+    {  
+        m_random = random;  
+    }  
+  
+    public int[] getNumbers()  
+    {  
+        return getNumbers(getFlags());  
+    }  
 }
 ```
 
-> StringUtil sınıfı ve ilgili elemanları inceleyiniz
+> StringUtil sınıfı ve ilgili elemanları inceleyiniz.
 
 ```java
 package org.csystem.util.string; 
@@ -23061,112 +23065,114 @@ public class StringUtil {
 }
 ```
 
-> **Sınıf Çalışması:** Aşağıda açıklanan `IntValue` isimli sınıfı yazınız.
+> ***Sınıf Çalışması:*** Aşağıda açıklanan `IntValue` isimli sınıfı yazınız.
+> 
 > **Açıklamalar:** 
-> - Sınıf int türden bir değeri sarmalayacaktır (wrapping).
-> - Sınıf immutable olarak yazılacaktır. Yani sınıf içerisinde tutulan veri elemanı değiştirilemeyecektir.
-> - Sınıf `[-128, 127]` aralığındaki değerler için bir ön bellek (cache) kullanacaktır. Bu aralıktaki bir değer için ilk sarmalamada nesne yaratılacak ve aynı değer tekrar sarmalanmak istendiğinde daha önce yaratılmış olan nesnenin referansı verilecektir.
-> - Sınıf `[-128, 127]` aralığı dışında kalan değerleri ön bellekte tutmayacaktır.
-> - Sınıfa yararlı bazı eklentiler yapılabilir.
-> - 
-> ***Anahtar notlar:*** Ön bellek (cache) genel bir kavramdır ve etkinlik açısından tercih edilir. Bu örnekte sınıf immutable olduğundan belirli aralıktaki değerler için ayrı ayrı nesnelerin yaratılması engellenmiştir. Bu durumda bellekte etkin kullanılmış olur aynı zamanda sarmalama da hızlı yapılmış olur. Daha fazla değere ilişkin nesnelerin saklanmaması yine etkinlik açısından düşünülmüştür. Eğer çok fazla değer saklanırsa belleğin etkin kullanımı azalmış olur.
+> - Sınıf `int` türden bir değeri sarmalayacaktır (wrapping).
+> - Sınıf *immutable* olarak yazılacaktır. Yani sınıf içerisinde tutulan veri elemanı değiştirilemeyecektir.
+> - Sınıf $[-128, 127]$ aralığındaki değerler için bir önbellek (cache) kullanacaktır. Bu aralıktaki bir değer için ilk sarmalamada nesne yaratılacak ve aynı değer tekrar sarmalanmak istendiğinde daha önce yaratılmış olan nesnenin referansı verilecektir.
+> - Sınıf $[-128, 127]$ aralığı dışında kalan değerleri önbellekte tutmayacaktır.
+> - Sınıfa isteğe bağlı olarak bazı yararlı eklentiler yapılabilir.
 > 
-> ***Anahtar notlar:*** Aslında JavaSE'de örnekteki int türden bir değeri immutable olarak sarmalayan ve `[-128, 127]` aralığındaki değerler için bir ön bellek kullanan sınıf vardır. Bu sınıf ileride ele alınacaktır. Örneğin amacı programalama açısından böyle bir sınıfın nasıl yazılabileceğini göstermektedir. 
+> **Not:** Aslında JavaSE'de örnekteki `int` türden bir değeri immutable olarak sarmalayan ve $[-128, 127]$ aralığındaki değerler için önbellek kullanan bir sınıf vardır. Bu sınıf ileride ele alınacaktır. Örneğin amacı programalama açısından böyle bir sınıfın nasıl yazılabileceğini göstermektedir. 
 > 
-> ***Anahtar notlar:*** Bir değerin sarmalanması (wrapping) o değerin bir sınıf içerisinde yani bir nesne içerinde tutulması anlamındadır. Temel türden bir değerin sarmalanması da aslında o değerin heap'de tutulması anlamına gelir. Temel türden bir değerin sarmalanasına genel olarak **boxing** denilmektedir. Sarmalanan temel türden bir değerin elde edilmesine ise **unboxing** denilmektedir. Bu kavramlar ileride daha detaylı olarak ele alınacaktır.
+> ***Anahtar notlar:*** Önbellek (cache) genel bir kavramdır ve etkinlik açısından tercih edilir. Bu örnekte sınıf immutable olduğundan belirli aralıktaki değerler için ayrı ayrı nesnelerin yaratılması engellenmiştir. Bu durumda bellek etkin kullanılmış olur ve aynı zamanda sarmalama hızlı yapılmış olur. Daha fazla değere ilişkin nesnelerin saklanmaması yine etkinlik açısından düşünülmüştür. Eğer çok fazla değer saklanırsa belleğin etkin kullanımı azalmış olur.
 > 
-> ***Anahtar notlar:*** Bu örnekte yazılan sınıfta `[-128, 127]` aralında kalan bir değer için nesne ilk kez sarmalandığında yaratılıp aynı değerin tekrar sarmalanması durumunda aynı nesne kullanıldığından Gof'un **flyweight** tasarım kalıbı kullanılmıştır. Kalıbın detayları şu an için önemsizdir.
+> ***Anahtar notlar:*** Bir değerin sarmalanması (wrapping) o değerin bir sınıf içerisinde yani bir nesne içerinde tutulması anlamına gelmektedir. Temel türden bir değerin sarmalanması da aslında o değerin heap'te tutulması anlamına gelir. Temel türden bir değerin sarmalanmasına genel olarak **boxing** denilmektedir. Sarmalanan temel türden bir değerin elde edilmesine ise **unboxing** denilmektedir. Bu kavramlar ileride daha detaylı olarak ele alınacaktır.
 > 
-> ***Anahtar notlar:*** Bazı sınıflarda Java 8 öncesinde `valueOf` biçiminde isimlendirilen factory metotlar bulundurulmuştur. Java 8 ile birlike yeni eklenen sınıflarda `valueOf` yerine `of` ismi tercih edilmektedir. Bu isimlendirme Java'da genel bir convention niteliğindedir.
+> ***Anahtar notlar:*** Bu örnekte yazılan sınıfta $[-128, 127]$ aralığında kalan bir değer için nesne ilk kez sarmalandığında yaratılıp aynı değerin tekrar sarmalanması durumunda aynı nesne kullanıldığından GoF'un **flyweight** tasarım kalıbı kullanılmıştır. Kalıbın detayları şu an için önemsizdir.
+> 
+> ***Anahtar notlar:*** Bazı sınıflarda *Java 8* öncesinde `valueOf` biçiminde isimlendirilen factory metotlar bulundurulmuştur. *Java 8* ile birlikte yeni eklenen sınıflarda `valueOf` yerine `of` ismi tercih edilmektedir. Bu isimlendirme Java'da genel bir convention niteliğindedir.
 
 ```java
-package org.csystem.wrapper.primitive.test; 
- 
-import org.csystem.wrapper.primitive.IntValue; 
- 
-public class IntValueInCacheTest { 
-  public static void run() 
-  { 
-    int value = -128; 
-    IntValue intValue1 = IntValue.of(value); 
-    IntValue intValue2 = IntValue.of(value); 
- 
-    System.out.println(intValue1 == intValue2 ? "Aynı nesne" : "Farklı nesneler"); 
-  } 
- 
-  public static void main(String[] args) 
-  { 
-    run(); 
-  } 
+package org.csystem.wrapper.primitive.test;  
+  
+import org.csystem.wrapper.primitive.IntValue;  
+  
+public class IntValueInCacheTest {  
+    public static void run()  
+    {  
+        int value = 128;  
+        IntValue intValue1 = IntValue.of(value);  
+        IntValue intValue2 = IntValue.of(value);  
+  
+        System.out.println(intValue1 == intValue2 ? "Same object" : "Different objects");  
+    }  
+  
+    public static void main(String[] args)  
+    {  
+        run();  
+    }  
 }
 ```
 
 ```java
-package org.csystem.wrapper.primitive.test; 
- 
-import org.csystem.wrapper.primitive.IntValue; 
- 
-public class IntValueNotInCacheTest { 
-  public static void run() 
-  { 
-    int value = -129; 
-    IntValue intValue1 = IntValue.of(value); 
-    IntValue intValue2 = IntValue.of(value); 
- 
-    System.out.println(intValue1 == intValue2 ? "Aynı nesne" : "Farklı nesneler"); 
-  } 
- 
-  public static void main(String[] args) 
-  { 
-    run(); 
-  } 
+package org.csystem.wrapper.primitive.test;  
+  
+import org.csystem.wrapper.primitive.IntValue;  
+  
+public class IntValueNotInCacheTest {  
+    public static void run()  
+    {  
+        int value = -129;  
+        IntValue intValue1 = IntValue.of(value);  
+        IntValue intValue2 = IntValue.of(value);  
+  
+        System.out.println(intValue1 == intValue2 ? "Same object" : "Different objects");  
+    }  
+  
+    public static void main(String[] args)  
+    {  
+        run();  
+    }  
 }
 ```
 
 ```java
-package org.csystem.wrapper.primitive; 
- 
-public class IntValue { 
-  private static final int CACHE_MIN = -128; 
-  private static final int CACHE_MAX = 127; 
-  private static final int INDEX_DIFFERENCE = 128; 
- 
-  private static final IntValue [] CACHE = new IntValue[CACHE_MAX - CACHE_MIN + 1]; 
-  private final int m_value; 
- 
-  private IntValue(int value) 
-  { 
-    m_value = value; 
-  } 
- 
-  public static IntValue of(int value) 
-  { 
-    if (value < CACHE_MIN || value > CACHE_MAX) 
-      return new IntValue(value); 
- 
-    if (CACHE[value + INDEX_DIFFERENCE] == null) 
-      CACHE[value + INDEX_DIFFERENCE] = new IntValue(value); 
- 
-    return CACHE[value + INDEX_DIFFERENCE]; 
-  } 
- 
-  public int getValue() 
-  { 
-    return m_value; 
-  } 
- 
-  public String toString() 
-  { 
-    return String.valueOf(m_value); 
-  } 
+package org.csystem.wrapper.primitive;  
+  
+public class IntValue {  
+    private static final int CACHE_MIN = -128;  
+    private static final int CACHE_MAX = 127;  
+    private static final int INDEX_DIFFERENCE = -CACHE_MIN;  
+  
+    private static final IntValue[] CACHE = new IntValue[CACHE_MAX - CACHE_MIN + 1];  
+  
+    private final int m_value;  
+  
+    private IntValue(int value)  
+    {  
+        m_value = value;  
+    }  
+  
+    public static IntValue of(int value)  
+    {  
+        if (value < CACHE_MIN || value > CACHE_MAX)  
+            return new IntValue(value);  
+  
+        if (CACHE[value + INDEX_DIFFERENCE] == null)  
+            CACHE[value + INDEX_DIFFERENCE] = new IntValue(value);  
+  
+        return CACHE[value + INDEX_DIFFERENCE];  
+    }  
+  
+    public int getValue()  
+    {  
+        return m_value;  
+    }  
+  
+    public String toString()  
+    {  
+        return String.valueOf(m_value);  
+    }  
 }
 ```
 
-## 31 Ekim 2024
+## 31 Ekim 2024 - Bakılacak
 
-> Bazı sınıfların duruma göre hem mutable hem de immutable versiyonları bulundurulabilir. Şüphesiz tüm sınıflar için bu durum söz konusu değildir. Yani domain'e bağlı olarak her iki versiyonun da yazılması gerekebilir. Böylesi durumlarda hem mutable hem de immutable olan sınıfların isimlendirilmesinde genel olarak immutable olan doğrudan isimlendirilir, mutable olan ise `Mutable` ön eki ile isimlendirilir. Örneğin iki boyutlu bir noktayı temsil eden bir tür için hem mutable hem de immutable versiyonları yazılacaksa immutable olana `Point`, mutable olana ise `MutablePoint` isimleri verilebilir. Bu bir convention olarak düşünülebilir.
+Bazı sınıfların duruma göre hem mutable hem de immutable versiyonları bulundurulabilir. Şüphesiz tüm sınıflar için bu durum söz konusu değildir. Yani domain'e bağlı olarak her iki versiyonun da yazılması gerekebilir. Böylesi durumlarda hem mutable hem de immutable olan sınıfların isimlendirilmesinde genel olarak immutable olan doğrudan isimlendirilir, mutable olan ise `Mutable` ön eki ile isimlendirilir. Örneğin iki boyutlu bir noktayı temsil eden bir tür için hem mutable hem de immutable versiyonları yazılacaksa immutable olana `Point`, mutable olana ise `MutablePoint` isimleri verilebilir. Bu bir convention olarak düşünülebilir.
 
-> Aşağıdaki Point, MutablePoint ve friendly olarak bildirilmiş PointCommon isimli sınıfları inceleyiniz
+> Aşağıdaki `Point`, `MutablePoint` ve friendly olarak bildirilmiş `PointCommon` isimli sınıfları inceleyiniz.
 
 ```java
 package org.csystem.math.geometry; 
@@ -23332,7 +23338,7 @@ class PointCommon {
 }
 ```
 
-> Aşağıdaki Complex ve MutableComplex sınıflarını inceleyiniz
+> Aşağıdaki `Complex` ve `MutableComplex` sınıflarını inceleyiniz.
 
 ```java
 package org.csystem.math; 
@@ -23528,9 +23534,9 @@ public class MutableComplex {
 }
 ```
 
-## 7 Kasım 2024
+## 7 Kasım 2024 - Bakılacak
 
-> Aşağıda test kodu bulunan `getDigits, getDigitsInTwos ve getDigitsInThrees` metotlarını inceleyiniz
+> Aşağıda test kodu bulunan `getDigits`, `getDigitsInTwos` ve `getDigitsInThrees` metotlarını inceleyiniz.
 
 ```java
 package org.csystem.util.numeric.test; 
@@ -23578,12 +23584,13 @@ public class NumberUtilGetDigitsTest {
 }
 ```
 
-> **Sınıf Çalışması:** Parametresi ile aldığı long türden bir sayının Türkçe okunuşuna geri dönen numToStrTR metodunu NumberUtil sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz
+> ***Sınıf Çalışması:*** Parametresi ile aldığı `long` türden bir sayının Türkçe okunuşuna geri dönen `numToStrTR` metodunu `NumberUtil` sınıfı içerisinde yazınız ve aşağıdaki kod ile test ediniz.
+> 
 > **Açıklamalar:** 
-> - Sayının okunuşuna ilişkin elde edilecek yazılar şu şekilde olacaktır: 
-> Sayı `12345608` ise okunuşu `on iki milyon üç yüz kırk beş bin altı yüz sekiz`
-> Sayı `-12345608` ise okunuşu `eksi on iki milyon üç yüz kırk beş bin altı yüz sekiz`
-> - Okunuştaki kelimeler arasında birer adet SPACE karakteri olduğuna dikkat ediniz
+> - Sayının okunuşuna ilişkin elde edilecek yazılar şu şekilde olacaktır:
+> 	Sayı `12345608` ise okunuşu: `on iki milyon üç yüz kırk beş bin altı yüz sekiz`
+> 	Sayı `-12345608` ise okunuşu: `eksi on iki milyon üç yüz kırk beş bin altı yüz sekiz`
+> - Okunuşta kelimeler arasında birer adet SPACE karakteri olduğuna dikkat ediniz.
 
 ```java
 package org.csystem.util.numeric.test; 
@@ -23650,11 +23657,11 @@ public class NumberUtilNumToStrTRTest {
 
 ## 12 Kasım 2024
 
-## Enum Sınıfları
+### Enum Sınıfları
 
-> Enum sınıfları (enum/enumration classes) bir UDT'dir. Aslında genel olarak bakıldığında kendine ait özellikleri olan bir sınıftır. Bu bölümde anlatılacak özellikleri dışında kalan özellikler klasik sınıflar ile aynıdır. Enum sınıfları Java 5 ile dile eklenmiştir.
-> 
-> Aşağıdaki demo örnekte GameObject sınıfının renk bilgisi ve move metodunun parametre isimleri ne olduğuna ilişkin bir fikir verse de, türleri hangi değerleri alabileceğine ilişkin bir fikir vermemektedir. Şüphesiz bunlar dökumanlardan anlaşılabilir. Ayrıca ilgili metotlar çağrılırken geçilen değerler de client code'ların okunabilirliğini/algılanabilirliğini olumsuz olarak etkileyebilmektedir. Bu anlamda setColor ve move metotları doğru çalışsalar da okunabilirlik/algılanabilirlik açısından iyi tasarlanmamış olarak düşünülebilir.
+Enum sınıfları (enum/enumeration classes) birer UDT'dir. Aslında genel olarak bakıldığında kendine ait özellikleri olan bir sınıftır. Bu bölümde anlatılacak özellikleri dışında kalan özellikler klasik sınıflar ile aynıdır. Enum sınıfları *Java 5* ile dile eklenmiştir.
+
+> Aşağıdaki demo örnekte `GameObject` sınıfının renk bilgisi ve `move` metodunun parametre isimleri bunların her birinin ne anlama geldiğine ilişkin bir fikir verse de, ilişkin oldukları türler hangi değerleri alabileceğine ilişkin bir fikir vermemektedir. Şüphesiz bunlar dokümanlardan anlaşılabilir, ancak ilgili metotlar çağrılırken geçilen değerler client code'ların okunabilirliğini/algılanabilirliğini olumsuz olarak etkileyebilmektedir. Bu anlamda `setColor` ve `move` metotları doğru çalışsalar da okunabilirlik/algılanabilirlik açısından iyi tasarlanmamış olarak düşünülebilir. buradayım
 
 ```java
 package org.csystem.app; 
