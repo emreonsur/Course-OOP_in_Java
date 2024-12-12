@@ -396,7 +396,7 @@ class Mample {
 > 1 byte içerisinde 1 ve 0'ların bütün permütasyonları 256 tanedir. 2 byte içerisinde en büyük sayıyı yazacak olsak şöyle olurdu:
 > 
 > 		1111 1111 1111 1111 ---> 65535
-> Biz burada ikilik sistemde tamsayıları ifade ettik. Ama bütün sayıları pozitif kabul ettik. Pekiyi negatif tamsayılar nasıl ifade edilmektedir?
+> Biz burada ikilik sistemde tam sayıları ifade ettik. Ama bütün sayıları pozitif kabul ettik. Pekiyi negatif tam sayılar nasıl ifade edilmektedir?
 > 
 > Bugün negatif tam sayıların ifade edilmesi için **ikiye tümleyen (two's complement)** sistemi denilen bir sistem kullanılmaktadır. Bu sistemde pozitif ve negatif sayılar birbirlerinin ikiye tümleyenidirler. İkiye tümleyen **bire tümleyene (one's complement)** bir eklenerek bulunmaktadır. Bir sayının bire tümleyeni sayıdaki 0'ların 1, 1'lerin 0 yapılmasıyla bulunur. Bu durumda ikiye tümleyen şöyle hesaplanır. örneğin aşağıdaki sayının ikiye tümleyenini bulmaya çalışalım:
 > 
@@ -473,7 +473,7 @@ class Mample {
 > 		
 > Demek ki bu sistemde bir sayıyı üst limitten taşırırsak yüksek bir negatif sayıyla karşılaırız. Benzer şekilde alt limitten taşırırsak yüksek bir	pozitif sayı ile karşılaşırız
 > 
-> Tamsayılar ikilik sistemde **işaretsiz (unsigned)** ya da **işaretli (signed)** sistemde yorumlanabilirler. İşaretsiz sistemde sayının en soldaki biti işaret biti olarak yorumlanmaz. Sayı herzaman sıfır ya da pozitiftir. İşaretli sistemde ise sayının en solundaki biti işaret bitidir. Sayı ikiye tümleyen aritmetiğine göre yorumlanır.
+> tam sayılar ikilik sistemde **işaretsiz (unsigned)** ya da **işaretli (signed)** sistemde yorumlanabilirler. İşaretsiz sistemde sayının en soldaki biti işaret biti olarak yorumlanmaz. Sayı herzaman sıfır ya da pozitiftir. İşaretli sistemde ise sayının en solundaki biti işaret bitidir. Sayı ikiye tümleyen aritmetiğine göre yorumlanır.
 > 
 > İşlemciler aslında genellikle işaretli ve işaretsiz ayırımını yapmazlar. Çünkü ikisi de aslında aynı biçimde işleme sokulmaktadır. Sonucun yorumu değişmektedir.
 > 
@@ -561,7 +561,7 @@ class Mample {
 > 
 > 		1A 23 5C 78
 > 		
-> Burada 4 byte'lık bir bilgi vardır. Örneğin 2 byte içerisinde yazılabilecek en küçük negatif işaretli sayının hex karşılığı 8000 biçimindedir. Örneğin bir byte'lık işaretli sistemde yazılabilecek en büyük pozitif sayı 7F biçimindedir. İşareti tamsayı sisteminde 4 byte içerisinde -1 sayısı FFFFFFFF biçimindedir.
+> Burada 4 byte'lık bir bilgi vardır. Örneğin 2 byte içerisinde yazılabilecek en küçük negatif işaretli sayının hex karşılığı 8000 biçimindedir. Örneğin bir byte'lık işaretli sistemde yazılabilecek en büyük pozitif sayı 7F biçimindedir. İşareti tam sayı sisteminde 4 byte içerisinde -1 sayısı FFFFFFFF biçimindedir.
 
 > Eskiden daha fazla kullanılıyor olsa da toplamda oldukça seyrek kullanılan diğer bir sayı sistemi de 8'lik sayı sistemidir. Bu sisteme İngilizce **octal system** denilmektedir. 8'lik sayı sistemindeki her bir basamağa **octal digit** denir. Octal digit sembolleri olarak 10'luk sistemin ilk 8 sembolü kullanılmaktadır:
 > 
@@ -613,14 +613,14 @@ class Mample {
 
 > **Açıklamalar:**
 > - Java'da temel tür isimlerinin her biri birer anahtar sözcüktür.
-> - int, long, short ve byte türlerine tamsayı türleri (integer/integral types) denir.
-> - Tamsayı türleri için işaretli sistemde 2'ye tümleme formatını kullanılar. Java'da işaretsiz tamsayı türü yoktur.
+> - int, long, short ve byte türlerine tam sayı türleri (integer/integral types) denir.
+> - tam sayı türleri için işaretli sistemde 2'ye tümleme formatını kullanılar. Java'da işaretsiz tam sayı türü yoktur.
 > - double ve float türlerine "gerçek sayı türleri (real types)" denir. Gerçek sayı türleri için `IEEE 754` formatı kullanılır. Bu sebeple türlere "floating point types" da denilmektedir. Bu türlerle yapılan işlemlerde `IEEE 754` standardının çalışma sistemi gereği yuvarlama hataları (rounding error) oluşabilir. Bu yuvarlama hatalarının problem olabileceği uygulamalarda (örneğin parasal ve finansal uygulamalarda) bu türler kullanılmaz. Bu tip durumlarda hangi türlerin kullanılacağı ileride ele alınacaktır.
 > - Programlamada kullanılan karakterler bir tabloda tutulurlar. Bu tabloya karakter tablosu denilmektedir. Programlamada pek çok karakter tablosu kullanılabilmektedir. Daha önceleri `ASCII` denilen ve 7 bit olarak tutulan ancak daha sonra 8 bit olarak ele alınan bir karakter tablosu vardır. Daha sonraları dünyada kullanılan pek çok karakterin de tutulabilmesi için `UNICODE` isimli bir karakter tablosu kullanılmaya başlanmıştır. `UNICODE` tablosunun ilk 128 karakteri `ASCII` ile aynıdır. `UNICODE` tablosunun da çeşitleri vardır. char türü içerisinde tutulan sayı ilgili tabloda sıra numarası olarak yorumlanır. Yani char türü içerisinde tutulan sayı aslında ilgili karakter tablosunda bir karakterin sıra numarasına karşılık gelir. Bu anlamda char türü `UNICODE` tablosunun 2 byte'ı ile uyumludur. Karakter tablolarına ilişkin detaylar ileride ele alıncaktır.
 > - boolean türü mantıksal olarak doğru ve yanlış kavramlarını temsil eden bir türdür. boolean türünden bir değişken iki tane değer alabilir: true, false. Bu tür örneğin flag değişkenlerde kullanılabilir. boolean türünün uzunluğu `Java Language Specifcation` dokümanında belirtilmemiştir. Zaten iki tane değer aldığı için de uzunluğunun kaç olduğunun programcı açısından önemi yoktur.
-> - Her ne kadar 8 tane tür olsa da programcı tamsayı kullanacağı zaman önce int türünü düşünür, int türünün senaryoya uygun olmadığı durumda (örneğin daha fazla değer tutulması gerekirse) diğer türler tercih edilmelidir. Benzer şekilde gerçek sayılar için de öncelikle double türü düşünülmeli, duruma göre float türü tercih edilmelidir. Diğer türler (char ve boolean) zaten özel amaçlı türlerdir. Bu anlamda int ve double türlerine "default types" da denilmektedir
+> - Her ne kadar 8 tane tür olsa da programcı tam sayı kullanacağı zaman önce int türünü düşünür, int türünün senaryoya uygun olmadığı durumda (örneğin daha fazla değer tutulması gerekirse) diğer türler tercih edilmelidir. Benzer şekilde gerçek sayılar için de öncelikle double türü düşünülmeli, duruma göre float türü tercih edilmelidir. Diğer türler (char ve boolean) zaten özel amaçlı türlerdir. Bu anlamda int ve double türlerine "default types" da denilmektedir
 > - Java'da boolean türü dışında kalan temel türlerin uzunlukları her sistemde aynıdır. boolean türünün aldığı iki tane değer olduğundan yani herhangi bir sınır söz konusu olmadığından programcı açısından uzunluğun da önemi yoktur.
-> - `int` türüne "integer" demek yanlış bir tanım kullanmak demektir. integer kavramı tam sayılara verilen genel bir isimdir. int ise 4 byte'lık bir tamsayı türüdür. Ayrıca JavaSE'de Integer isimli önemli bir sınıf da bulunmaktadır.
+> - `int` türüne "integer" demek yanlış bir tanım kullanmak demektir. integer kavramı tam sayılara verilen genel bir isimdir. int ise 4 byte'lık bir tam sayı türüdür. Ayrıca JavaSE'de Integer isimli önemli bir sınıf da bulunmaktadır.
 
 > Aşağıdaki demo örneği çalıştırıp yuvarlama hatasını gözlemleyiniz. Kodun detayları şu an için önemsizdir
 
@@ -1148,7 +1148,7 @@ class App {
 class Sample {
 	public static int getInt()
 	{
-		System.out.println("İki tane tamsayı değeri girmeniz gerekiyor:");
+		System.out.println("İki tane tam sayı değeri girmeniz gerekiyor:");
 		
 		return Util.add();
 	}
@@ -1544,10 +1544,10 @@ düzeltilmesi açısından da önemlidir.
 > ***Anahtar notlar:*** Kurs içerisinde ele alacağımız Nesne Yönelimli Programlama Tekniği'ne (Object Oriented Programming Paradigm) ilişkin kavramlar ile kodun parçalara ayrılması metotlar dışında daha yüksek seviyede de yapılabilecektir.
 
 > `System.out.printf` metodu ile formatlı yazdırma yapılabilir. printf metodunun birinci parametresine geçien argüman bir yazı (string literal vb.) olmalıdır. Bu metot birinci parametresi ile birlikte değişken sayıda argüman alabilecek şekilde tasarlanmıştır. Değişken sayıda argüman alan metotların (vararg methods) bildiriminin nasıl yapıldığı bu bölümde ele alınmayacaktır. printf metodunun birinci parametresine ilişkin yazının içerisinde `%` karakteri ile birlikte özel bazı karakterler kullanılabilmektedir. Bu özel karakterlere format karakterleri (format specifiers) denir. Bir format karakterinin yazı içerisinde `%` karakteri ile birlikte kullanılmasına ise yer tutucu (place holder) denir. Bir format karakteri özel bazıları dışında bir türe karşılık gelir ve o yer tutucu yerine printf'e geçilen argümanların değerleri yerleştirilerek yazı formatlanır. Format karakterlerinin bazıları şunlardır:
-> - d: Tamsayı türleri için kullanılır. Sayının değerinin decimal olarak formatlanmasını sağlar.
-> - x veya X: Tamsayı türleri için kullanılır. Sayının değerinin hexadecimal olarak formatlanmasını sağlar.
-> - h veya H: Tamsayı türleri için kullanılır. Sayının değerinin hexadecimal olarak formatlanmasını sağlar.
-> - o: Tamsayı türleri için kullanılır. Sayının değerinin octal olarak formatlanmasını sağlar.
+> - d: tam sayı türleri için kullanılır. Sayının değerinin decimal olarak formatlanmasını sağlar.
+> - x veya X: tam sayı türleri için kullanılır. Sayının değerinin hexadecimal olarak formatlanmasını sağlar.
+> - h veya H: tam sayı türleri için kullanılır. Sayının değerinin hexadecimal olarak formatlanmasını sağlar.
+> - o: tam sayı türleri için kullanılır. Sayının değerinin octal olarak formatlanmasını sağlar.
 > - f: Gerçek sayı türleri kullanılır. 
 > - c: char türü için kullanılır.
 > - b: boolean türü için kullanılır.
@@ -1582,7 +1582,7 @@ class App {
 }
 ```
 
-> Tamsayıya ilişkin format karakterlerinde `%` ile format karakteri arasında yazılan sayı hizalamak (alignment) için kullanılabilir. Bu sayının pozitif olması gerekir. `%` ile format karakteri arasında yalnızca pozitif bir sayı sayı yazıldığında formatlanan sayının basamak sayısı `%` ile format karakteri arasındaki sayıdan küçükse soluna verilen sayı kadar space karakteri eklenir. Eğer `%` ile format karakteri arasında verilen sayıdan önce sıfır sayısı yazılırsa space yerine sıfır değeri ile formatlama yapılır. Tamsayılara ilişkin format karakterlerinin başka detaylı kullanımları da vardır.
+> tam sayıya ilişkin format karakterlerinde `%` ile format karakteri arasında yazılan sayı hizalamak (alignment) için kullanılabilir. Bu sayının pozitif olması gerekir. `%` ile format karakteri arasında yalnızca pozitif bir sayı sayı yazıldığında formatlanan sayının basamak sayısı `%` ile format karakteri arasındaki sayıdan küçükse soluna verilen sayı kadar space karakteri eklenir. Eğer `%` ile format karakteri arasında verilen sayıdan önce sıfır sayısı yazılırsa space yerine sıfır değeri ile formatlama yapılır. tam sayılara ilişkin format karakterlerinin başka detaylı kullanımları da vardır.
 > 
 > Aşağıdaki demo örneği inceleyiniz
 
@@ -1713,7 +1713,7 @@ class App {
 }
 ```
 
-> Tam sayılarla bölme işleminde elde edilen sonucun noktadan sonraki kısmı atılır. Yani tamsayılarla bölme işleminde sonuç yine tamsayı çıkar 
+> Tam sayılarla bölme işleminde elde edilen sonucun noktadan sonraki kısmı atılır. Yani tam sayılarla bölme işleminde sonuç yine tam sayı çıkar 
 > 
 > Tam sayılarla bölme işleminde paydanın değeri sıfır ise exception oluşur.
 > 	
@@ -2036,7 +2036,7 @@ class App {
 }
 ```
 
-> `Math` sınıfının tamsayı değerine yuvarlayan önemli bazı metotları
+> `Math` sınıfının tam sayı değerine yuvarlayan önemli bazı metotları
 
 ```java
 package csd;
@@ -2375,7 +2375,7 @@ class App {
 }
 ```
 
-> Tamsayı sabitleri decimal dışında, hexadecimal, octal ve Java 7 ile birlikte binary olarak gösterilebilmektedir. Sabitin başında bir ek yoksa decimal, `0x` (x küçük veya büyük olabilir) varsa hexadecimal, sıfır varsa octal ve `0b` (b küçük veya büyük olabilir) binary olarak ele alınır. Şüphesiz sayının basamakları sayı sistemine uygun olmalıdır. Aksi durumda error oluşur. Aşağıdaki demo örneği inceleyiniz
+> tam sayı sabitleri decimal dışında, hexadecimal, octal ve Java 7 ile birlikte binary olarak gösterilebilmektedir. Sabitin başında bir ek yoksa decimal, `0x` (x küçük veya büyük olabilir) varsa hexadecimal, sıfır varsa octal ve `0b` (b küçük veya büyük olabilir) binary olarak ele alınır. Şüphesiz sayının basamakları sayı sistemine uygun olmalıdır. Aksi durumda error oluşur. Aşağıdaki demo örneği inceleyiniz
 
 ```java
 package csd;
@@ -2495,7 +2495,7 @@ class App {
 
 > Mod operatörü `%` aslında bir çeşit bölme işlemi yapar. Bu sebeple önceliği ürettiği değer dışında bölme operatörü ile aynıduır. Bu operatör birinci operandının ikinci operandına bölümünden elde edilen kalan değerini verir. Bu operatörün ikinci operandının işaretinin önemi yoktur. Yani ikinci operandı negatif bile olsa pozitif değeri ile işlem yapılır. Bu operatörün birinci operandı negatif ise işlem şu şekilde yapılır:
 > 
-> Birinci operandın pozitif olduğu değere göre kalan değerinin ters işaretlisi alınır. Yani bu operaörün ürettiği değerin işareti birinci operandının işareti ile aynıdır. Yani sonuç olarak bu operatör negatif operandlar için Matematik'teki mod alma işlemi ile aynı değildir. Bazı programlama dillerinde gerçek sayılar için mod operatörü kullanılamaz. Ancak Java'da böyle bir kısıt yoktur. Pratikte bu operatörler daha daha çok tamsayılarla kullanılır.
+> Birinci operandın pozitif olduğu değere göre kalan değerinin ters işaretlisi alınır. Yani bu operaörün ürettiği değerin işareti birinci operandının işareti ile aynıdır. Yani sonuç olarak bu operatör negatif operandlar için Matematik'teki mod alma işlemi ile aynı değildir. Bazı programlama dillerinde gerçek sayılar için mod operatörü kullanılamaz. Ancak Java'da böyle bir kısıt yoktur. Pratikte bu operatörler daha daha çok tam sayılarla kullanılır.
 > 
 > Aşağıdaki demo örneği inceleyiniz
 
@@ -3384,9 +3384,9 @@ class Sample {
 
 ## 14 Mart 2024
  
-> Bitwise AND `&` ve bitwise OR `|` operatörleri tamsayılar ile bitsel işlemler yaparlar. Bu operatörler özel olarak boolean türü ile kullanıldıklarında (yani operandları boolen türden olduğunda) kısa devre davranışı olmayan AND ve OR işlemleri olarak düşünülmeldir. Yani bu operatörler boolean türü ile kullanıldıklarında, işlem sırası yine `&&` ve `||` operatörleri ile aynıdır ancak kısa devre davranışı olmaz.
+> Bitwise AND `&` ve bitwise OR `|` operatörleri tam sayılar ile bitsel işlemler yaparlar. Bu operatörler özel olarak boolean türü ile kullanıldıklarında (yani operandları boolen türden olduğunda) kısa devre davranışı olmayan AND ve OR işlemleri olarak düşünülmeldir. Yani bu operatörler boolean türü ile kullanıldıklarında, işlem sırası yine `&&` ve `||` operatörleri ile aynıdır ancak kısa devre davranışı olmaz.
 	
-***Anahtar notlar:*** Java'da tamsayılar ile bitsel işlemler yapan bir grup operatör vardır. Bunlara "bitwise operators"	denilmektedir. Bitsel operatörlerin detayları ve kullanım alanları "Java ile Uygulama Geliştirme 1" ve "Android Programlama" kurslarında ele alınacaktır
+***Anahtar notlar:*** Java'da tam sayılar ile bitsel işlemler yapan bir grup operatör vardır. Bunlara "bitwise operators"	denilmektedir. Bitsel operatörlerin detayları ve kullanım alanları "Java ile Uygulama Geliştirme 1" ve "Android Programlama" kurslarında ele alınacaktır
  
 > Aşağıdaki demo örnekte tüm metotların çağrıldığına dikkat ediniz
 
@@ -3701,7 +3701,7 @@ class App {
 
 | Operatör                | İlişkisi  |
 | --------------------------------------- | ----------- |
-| () . [] new               | Soldan sağa |
+| () .[] new               | Soldan sağa |
 | + - ++ -- ! ~ ()            | Sağdan sola |
 | * / %                  | Soldan sağa |
 | + -                   | Soldan sağa |
@@ -8086,7 +8086,7 @@ class App {
 
 ### Temel türler arasındaki doğrudan dönüşüme (implicit conversion) ilişkin ayrıntılar
  
-> Küçük tamsayı türünden büyük tamsayı türüne doğrudan atama geçerlidir. Bu dönüşümde kaynak türe ilişkin değer pozitif ise sayının yüksek anlamlı byte'larına ilişkin bit'leri sıfır ile beslenir, değer negatif ise işaretin kaybedilmemesi için yüksek anlamlı byte'lara ilişkin bit'ler 1 ile beslenir.
+> Küçük tam sayı türünden büyük tam sayı türüne doğrudan atama geçerlidir. Bu dönüşümde kaynak türe ilişkin değer pozitif ise sayının yüksek anlamlı byte'larına ilişkin bit'leri sıfır ile beslenir, değer negatif ise işaretin kaybedilmemesi için yüksek anlamlı byte'lara ilişkin bit'ler 1 ile beslenir.
 > 	
 > Aşağıdaki demo örneği çeşitli değerler girerek çalıştırıp sonuçları gözlemleyiniz
 
@@ -8117,7 +8117,7 @@ class App {
 }
 ```
 
-> Büyük tamsayı türünden küçük tamsayı türüne doğrudan dönüşüm geçersizdir
+> Büyük tam sayı türünden küçük tam sayı türüne doğrudan dönüşüm geçersizdir
 
 ```java
 package csd;
@@ -8227,7 +8227,7 @@ class Mample {
 }
 ```
 
-> Herhangi bir gerçek sayı türünden, bir tamsayı türüne doğrudan dönüşüm geçersizdir
+> Herhangi bir gerçek sayı türünden, bir tam sayı türüne doğrudan dönüşüm geçersizdir
 
 ```java
 package csd;
@@ -8243,7 +8243,7 @@ class App {
 }
 ```
 
-> Herhangi bir tamsayı türünden herhangi bir gerçek sayı türüne doğrudan atama geçerlidir. Aşağıdaki örnekte long türünün uzunluğu float türünden büyük olmasına karşın atama işlemi yapılabilir. Çünkü tamsayıların tutuluş formatı ile gerçek sayıların tutuluş formatı farklıdır
+> Herhangi bir tam sayı türünden herhangi bir gerçek sayı türüne doğrudan atama geçerlidir. Aşağıdaki örnekte long türünün uzunluğu float türünden büyük olmasına karşın atama işlemi yapılabilir. Çünkü tam sayıların tutuluş formatı ile gerçek sayıların tutuluş formatı farklıdır
 
 ```java
 package csd;
@@ -8457,9 +8457,9 @@ class App {
 }
 ```
 
-***Anahtar notlar:*** Modern sistemlerde iki operandlı tamsayı işlemleri ilgili sistemdeki int ve üstü tamsayı türleri ile yapılabilmektedir. Bu anlamda, 32 bit sistemlerde tamsayılar için iki operandlı işlemler genel olarak minimum 32 bit veya daha üstü (64 bit, 128 bit ...) gibi türler ile yapılabilir. 64 bit sistemlerde tamsayılar için iki	operandlı işlemler genel olarak minimum 32 bit veya daha üstü (64 bit, 128 bit ...) gibi türler ile yapılabilir. Burada söylenenlerin oldukça fazla detayı vardır. Bir fikir vermek amaçlı yazılmıştır.
+***Anahtar notlar:*** Modern sistemlerde iki operandlı tam sayı işlemleri ilgili sistemdeki int ve üstü tam sayı türleri ile yapılabilmektedir. Bu anlamda, 32 bit sistemlerde tam sayılar için iki operandlı işlemler genel olarak minimum 32 bit veya daha üstü (64 bit, 128 bit ...) gibi türler ile yapılabilir. 64 bit sistemlerde tam sayılar için iki	operandlı işlemler genel olarak minimum 32 bit veya daha üstü (64 bit, 128 bit ...) gibi türler ile yapılabilir. Burada söylenenlerin oldukça fazla detayı vardır. Bir fikir vermek amaçlı yazılmıştır.
  
-> Bölme işleminde operandlardan ikisi de tamsayı türlerindense, işlemin sonucu tamsayı olarak çıkar. Bölme işleminde elde edilen değerin noktadan sonraki kısmı atılır.
+> Bölme işleminde operandlardan ikisi de tam sayı türlerindense, işlemin sonucu tam sayı olarak çıkar. Bölme işleminde elde edilen değerin noktadan sonraki kısmı atılır.
 
 ***Anahtar notlar:*** Bu kuralın bir problem olmadığını programcı için bazı algoritmalarda kullanılabilir olduğunu anımsayınız. Sayıyı basamaklara ayıran örneklerimizi inceleyiniz.
 
@@ -8484,7 +8484,7 @@ class App {
 }
 ```
 
-> Büyük tamsayı türü ile küçük tamsayı türü işleme sokulduğunda küçük tamsayı türüne ilişkimn değer büyük tamsayı türüne dönüştürülür ve sonuç büyük tamsayı türünden çıkar. Integral promotion bu kuralın dışındadır
+> Büyük tam sayı türü ile küçük tam sayı türü işleme sokulduğunda küçük tam sayı türüne ilişkimn değer büyük tam sayı türüne dönüştürülür ve sonuç büyük tam sayı türünden çıkar. Integral promotion bu kuralın dışındadır
 
 ```java
 package csd;
@@ -8504,7 +8504,7 @@ class App {
 }
 ```
 
-> Büyük tamsayı türü ile küçük tamsayı türü işleme sokulduğunda küçük tamsayı türüne ilişkimn değer büyük tamsayı türüne dönüştürülür ve sonuç büyük tamsayı türünden çıkar. Integral promotion bu kuralın dışındadır
+> Büyük tam sayı türü ile küçük tam sayı türü işleme sokulduğunda küçük tam sayı türüne ilişkimn değer büyük tam sayı türüne dönüştürülür ve sonuç büyük tam sayı türünden çıkar. Integral promotion bu kuralın dışındadır
 
 ```java
 package csd;
@@ -8543,7 +8543,7 @@ class App {
 }
 ```
 
-> Bir tamsayı ile bir gerçek sayı işleme sokulduğunda tamsayı türüne ilişkin değer ilgili gerçek sayı türüne dönüştürülür ve sonuç ilgili gerçek sayı türünden çıkar
+> Bir tam sayı ile bir gerçek sayı işleme sokulduğunda tam sayı türüne ilişkin değer ilgili gerçek sayı türüne dönüştürülür ve sonuç ilgili gerçek sayı türünden çıkar
 
 ```java
 package csd;
@@ -8687,7 +8687,7 @@ class App {
 
 > Explciit conversion'a ilişkin ayrıntılar şunlardır:
  
-> Büyük tamsayı türünden küçük tamsayı türüne yapılan explicit dönüşümde değerin yüksek anlamlı byte'ları atılır. Bu durumda sayı hedef türün sınırları içerisinde kalıyorsa bilgi kaybı oluşmaz, kalmıyorsa oluşur. Aşağıdaki demo örneği inceleyiniz
+> Büyük tam sayı türünden küçük tam sayı türüne yapılan explicit dönüşümde değerin yüksek anlamlı byte'ları atılır. Bu durumda sayı hedef türün sınırları içerisinde kalıyorsa bilgi kaybı oluşmaz, kalmıyorsa oluşur. Aşağıdaki demo örneği inceleyiniz
 
 ```java
 package csd;
@@ -8716,7 +8716,7 @@ class App {
 }
 ```
 
-> Büyük tamsayı türünden `char` türüne yapılan explicit dönüşümde sayının yüksek anlamlı byte değeri atılır
+> Büyük tam sayı türünden `char` türüne yapılan explicit dönüşümde sayının yüksek anlamlı byte değeri atılır
 
 ```java
 package csd;
@@ -8902,13 +8902,13 @@ class App {
 
 > ***Anahtar notlar:*** `int` türünün en büyük değerine programlamada `Integer.MAX_VALUE`, en küçük değerine ise `Integer.MIN_VALUE` ifadeleri ile erişiebilir. Detaylar ileride ele alınacaktır
 > 
-> Gerçek sayı türünden tamsayı ve char türüne yapılan explicit dönüşüm şu şekilde gerçekleşir:
+> Gerçek sayı türünden tam sayı ve char türüne yapılan explicit dönüşüm şu şekilde gerçekleşir:
 > - Sayının noktadan sonraki kısmı atılır
 > 	- Elde edilen değer hedef türün sınırları içerisinde kalıyorsa doğrudan dönüştürülür
 > 	- Elde edilen değer hedef türün sınırları içerisinde kalmıyorsa
 > 		- Hedef tür int, short, byte, char türlerinde biriyse
-> 			- Değer int türü sınırları içerisindeyse tamsayılar arasındaki dönüşüm kuralları uygulanır
-> 			- Değer int türü sınırları dışındaysa sayının pozitif ya da negatif olması durumuna göre int türünün en büyük ya da en küçük değeri alınır ve bu değer ile tamsayılar arasındaki dönüşüm kuralları uygulanır
+> 			- Değer int türü sınırları içerisindeyse tam sayılar arasındaki dönüşüm kuralları uygulanır
+> 			- Değer int türü sınırları dışındaysa sayının pozitif ya da negatif olması durumuna göre int türünün en büyük ya da en küçük değeri alınır ve bu değer ile tam sayılar arasındaki dönüşüm kuralları uygulanır
 > 		- Hedef tür long türüyse 
 > 			- Değer long türü sınırları içerisindeyse doğrudan alınır
 > 			- Değer long türü sınırları içerisinde değilse sayınının pozitif ya da negatif olması duruma göre long türünün en büyük ya da en küçük değeri alınır
@@ -10705,7 +10705,7 @@ class Sample {
 > 
 > Peki bir **referansın** uzunluğu ne kadardır?
 > 
-> Bir referansın uzunluğu sistemin adresleyebileceği kadardır. Yani örneğin `32 bit` bir sistemde `4 byte`, `64 bit` bir sistemde `8 byte`'dır. Bu anlamda adresler tamsayı formatında olduğundan tutuluş biçimleri yine işaretsiz ikiye tümleme formatıdır. **Referansların** uzunluğu türe göre **değişmez**. Bu anlamda bir uygulama için ilgili sistemde tüm referansların uzunluğu **aynıdır.**
+> Bir referansın uzunluğu sistemin adresleyebileceği kadardır. Yani örneğin `32 bit` bir sistemde `4 byte`, `64 bit` bir sistemde `8 byte`'dır. Bu anlamda adresler tam sayı formatında olduğundan tutuluş biçimleri yine işaretsiz ikiye tümleme formatıdır. **Referansların** uzunluğu türe göre **değişmez**. Bu anlamda bir uygulama için ilgili sistemde tüm referansların uzunluğu **aynıdır.**
 > 
 > Peki bir **nesnenin** uzunluğu ne kadardır?
 > 
@@ -14931,7 +14931,7 @@ class App {
 		java.util.Scanner kb = new java.util.Scanner(System.in);
 		
 		while (true) {
-			System.out.print("Bir tamsayı giriniz:");
+			System.out.print("Bir tam sayı giriniz:");
 			int a = Integer.parseInt(kb.nextLine());
 			
 			System.out.print("Bir gerçek sayı giriniz:");
@@ -17087,13 +17087,13 @@ public class Complex {
 > 
 > Java'da diziler `heap`'de yaratılırlar. Yani sınıfsal temsil edilmişlerdir. Java'da `stack`'de dizi **yaratılamaz**. `T` bir tür ismi olmak üzere her bir elemanı `T` türünden olan (bu durumda `T` türden dizi de denebilir) bir dizi referansı bildiriminin iki biçimi vardır:
 > 
-> 		T [] a;
+> 		T[] a;
 > 		T a[];
 > Burada `a` bir referans değişkendir. Henüz daha dizi yaratılmamıştır. İkinci biçime **"C stili (C style)"** bildirim de denilmektedir. Java programcısına önerilmemektedir. Pek çok static kod analizi aracı da ikinci biçimde default olarak uyarı verebilmektedir. Biz de kodlarımıza birinci biçimi tercih edeceğiz
 > 
 > Örneğin:
 > 
-> 		int [] a;
+> 		int[] a;
 > 		int a[];
 
 ```java
@@ -17102,7 +17102,7 @@ package org.csystem.app;
 class App {
 	public static void main(String[] args)
 	{
-		int [] a; //int türden dizi referansı bildirimi
+		int[] a; //int türden dizi referansı bildirimi
 		int b[]; //int türden dizi referansı bildirimi
 
 	}
@@ -17117,7 +17117,7 @@ package org.csystem.app;
 class App {
 	public static void main(String[] args)
 	{
-		int [] a, b, c; //a, b ve c int [] türünden
+		int[] a, b, c; //a, b ve c int[] türünden
 		int x[], y, z; // x int[], y ve z int türden
 	}
 }
@@ -17147,7 +17147,7 @@ class App {
 		System.out.print("Bir sayı giriniz:");
 		int count = kb.nextInt();
 
-		int [] a;
+		int[] a;
 
 		a = new int[count];
 		int len = a.length;
@@ -17178,7 +17178,7 @@ class App {
 		System.out.print("Bir sayı giriniz:");
 		int count = kb.nextInt();
 
-		int [] a;
+		int[] a;
 
 		a = new int[count];
 		int len = a.length;
@@ -17208,7 +17208,7 @@ class App {
 		System.out.print("Bir sayı giriniz:");
 		int count = kb.nextInt();
 
-		int [] a;
+		int[] a;
 
 		a = new int[count];
 		int len = a.length;
@@ -17241,8 +17241,8 @@ class App {
 		System.out.print("Bir sayı giriniz:");
 		int count = kb.nextInt();
 
-		int [] a;
-		boolean [] b;
+		int[] a;
+		boolean[] b;
 
 		a = new int[count];
 		b = new boolean[count];
@@ -17270,7 +17270,7 @@ package org.csystem.app;
 class App {
 	public static void main(String[] args)
 	{
-		int [] a;
+		int[] a;
 
 		a = new int[] {1, 2, 3, 4, 5, 6};
 
@@ -17290,7 +17290,7 @@ package org.csystem.app;
 class App {
 	public static void main(String[] args)
 	{
-		int [] a = {1, 2, 3, 4, 5, 6};
+		int[] a = {1, 2, 3, 4, 5, 6};
 
 		for (int i = 0; i < a.length; ++i)
 			System.out.printf("%d ", a[i]);
@@ -17314,7 +17314,7 @@ import static org.csystem.util.array.ArrayUtil.print;
 class App {
 	public static void main(String[] args)
 	{
-		int [] a = {1, 2, 3, 4, 5, 6};
+		int[] a = {1, 2, 3, 4, 5, 6};
 
 		print(a);
 	}
@@ -17377,7 +17377,7 @@ class App {
 			if (count <= 0)
 				break;
 
-			double [] a = generateRandomArray(random, count, 0., 100);
+			double[] a = generateRandomArray(random, count, 0., 100);
 
 			print(a);
 		}
@@ -17408,7 +17408,7 @@ public class ArrayUtilSumTest {
       if (count <= 0)
         break;
 
-      int [] a = generateRandomArray(r, count, 0, 100);
+      int[] a = generateRandomArray(r, count, 0, 100);
 
       print(a, 2);
       System.out.printf("Total:%d%n", sum(a));
@@ -17444,7 +17444,7 @@ class App {
 			System.out.print("Bir sayı giriniz:");
 			int count = kb.nextInt();
 
-			boolean [] a = Util.generateRandomBooleanArray(random, count);
+			boolean[] a = Util.generateRandomBooleanArray(random, count);
 
 			if (a.length > 0) {
 				for (int i = 0; i < a.length; ++i)
@@ -17460,12 +17460,12 @@ class App {
 }
 
 class Util {
-	public static boolean [] generateRandomBooleanArray(Random r, int count)
+	public static boolean[] generateRandomBooleanArray(Random r, int count)
 	{
 		if (count <= 0)
 			return new boolean[0];
 
-		boolean [] a = new boolean[count];
+		boolean[] a = new boolean[count];
 
 		for (int i = 0; i < count; ++i)
 			a[i] = r.nextBoolean();
@@ -17498,7 +17498,7 @@ public class ArrayUtilMinMaxTest {
       if (count <= 0)
         break;
 
-      int [] a = generateRandomArray(r, count, 0, 100);
+      int[] a = generateRandomArray(r, count, 0, 100);
 
       print(a, 2);
       System.out.printf("En büyük eleman:%d%nEn küçük eleman:%d%n", max(a), min(a));
@@ -17570,9 +17570,9 @@ public class NumericLottery {
     random = r;
   }
 
-  public int [] getNumbers()
+  public int[] getNumbers()
   {
-    int [] a = new int[6];
+    int[] a = new int[6];
 
     for (int i = 0; i < 6; ++i) {
       boolean repeat;
@@ -17647,9 +17647,9 @@ import java.util.Random;
 public class NumericLottery { 
   public Random random; 
  
-  public boolean [] getFlags() 
+  public boolean[] getFlags() 
   { 
-    boolean [] flags = new boolean[50]; 
+    boolean[] flags = new boolean[50]; 
  
     for (int i = 0; i < 6; ++i) { 
       int val; 
@@ -17666,9 +17666,9 @@ public class NumericLottery {
     return flags; 
   } 
  
-  public int [] getNumbers(boolean [] flags) 
+  public int[] getNumbers(boolean[] flags) 
   { 
-    int [] a = new int[6]; 
+    int[] a = new int[6]; 
     int idx = 0; 
  
     for (int i = 1; i < flags.length; ++i) 
@@ -17683,7 +17683,7 @@ public class NumericLottery {
     random = r; 
   } 
  
-  public int [] getNumbers() 
+  public int[] getNumbers() 
   { 
     return getNumbers(getFlags()); 
   } 
@@ -17739,9 +17739,9 @@ import java.util.Random;
 public class NumericLottery { 
   public Random random; 
  
-  public boolean [] getFlags() 
+  public boolean[] getFlags() 
   { 
-    boolean [] flags = new boolean[50]; 
+    boolean[] flags = new boolean[50]; 
  
     for (int i = 0; i < 6; ++i) { 
       int val; 
@@ -17756,9 +17756,9 @@ public class NumericLottery {
     return flags; 
   } 
  
-  public int [] getNumbers(boolean [] flags) 
+  public int[] getNumbers(boolean[] flags) 
   { 
-    int [] a = new int[6]; 
+    int[] a = new int[6]; 
     int idx = 0; 
  
     for (int i = 1; i < flags.length; ++i) 
@@ -17773,7 +17773,7 @@ public class NumericLottery {
     random = r; 
   } 
  
-  public int [] getNumbers() 
+  public int[] getNumbers() 
   { 
     return getNumbers(getFlags()); 
   } 
@@ -17814,7 +17814,7 @@ public class ArrayUtilBubbleSortTest {
       if (count <= 0) 
         break; 
  
-      int [] a = generateRandomArray(r, count, 0, 100); 
+      int[] a = generateRandomArray(r, count, 0, 100); 
  
       print(a, 2); 
       boolean descending = r.nextBoolean(); 
@@ -17834,7 +17834,7 @@ public class ArrayUtilBubbleSortTest {
 > Aşağıdaki reverse metodunu inceleyiniz. Metodun başka bir yazım biçimi ArrayUtil sınıfı içerisinde bulunmaktadır
 
 ```java
-public static void reverse(int [] a) 
+public static void reverse(int[] a) 
 {
   for (int i = 0; i < a.length / 2; ++i) 
     swap(a, i, a.length - i - 1); 
@@ -17872,7 +17872,7 @@ public class ArrayUtilSelectionSortTest {
       if (count <= 0) 
         break; 
  
-      int [] a = generateRandomArray(r, count, 0, 100); 
+      int[] a = generateRandomArray(r, count, 0, 100); 
  
       print(a, 2); 
       boolean descending = r.nextBoolean(); 
@@ -17932,7 +17932,7 @@ public class ArrayUtilPartitionTest {
       if (count <= 0) 
         break; 
  
-      int [] a = generateRandomArray(r, count, 0, 100); 
+      int[] a = generateRandomArray(r, count, 0, 100); 
  
       print(a, 2); 
  
@@ -17995,7 +17995,7 @@ public class NumberUtilGetDigitsTest {
 ## 5 Eylül 2024
 
 > ***Sınıf Çalışması:*** Aşağıda prototipi verilen metodu açıklamalara göre yazınız ve test ediniz:
-> `public static int [] histogramData(int [] a, int n);`
+> `public static int[] histogramData(int[] a, int n);`
 > **Açıklamalar:** 
 > - Metot ArrayUtil sınıfı içerisinde yazılacaktır.
 > - Metodun birinci parametresi, içerisinde [0, n] aralığında değerlerden oluşan bir dizi olacaktır.
@@ -18025,11 +18025,11 @@ public class ArrayUtilHistogramDataTest {
       if (count <= 0) 
         break; 
  
-      int [] a = generateRandomArray(r, count, 0, 11); 
+      int[] a = generateRandomArray(r, count, 0, 11); 
  
       System.out.print("Dizi:"); 
       print(a, 2); 
-      int [] hist = histogramData(a, 10); 
+      int[] hist = histogramData(a, 10); 
       System.out.print("Sayı dizisi:"); 
       print(hist, 2); 
     } 
@@ -18042,7 +18042,7 @@ public class ArrayUtilHistogramDataTest {
 }
 ```
 
-> char türden diziler String sınıfına benzetilebilir. char türden diziler immutable değildir. Bu anlamda char türden diziler String sınıfına yardımcı olarak da kullanılabilir. Örneğin String sınıfının immutable olmasından dolayı oluşabilecek maliyetli bir durumda char türden dizi kullanılabilir. Şüphesiz böyle bir durumda StringBuilder sınıfı da String sınıfına yardımcı olarak tercih edilebilir. Zaten StringBuilder sınıfı da genellikle içsel olarak char türden dizi kullanmaktadır. String sınıfının toCharArray metodu ile yazıya ilişkin karakterlerden oluşan char türden dizi elde edilebilir. Şüphesiz toCharArray metodu ile her çağrıda yeni bir dizi yaratılır. String sınıfnın char [] parametreli ctor'ları ile char türden dizi içerisindeki karakteri tutan String nesnesi elde edilebilir. String sınıfnın char [] parametresi alan 3 parametreli ctor'u dizinin herhangi bir indeksinden başlayarak 3. parametresi ile aldığı sayı kadar karakterden oluşan bir String nesnesi yaratılmasını sağlar. String sınıfının char [] parametreli valueOf factory metotları da yine char türden bir diziden String nesnesi elde etmek için kullanılabilir. Aşağıdaki demo örneği inceleyiniz
+> char türden diziler String sınıfına benzetilebilir. char türden diziler immutable değildir. Bu anlamda char türden diziler String sınıfına yardımcı olarak da kullanılabilir. Örneğin String sınıfının immutable olmasından dolayı oluşabilecek maliyetli bir durumda char türden dizi kullanılabilir. Şüphesiz böyle bir durumda StringBuilder sınıfı da String sınıfına yardımcı olarak tercih edilebilir. Zaten StringBuilder sınıfı da genellikle içsel olarak char türden dizi kullanmaktadır. String sınıfının toCharArray metodu ile yazıya ilişkin karakterlerden oluşan char türden dizi elde edilebilir. Şüphesiz toCharArray metodu ile her çağrıda yeni bir dizi yaratılır. String sınıfnın char[] parametreli ctor'ları ile char türden dizi içerisindeki karakteri tutan String nesnesi elde edilebilir. String sınıfnın char[] parametresi alan 3 parametreli ctor'u dizinin herhangi bir indeksinden başlayarak 3. parametresi ile aldığı sayı kadar karakterden oluşan bir String nesnesi yaratılmasını sağlar. String sınıfının char[] parametreli valueOf factory metotları da yine char türden bir diziden String nesnesi elde etmek için kullanılabilir. Aşağıdaki demo örneği inceleyiniz
 
 
 ```java
@@ -18062,7 +18062,7 @@ class App {
      if ("quit".equals(s)) 
        break; 
  
-     char [] chars = s.toCharArray(); 
+     char[] chars = s.toCharArray(); 
  
      for (int i = 0; i < chars.length / 2; ++i) { 
        char temp = chars[i]; 
@@ -18117,7 +18117,7 @@ class ChangeCaseTest {
 class Util { 
   public static String changeCase(String s) 
   { 
-    char [] c = s.toCharArray(); 
+    char[] c = s.toCharArray(); 
  
     for (int i = 0; i < c.length; ++i) 
      c[i] = Character.isUpperCase(c[i]) ? Character.toLowerCase(c[i]) : Character.toUpperCase(c[i]); 
@@ -18144,7 +18144,7 @@ import java.util.Scanner;
 class App { 
   public static void main(String[] args) 
   { 
-    Sample [] samples; 
+    Sample[] samples; 
  
     samples = new Sample[10]; 
  
@@ -18181,7 +18181,7 @@ package org.csystem.app;
 class App { 
   public static void main(String[] args) 
   { 
-    Sample [] samples; 
+    Sample[] samples; 
  
     samples = new Sample[10]; 
  
@@ -18221,7 +18221,7 @@ class App {
   { 
     Sample s1 = new Sample(67); 
     Sample s2 = new Sample(35); 
-    Sample [] samples = {s1, new Sample(23), s1, s2, new Sample(10), s2}; 
+    Sample[] samples = {s1, new Sample(23), s1, s2, new Sample(10), s2}; 
  
     System.out.println("Dizi elemanları yazdırılıyor:"); 
     for (int i = 0; i < samples.length; ++i) 
@@ -18254,7 +18254,7 @@ package org.csystem.app;
 class App { 
   public static void main(String[] args) 
   { 
-    String [] cities = {"ankara", "istanbul", "izmir", "zonguldak", "muğla"}; 
+    String[] cities = {"ankara", "istanbul", "izmir", "zonguldak", "muğla"}; 
  
     for (int i = 0; i < cities.length; ++i) 
      System.out.println(cities[i].toUpperCase()); 
@@ -18314,12 +18314,12 @@ class DemoDateApp {
 package org.csystem.app.datetime; 
  
 public class DateUtil { 
-  public static int [] daysOfMoths = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; 
-  public static String [] daysOfWeekTR = {"Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"}; 
-  public static String [] daysOfWeekEN = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"}; 
-  public static String [] monthsTR = {"", "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", 
+  public static int[] daysOfMoths = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; 
+  public static String[] daysOfWeekTR = {"Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"}; 
+  public static String[] daysOfWeekEN = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"}; 
+  public static String[] monthsTR = {"", "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", 
      "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"}; 
-  public static String [] monthsEN = {"", "January", "February", "March", "April", "May", "June", 
+  public static String[] monthsEN = {"", "January", "February", "March", "April", "May", "June", 
      "July", "August", "September", "October", "November", "December"}; 
  
   public static void printDateTR(int day, int month, int year) 
@@ -18398,7 +18398,7 @@ public class DateUtil {
 ```
 
 > ***Sınıf Çalışması:*** Aşağıda prototipi verilen metodu StringUtil sınıfı içerisinde açıklamalara göre yazınız ve aşağıdaki kod ile test ediniz:
-> `public static String join(String [] s, String delimiter)` 
+> `public static String join(String[] s, String delimiter)` 
 > **Açıklamalar:**
 > - Metot birinci parametresi ile aldığı String dizisi ile tutulan yazıları ikinci parametresi ile aldığı separator ile birleştirilmiş bir yazıya geri dönecektir.
 > - Metot parametre geçerlilik kontrolü yapmayacaktır
@@ -18418,7 +18418,7 @@ public class StringUtilJoinTest {
     Random random = new Random(); 
  
     System.out.print("Bir sayı giriniz:"); 
-    String [] s = StringUtil.generateRandomTextsTR(random, kb.nextInt(), 5, 16); 
+    String[] s = StringUtil.generateRandomTextsTR(random, kb.nextInt(), 5, 16); 
      
     System.out.printf("(%s)", StringUtil.join(s, "--")); 
   } 
@@ -18450,7 +18450,7 @@ class App {
   public static void main(String[] args) 
   { 
     String s = "Bugün hava çok güzel, çok çok güzel. Yarın nasıl olacak acaba?"; 
-    String [] str = s.split("[, .]"); 
+    String[] str = s.split("[, .]"); 
  
     for (int i = 0; i < str.length; ++i) 
      System.out.printf("(%s)%n", str[i]);
@@ -18469,7 +18469,7 @@ class App {
   public static void main(String[] args) 
   { 
     String s = "Bugün hava çok güzel, çok çok güzel. Yarın nasıl olacak acaba?"; 
-    String [] str = s.split("[, .]+"); 
+    String[] str = s.split("[, .]+"); 
      
     for (int i = 0; i < str.length; ++i) 
      System.out.printf("(%s)%n", str[i]);
@@ -18488,7 +18488,7 @@ class App {
   public static void main(String[] args) 
   { 
     String s = "Bugün hava [çok] güzel, [çok] çok güzel. Yarın nasıl olacak acaba?"; 
-    String [] str = s.split("[, .\\]\\[]+"); 
+    String[] str = s.split("[, .\\]\\[]+"); 
  
     for (int i = 0; i < str.length; ++i) 
      System.out.printf("(%s)%n", str[i]); 
@@ -18508,7 +18508,7 @@ class App {
   public static void main(String[] args) 
   { 
     String s = "Bugün hava [çok] güzel, [çok] çok güzel. Yarın nasıl olacak acaba?"; 
-    String [] str = StringUtil.split(s, ", . ] ["); 
+    String[] str = StringUtil.split(s, ", . ] ["); 
  
     for (int i = 0; i < str.length; ++i) 
      System.out.printf("(%s)%n", str[i]); 
@@ -18580,11 +18580,11 @@ import static org.csystem.app.datetime.DateUtil.getDateStrTR;
 public class GradeInfoHelper { 
   public static GradeInfo parse(String s) 
   { 
-    String [] info = s.split("[:]+"); 
+    String[] info = s.split("[:]+"); 
  
     //... 
  
-    String [] birthDateInfo = info[2].split("[/]+"); 
+    String[] birthDateInfo = info[2].split("[/]+"); 
     GradeInfo gradeInfo = new GradeInfo(); 
  
     gradeInfo.number = info[0]; 
@@ -18638,12 +18638,12 @@ public class GradeInfo {
 package org.csystem.app.datetime; 
  
 public class DateUtil { 
-  public static int [] daysOfMoths = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; 
-  public static String [] daysOfWeekTR = {"Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"}; 
-  public static String [] daysOfWeekEN = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"}; 
-  public static String [] monthsTR = {"", "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", 
+  public static int[] daysOfMoths = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; 
+  public static String[] daysOfWeekTR = {"Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"}; 
+  public static String[] daysOfWeekEN = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"}; 
+  public static String[] monthsTR = {"", "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", 
      "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"}; 
-  public static String [] monthsEN = {"", "January", "February", "March", "April", "May", "June", 
+  public static String[] monthsEN = {"", "January", "February", "March", "April", "May", "June", 
      "July", "August", "September", "October", "November", "December"}; 
  
   public static void printDateTR(int day, int month, int year) 
@@ -18812,7 +18812,7 @@ package org.csystem.util.array;
 import java.util.Random; 
  
 public class ArrayUtil { 
-  public static void bubbleSortAscending(int [] a) 
+  public static void bubbleSortAscending(int[] a) 
   { 
     for (int i = 0; i < a.length - 1; ++i) 
       for (int k = 0; k < a.length -1 - i; ++k) 
@@ -18820,7 +18820,7 @@ public class ArrayUtil {
           swap(a, k, k + 1); 
   } 
  
-  public static void bubbleSortDescending(int [] a) 
+  public static void bubbleSortDescending(int[] a) 
   { 
     for (int i = 0; i < a.length - 1; ++i) 
       for (int k = 0; k < a.length -1 - i; ++k) 
@@ -18828,7 +18828,7 @@ public class ArrayUtil {
           swap(a, k, k + 1); 
   } 
  
-  public static void selectionSortAscending(int [] a) 
+  public static void selectionSortAscending(int[] a) 
   { 
     int min, minIndex; 
  
@@ -18846,7 +18846,7 @@ public class ArrayUtil {
     } 
   } 
  
-  public static void selectionSortDescending(int [] a) 
+  public static void selectionSortDescending(int[] a) 
   { 
     int max, maxIndex; 
  
@@ -18864,12 +18864,12 @@ public class ArrayUtil {
     } 
   } 
  
-  public static void bubbleSort(int [] a) 
+  public static void bubbleSort(int[] a) 
   { 
     bubbleSort(a, false); 
   } 
  
-  public static void bubbleSort(int [] a, boolean descending) 
+  public static void bubbleSort(int[] a, boolean descending) 
   { 
     if (descending) 
       bubbleSortDescending(a); 
@@ -18877,9 +18877,9 @@ public class ArrayUtil {
       bubbleSortAscending(a); 
   } 
  
-  public static int [] generateRandomArray(Random random, int count, int origin, int bound) 
+  public static int[] generateRandomArray(Random random, int count, int origin, int bound) 
   { 
-    int [] a = new int[count]; 
+    int[] a = new int[count]; 
  
     for (int i = 0; i < count; ++i) 
       a[i] = random.nextInt(origin, bound); 
@@ -18887,9 +18887,9 @@ public class ArrayUtil {
     return a; 
   } 
  
-  public static double [] generateRandomArray(Random random, int count, double origin, double bound) 
+  public static double[] generateRandomArray(Random random, int count, double origin, double bound) 
   { 
-    double [] a = new double[count]; 
+    double[] a = new double[count]; 
  
     for (int i = 0; i < count; ++i) 
       a[i] = random.nextDouble(origin, bound); 
@@ -18897,9 +18897,9 @@ public class ArrayUtil {
     return a; 
   } 
  
-  public static boolean [] generateRandomArray(Random random, int count) 
+  public static boolean[] generateRandomArray(Random random, int count) 
   { 
-    boolean [] a = new boolean[count]; 
+    boolean[] a = new boolean[count]; 
  
     for (int i = 0; i < count; ++i) 
       a[i] = random.nextBoolean(); 
@@ -18907,9 +18907,9 @@ public class ArrayUtil {
     return a; 
   } 
  
-  public static int [] histogramData(int [] a, int n) 
+  public static int[] histogramData(int[] a, int n) 
   { 
-    int [] data = new int[n + 1]; 
+    int[] data = new int[n + 1]; 
  
     for (int i = 0; i < a.length; ++i) 
       ++data[a[i]]; 
@@ -18917,7 +18917,7 @@ public class ArrayUtil {
     return data; 
   } 
  
-  public static int max(int [] a) 
+  public static int max(int[] a) 
   { 
     int result = a[0]; 
  
@@ -18927,7 +18927,7 @@ public class ArrayUtil {
     return result; 
   } 
  
-  public static int max(int [] a, int startIndex) 
+  public static int max(int[] a, int startIndex) 
   { 
     int result = a[startIndex]; 
  
@@ -18937,7 +18937,7 @@ public class ArrayUtil {
     return result; 
   } 
  
-  public static int min(int [] a) 
+  public static int min(int[] a) 
   { 
     int result = a[0]; 
  
@@ -18947,7 +18947,7 @@ public class ArrayUtil {
     return result; 
   } 
  
-  public static int min(int [] a, int startIndex) 
+  public static int min(int[] a, int startIndex) 
   { 
     int result = a[startIndex]; 
  
@@ -18957,7 +18957,7 @@ public class ArrayUtil {
     return result; 
   } 
  
-  public static int partition(int [] a, int threshold) 
+  public static int partition(int[] a, int threshold) 
   { 
     int partitionPoint = 0; 
  
@@ -18974,7 +18974,7 @@ public class ArrayUtil {
     return partitionPoint; 
   } 
  
-  public static int partitionByEven(int [] a) 
+  public static int partitionByEven(int[] a) 
   { 
     int partitionPoint = 0; 
  
@@ -18991,22 +18991,22 @@ public class ArrayUtil {
     return partitionPoint; 
   } 
  
-  public static void print(int [] a) 
+  public static void print(int[] a) 
   { 
     print(a, ' ', '\n'); 
   } 
  
-  public static void print(int [] a, char sep, char end) 
+  public static void print(int[] a, char sep, char end) 
   { 
     print(a, 1, sep, end); 
   } 
  
-  public static void print(int [] a, int n) 
+  public static void print(int[] a, int n) 
   { 
     print(a, n, ' ', '\n'); 
   } 
  
-  public static void print(int [] a, int n, char sep, char end) 
+  public static void print(int[] a, int n, char sep, char end) 
   { 
     String fmt = String.format("%%0%dd%c", n, sep); 
  
@@ -19016,12 +19016,12 @@ public class ArrayUtil {
     System.out.print(end); 
   } 
  
-  public static void print(double [] a) 
+  public static void print(double[] a) 
   { 
     print(a, '\n', '\n'); 
   } 
  
-  public static void print(double [] a, char sep, char end) 
+  public static void print(double[] a, char sep, char end) 
   { 
     for (int i = 0; i < a.length; ++i) 
       System.out.printf("%f%c", a[i], sep); 
@@ -19029,19 +19029,19 @@ public class ArrayUtil {
     System.out.print(end); 
   } 
  
-  public static void selectionSort(int [] a) 
+  public static void selectionSort(int[] a) 
   { 
     selectionSort(a, false); 
   } 
  
-  public static void selectionSort(int [] a, boolean descending) 
+  public static void selectionSort(int[] a, boolean descending) 
   { 
     if (descending) 
       selectionSortDescending(a); 
     else 
       selectionSortAscending(a); 
   } 
-  public static long sum(int [] a) 
+  public static long sum(int[] a) 
   { 
     long total = 0; 
  
@@ -19051,7 +19051,7 @@ public class ArrayUtil {
     return total; 
   } 
  
-  public static void swap(int [] a, int i, int k) 
+  public static void swap(int[] a, int i, int k) 
   { 
     int temp = a[i]; 
  
@@ -19133,9 +19133,9 @@ public class NumberUtil {
     return result; 
   } 
  
-  public static int [] getDigits(long a) 
+  public static int[] getDigits(long a) 
   { 
-    int [] digits = new int[countDigits(a)]; 
+    int[] digits = new int[countDigits(a)]; 
  
     a = Math.abs(a); 
  
@@ -19301,7 +19301,7 @@ public class StringUtil {
  
   public static String generateRandomText(Random random, int count, String sourceText) 
   { 
-    char [] c = new char[count]; 
+    char[] c = new char[count]; 
  
     for (int i = 0; i < count; ++i) 
      c[i] = sourceText.charAt(random.nextInt(sourceText.length())); 
@@ -19319,9 +19319,9 @@ public class StringUtil {
     return generateRandomText(random, count, "ABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZabcçdefgğhıijklmnoöprsştuüvyz"); 
   } 
  
-  public static String [] generateRandomTexts(Random random, int count, int origin, int bound, String sourceText) 
+  public static String[] generateRandomTexts(Random random, int count, int origin, int bound, String sourceText) 
   { 
-    String [] str = new String[count]; 
+    String[] str = new String[count]; 
  
     for (int i = 0; i < count; ++i) 
      str[i] = generateRandomText(random, random.nextInt(origin, bound), sourceText); 
@@ -19329,12 +19329,12 @@ public class StringUtil {
     return str; 
   } 
  
-  public static String [] generateRandomTextsEN(Random random, int count, int origin, int bound) 
+  public static String[] generateRandomTextsEN(Random random, int count, int origin, int bound) 
   { 
     return generateRandomTexts(random, count, origin, bound, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"); 
   } 
  
-  public static String [] generateRandomTextsTR(Random random, int count, int origin, int bound) 
+  public static String[] generateRandomTextsTR(Random random, int count, int origin, int bound) 
   { 
     return generateRandomTexts(random, count, origin, bound, "ABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZabcçdefgğhıijklmnoöprsştuüvyz"); 
   } 
@@ -19390,7 +19390,7 @@ public class StringUtil {
     return isPangram(s.toLowerCase(), "abcçdefgğhıijklmnoöprsştuüvyz"); 
   } 
  
-  public static String join(String [] s, String delimiter) 
+  public static String join(String[] s, String delimiter) 
   { 
     StringBuilder sb = new StringBuilder(); 
  
@@ -19400,7 +19400,7 @@ public class StringUtil {
     return sb.substring(0, sb.length() - delimiter.length()); 
   } 
  
-  public static String join(String [] s, char delimiter) 
+  public static String join(String[] s, char delimiter) 
   { 
     return join(s, String.valueOf(delimiter)); 
   } 
@@ -19434,12 +19434,12 @@ public class StringUtil {
     return new StringBuilder(s).reverse().toString(); 
   } 
  
-  public static String [] split(String s, String delimiters) 
+  public static String[] split(String s, String delimiters) 
   { 
     return split(s, delimiters, true); 
   } 
  
-  public static String [] split(String s, String delimiters, boolean removeEmptyEntries) 
+  public static String[] split(String s, String delimiters, boolean removeEmptyEntries) 
   { 
     StringBuilder pattern = new StringBuilder("["); 
  
@@ -19478,7 +19478,7 @@ package org.csystem.app;
 class App { 
   public static void main(String[] args) 
   { 
-    int [] a = {1, 2, 3, 4, 5, 6}; 
+    int[] a = {1, 2, 3, 4, 5, 6}; 
  
     for (int val : a) 
      System.out.printf("%d ", val); 
@@ -19498,7 +19498,7 @@ package org.csystem.app;
 class App { 
   public static void main(String[] args) 
   { 
-    int [] a = {1, 2, 3, 4, 5, 6}; 
+    int[] a = {1, 2, 3, 4, 5, 6}; 
  
     for (short val : a) //error 
      System.out.printf("%d ", val); 
@@ -19516,7 +19516,7 @@ package org.csystem.app;
 class App { 
   public static void main(String[] args) 
   { 
-    int [] a = {1, 2, 3, 4, 5, 6}; 
+    int[] a = {1, 2, 3, 4, 5, 6}; 
  
     for (long val : a) 
      System.out.printf("%d ", val); 
@@ -19534,7 +19534,7 @@ package org.csystem.app;
 class App { 
   public static void main(String[] args) 
   { 
-    int [] a = new int[10]; 
+    int[] a = new int[10]; 
  
     int i = 0; 
  
@@ -19567,7 +19567,7 @@ class App {
 } 
  
 class Sample { 
-  public static int [] getArray() 
+  public static int[] getArray() 
   { 
     System.out.println("getArray"); 
  
@@ -19585,7 +19585,7 @@ package org.csystem.app;
 class App { 
   public static void main(String[] args) 
   { 
-    String [] cities = {"ankara", "istnbul", "İznir"}; 
+    String[] cities = {"ankara", "istnbul", "İznir"}; 
 
  
     for (String s : cities) 
@@ -19640,8 +19640,8 @@ class App {
 ### Dizi Dizileri ve Matrisler
 
 > Dizinin her bir elemanı yine bir dizi referansı ise bu durumda bu diziye artık bir dizi dizisi (array of array) denebilir. Programlamada dizi dizisi "jagged array" olarak da adlandırılmaktadır. Örneğin
-> `int [][] a` bildiriminde a referansı her bir elamanı int [ ] türünden bir dizi türündendir. Yani aslında bu bir referans dizisidir. Bu durumda dizi yaratılırken new operatörü ile birlikte yine iki tane [ ] kullanılır. Aslında diziler için karmaşık bildirimler de söz konusu olabilir. Örneğin 
-> `int [][][] a` bildiriminde a referansı, her bir elemanı bir dizi dizisi olan bir dizi türündendir. Pratikte diziler ve dizi dizileri daha çok kullanılmaktadır. 
+> `int[][] a` bildiriminde a referansı her bir elamanı int [ ] türünden bir dizi türündendir. Yani aslında bu bir referans dizisidir. Bu durumda dizi yaratılırken new operatörü ile birlikte yine iki tane [ ] kullanılır. Aslında diziler için karmaşık bildirimler de söz konusu olabilir. Örneğin 
+> `int[][][] a` bildiriminde a referansı, her bir elemanı bir dizi dizisi olan bir dizi türündendir. Pratikte diziler ve dizi dizileri daha çok kullanılmaktadır. 
 > Bir dizi dizisinin her bir elemanı olan dizi referanslarına ilişkin dizilerin uzunları aynı ise bu dizi dizisi artık bir matrisi temsil eder. Yani örneğin ana dizinin uzunluğu m, elemanı olan her dizininin uzunluğu n ise bu dizi artık m x n'lık bir matris olarak kullanılabilir. 
 > new operatörü ile bir dizi dizisi yaratılmasında ilk [ ]'in içeris boş olamaz. Çünkü ilk [ ] ana dizinin uzunluğunu belirtir. Diğer [ ]'ler boş olabilir. 
 
@@ -19776,7 +19776,7 @@ class App {
     for (int i = 0; i < m; ++i)      
 			a[i] = ArrayUtil.generateRandomArray(r, n, 0, 100); 
  
-    for (int [] array : a) { 
+    for (int[] array : a) { 
      for (int val : array) 
        System.out.printf("%02d ", val); 
  
@@ -19798,8 +19798,8 @@ import org.csystem.util.array.ArrayUtil;
 class App { 
   public static void main(String[] args) 
   { 
-    int [][] a = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}; 
-    int [][] b = {{1, 2, 3}, {4, 5, 6, 3}, {7, 8, 9}}; 
+    int[][] a = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}; 
+    int[][] b = {{1, 2, 3}, {4, 5, 6, 3}, {7, 8, 9}}; 
  
     ArrayUtil.print(a); 
     System.out.println("--------------------------------"); 
@@ -19819,8 +19819,8 @@ import org.csystem.util.matrix.MatrixUtil;
 public class MatrixUtilIsMatrixTest { 
   public static void run() 
   { 
-    int [][] a = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}; 
-    int [][] b = {{1, 2, 3}, {4, 5, 6, 3}, {7, 8, 9}}; 
+    int[][] a = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}; 
+    int[][] b = {{1, 2, 3}, {4, 5, 6, 3}, {7, 8, 9}}; 
  
     ArrayUtil.print(a); 
     System.out.println("--------------------------------"); 
@@ -19846,9 +19846,9 @@ import org.csystem.util.matrix.MatrixUtil;
 public class MatrixUtilIsSquareMatrixTest { 
   public static void run() 
   { 
-    int [][] a = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}; 
-    int [][] b = {{1, 2, 3}, {4, 5, 6, 3}, {7, 8, 9}}; 
-    int [][] c = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}, {1, 2, 3}}; 
+    int[][] a = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}; 
+    int[][] b = {{1, 2, 3}, {4, 5, 6, 3}, {7, 8, 9}}; 
+    int[][] c = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}, {1, 2, 3}}; 
  
     ArrayUtil.print(a); 
     System.out.println("--------------------------------"); 
@@ -19896,7 +19896,7 @@ public class MatrixUtilSumDiagonalTest {
       if (n <= 0) 
         break; 
  
-      int [][] a = MatrixUtil.generateRandomSquareMatrix(random, n, 0, 100); 
+      int[][] a = MatrixUtil.generateRandomSquareMatrix(random, n, 0, 100); 
  
       MatrixUtil.print(a, 2); 
  
@@ -19915,7 +19915,7 @@ public class MatrixUtilSumDiagonalTest {
 > Bir dizi dizisinin en büyük elemanı bulunurken, dizinin ilk elemanını almak yerine ilgili türün en küçük değeri alınır. İşlem klasik olarak devam eder. Benzer dırım en küçük eleman bulunurken de ilgili türün en büyük değerini alarak yapılabilir. Bu bir yaklaşımdır. Pek çok başka yaklaşım söz konusu olabilir. Aşağıdaki max ve min metotlarını inceleyiniz. Metotlar durumu anlatmak için en ilkel biçimde yazılmıştır
 
 ```java
-public static int max(int [][] a) 
+public static int max(int[][] a) 
 { 
   int result = Integer.MIN_VALUE; 
  
@@ -19927,7 +19927,7 @@ public static int max(int [][] a)
   return result; 
 }
 
-public static int min(int [] a, int startIndex) 
+public static int min(int[] a, int startIndex) 
 { 
   int result = a[startIndex]; 
  
@@ -19966,7 +19966,7 @@ public class MatrixUtilMinMaxTest {
       if (m <= 0 || n <= 0) 
         break; 
  
-      int [][] a = generateRandomMatrix(r, m, n, 0, 100); 
+      int[][] a = generateRandomMatrix(r, m, n, 0, 100); 
  
       print(a, 2); 
       System.out.printf("En büyük eleman:%d%nEn küçük eleman:%d%n", max(a), min(a)); 
@@ -20013,15 +20013,15 @@ public class MatrixUtilAddTest {
       if (m <= 0 || n <= 0) 
         break; 
  
-      int [][] a = generateRandomMatrix(r, m, n, 0, 100); 
-      int [][] b = generateRandomMatrix(r, m, n, 0, 100); 
+      int[][] a = generateRandomMatrix(r, m, n, 0, 100); 
+      int[][] b = generateRandomMatrix(r, m, n, 0, 100); 
  
       print(a, 2); 
       System.out.println("---------------------------------------------"); 
       print(b, 2); 
       System.out.println("---------------------------------------------"); 
  
-      int [][] c = add(a, b); 
+      int[][] c = add(a, b); 
  
       print(c, 3); 
     } 
@@ -20066,15 +20066,15 @@ public class MatrixUtilSubtractTest {
       if (m <= 0 || n <= 0) 
         break; 
  
-      int [][] a = generateRandomMatrix(r, m, n, 0, 100); 
-      int [][] b = generateRandomMatrix(r, m, n, 0, 100); 
+      int[][] a = generateRandomMatrix(r, m, n, 0, 100); 
+      int[][] b = generateRandomMatrix(r, m, n, 0, 100); 
  
       print(a, 2); 
       System.out.println("---------------------------------------------"); 
       print(b, 2); 
       System.out.println("---------------------------------------------"); 
  
-      int [][] c = subtract(a, b); 
+      int[][] c = subtract(a, b); 
  
       print(c, 3); 
     } 
@@ -20120,7 +20120,7 @@ public class MatrixUtilMultiplyByTest {
       System.out.print("Bir sayı giriniz:"); 
       int value = Integer.parseInt(kb.nextLine()); 
  
-      int [][] a = generateRandomMatrix(r, m, n, 0, 100); 
+      int[][] a = generateRandomMatrix(r, m, n, 0, 100); 
  
  
       print(a, 2); 
@@ -20167,7 +20167,7 @@ public class MatrixUtilTransposeTest {
       if (m <= 0 || n <= 0) 
         break; 
  
-      int [][] a = generateRandomMatrix(r, m, n, 0, 100); 
+      int[][] a = generateRandomMatrix(r, m, n, 0, 100); 
  
       print(a, 2); 
       System.out.println(); 
@@ -20183,7 +20183,7 @@ public class MatrixUtilTransposeTest {
 ```
 
 > Dizi dizilerine ilişkin karmaşık bildirimler de söz konusu olabilmektedir. Örneğin: 
-> `int [][][] a` referansı her bir elemanı bir dizi dizisi olan bir dizi referansını temsil eder. Bu durumda eğer dizi dizilerinin kendi aralarında uzunlukları ve dizi dizilerine ilişkin dizilerin de kendi aralarında uzunlukları eşitse yani örneğin bu referansa `new int[3][4][5]` gibi bir dizinin referansı verilirse bu bir dikdörtgen prizmayı temsil edebilir. Şüphesiz daha karmaşık bildirimler de söz konusu olabilir ancak pratikte çok kullanılmaz.
+> `int[][][] a` referansı her bir elemanı bir dizi dizisi olan bir dizi referansını temsil eder. Bu durumda eğer dizi dizilerinin kendi aralarında uzunlukları ve dizi dizilerine ilişkin dizilerin de kendi aralarında uzunlukları eşitse yani örneğin bu referansa `new int[3][4][5]` gibi bir dizinin referansı verilirse bu bir dikdörtgen prizmayı temsil edebilir. Şüphesiz daha karmaşık bildirimler de söz konusu olabilir ancak pratikte çok kullanılmaz.
 
 ```java
 package org.csystem.app; 
@@ -20193,7 +20193,7 @@ import java.util.Random;
 class App { 
   public static void main(String[] args) 
   { 
-    int [][][] a = new int[3][4][5]; 
+    int[][][] a = new int[3][4][5]; 
     Random r = new Random(); 
  
     for (int i = 0; i < a.length; ++i) 
@@ -20204,8 +20204,8 @@ class App {
     //... 
  
  
-    for (int [][] arrayOfArray : a) 
-     for (int [] array : arrayOfArray) 
+    for (int[][] arrayOfArray : a) 
+     for (int[] array : arrayOfArray) 
        for (int val : array) 
         System.out.println(val); 
   } 
@@ -20246,15 +20246,15 @@ public class MatrixUtilMultiplyTest {
       if (m <= 0 || n <= 0 || k <= 0) 
         break; 
  
-      int [][] a = generateRandomMatrix(r, m, n, 0, 10); 
-      int [][] b = generateRandomMatrix(r, n, k, 0, 10); 
+      int[][] a = generateRandomMatrix(r, m, n, 0, 10); 
+      int[][] b = generateRandomMatrix(r, n, k, 0, 10); 
  
       print(a, 2); 
       System.out.println("---------------------------------------------"); 
       print(b, 2); 
       System.out.println("---------------------------------------------"); 
  
-      int [][] c = multiply(a, b); 
+      int[][] c = multiply(a, b); 
  
       print(c, 3); 
     } 
@@ -21018,7 +21018,7 @@ public class Complex {
 
 > ***Sınıf Çalışması:*** Bir okulda ortak olarak Fizik sınavı yapılıyor olsun. Sınav n tane şube için yapılsın. n sayısını klavyeden isteyiniz. Her bir şubedeki öğrenci sayısını da klavyeden isteyiniz. Bu sınavdan alınan notları rassal olarak belirleyiniz. Bu işlemlerden sonra ilgili notlara göre her bir şubenin ayrı ayrı Fizik dersi ortalaması ve okulun Fizik dersi ortalamasını hesaplayan simülasyonu yazınız.
 > **Açıklamalar:**
-> - Bir öğrencinin not `[0, 10]` aralığında bir tamsayı olabilir.
+> - Bir öğrencinin not `[0, 10]` aralığında bir tam sayı olabilir.
 > - Programı mümkün olduğunca nesne yönelimli olarak ve genel olarak tasarlayınız.
 > - Her bir şubenin not dağılımına ilişkin histogram'ları ve okulun Fizik notlarına ilişkin histogramı (düşey olarak) çiziniz.
 > **Not:** İleride daha iyisi yazılacaktır.
@@ -21080,7 +21080,7 @@ public class ExamSimulationApp {
  
   private static void drawHistogram(Classroom classroom, int maxGrade) 
   { 
-    int [] data = classroom.getHistogramData(maxGrade); 
+    int[] data = classroom.getHistogramData(maxGrade); 
     ArrayUtil.print(data); 
     ArrayUtil.drawHistogram(data, 20, '-'); 
   } 
@@ -21095,7 +21095,7 @@ public class ExamSimulationApp {
     } 
  
     System.out.printf("%s dersi okul histogramı:%n", exam.getLectureName()); 
-    int [] data = exam.getHistogramData(); 
+    int[] data = exam.getHistogramData(); 
  
     ArrayUtil.print(data); 
     ArrayUtil.drawHistogram(data, 20, '-'); 
@@ -21132,8 +21132,8 @@ package org.csystem.app.simulation.grades;
  
 public class Exam { 
   private String m_lectureName; 
-  private Classroom [] m_classrooms; 
-  private double [] m_averages; 
+  private Classroom[] m_classrooms; 
+  private double[] m_averages; 
   private double m_average; 
   private int m_maxGrade; 
  
@@ -21213,9 +21213,9 @@ public class Exam {
     return m_maxGrade; 
   } 
  
-  public int [] getHistogramData() 
+  public int[] getHistogramData() 
   { 
-    int [] data = new int[m_maxGrade + 1]; 
+    int[] data = new int[m_maxGrade + 1]; 
  
     for (Classroom classroom : m_classrooms) { 
       int nStudents = classroom.getNumberOfStudents(); 
@@ -21258,7 +21258,7 @@ public class Exam {
 package org.csystem.app.simulation.grades; 
  
 public class Classroom { 
-  private GradeInfo [] m_grades; 
+  private GradeInfo[] m_grades; 
  
   //... 
  
@@ -21282,9 +21282,9 @@ public class Classroom {
     return m_grades.length; 
   } 
  
-  public int [] getHistogramData(int maxGrade) 
+  public int[] getHistogramData(int maxGrade) 
   { 
-    int [] data = new int[maxGrade + 1]; 
+    int[] data = new int[maxGrade + 1]; 
  
     for (GradeInfo gradeInfo : m_grades) 
       ++data[gradeInfo.getGrade()]; 
@@ -21384,7 +21384,7 @@ public class ArrayUtil {
   { 
   } 
  
-  private static void bubbleSortAscending(int [] a) 
+  private static void bubbleSortAscending(int[] a) 
   { 
     for (int i = 0; i < a.length - 1; ++i) 
       for (int k = 0; k < a.length - 1 - i; ++k) 
@@ -21392,7 +21392,7 @@ public class ArrayUtil {
           swap(a, k, k + 1); 
   } 
  
-  private static void bubbleSortDescending(int [] a) 
+  private static void bubbleSortDescending(int[] a) 
   { 
     for (int i = 0; i < a.length - 1; ++i) 
       for (int k = 0; k < a.length -1 - i; ++k) 
@@ -21400,7 +21400,7 @@ public class ArrayUtil {
           swap(a, k, k + 1); 
   } 
  
-  private static void selectionSortAscending(int [] a) 
+  private static void selectionSortAscending(int[] a) 
   { 
     int min, minIndex; 
  
@@ -21418,7 +21418,7 @@ public class ArrayUtil {
     } 
   } 
  
-  private static void selectionSortDescending(int [] a) 
+  private static void selectionSortDescending(int[] a) 
   { 
     int max, maxIndex; 
  
@@ -21436,17 +21436,17 @@ public class ArrayUtil {
     } 
   } 
  
-  public static double average(int [] a) 
+  public static double average(int[] a) 
   { 
     return sum(a) / (double)a.length; 
   } 
  
-  public static void bubbleSort(int [] a) 
+  public static void bubbleSort(int[] a) 
   { 
     bubbleSort(a, false); 
   } 
  
-  public static void bubbleSort(int [] a, boolean descending) 
+  public static void bubbleSort(int[] a, boolean descending) 
   { 
     if (descending) 
       bubbleSortDescending(a); 
@@ -21454,7 +21454,7 @@ public class ArrayUtil {
       bubbleSortAscending(a); 
   } 
  
-  public static void drawHistogram(int [] data, int n, char ch) 
+  public static void drawHistogram(int[] data, int n, char ch) 
   { 
     int maxValue = ArrayUtil.max(data); 
  
@@ -21468,9 +21468,9 @@ public class ArrayUtil {
     } 
   } 
  
-  public static int [] generateRandomArray(Random random, int count, int origin, int bound) 
+  public static int[] generateRandomArray(Random random, int count, int origin, int bound) 
   { 
-    int [] a = new int[count]; 
+    int[] a = new int[count]; 
  
     for (int i = 0; i < count; ++i) 
       a[i] = random.nextInt(origin, bound); 
@@ -21478,9 +21478,9 @@ public class ArrayUtil {
     return a; 
   } 
  
-  public static double [] generateRandomArray(Random random, int count, double origin, double bound) 
+  public static double[] generateRandomArray(Random random, int count, double origin, double bound) 
   { 
-    double [] a = new double[count]; 
+    double[] a = new double[count]; 
  
     for (int i = 0; i < count; ++i) 
       a[i] = random.nextDouble(origin, bound); 
@@ -21488,9 +21488,9 @@ public class ArrayUtil {
     return a; 
   } 
  
-  public static boolean [] generateRandomArray(Random random, int count) 
+  public static boolean[] generateRandomArray(Random random, int count) 
   { 
-    boolean [] a = new boolean[count]; 
+    boolean[] a = new boolean[count]; 
  
     for (int i = 0; i < count; ++i) 
       a[i] = random.nextBoolean(); 
@@ -21498,9 +21498,9 @@ public class ArrayUtil {
     return a; 
   } 
  
-  public static int [] histogramData(int [] a, int n) 
+  public static int[] histogramData(int[] a, int n) 
   { 
-    int [] data = new int[n + 1]; 
+    int[] data = new int[n + 1]; 
  
     for (int val : a) 
       ++data[val]; 
@@ -21508,12 +21508,12 @@ public class ArrayUtil {
     return data; 
   } 
  
-  public static int max(int [] a) 
+  public static int max(int[] a) 
   { 
     return max(a, 0); 
   } 
  
-  public static int max(int [] a, int startIndex) 
+  public static int max(int[] a, int startIndex) 
   { 
     int result = a[startIndex]; 
  
@@ -21523,22 +21523,22 @@ public class ArrayUtil {
     return result; 
   } 
  
-  public static int max(int [][] a) 
+  public static int max(int[][] a) 
   { 
     int result = Integer.MIN_VALUE; 
  
-    for (int [] array : a) 
+    for (int[] array : a) 
       result = Math.max(result, max(array)); 
  
     return result; 
   } 
  
-  public static int min(int [] a) 
+  public static int min(int[] a) 
   { 
     return min(a, 0); 
   } 
  
-  public static int min(int [] a, int startIndex) 
+  public static int min(int[] a, int startIndex) 
   { 
     int result = a[startIndex]; 
  
@@ -21548,29 +21548,29 @@ public class ArrayUtil {
     return result; 
   } 
  
-  public static int min(int [][] a) 
+  public static int min(int[][] a) 
   { 
     int result = Integer.MAX_VALUE; 
  
-    for (int [] array : a) 
+    for (int[] array : a) 
       result = Math.min(result, min(array)); 
  
     return result; 
   } 
  
-  public static void multiplyBy(int [] a, int value) 
+  public static void multiplyBy(int[] a, int value) 
   { 
     for (int i = 0; i < a.length; ++i) 
       a[i] *= value; 
   } 
  
-  public static void multiplyBy(int [][] a, int value) 
+  public static void multiplyBy(int[][] a, int value) 
   { 
-    for (int [] array : a) 
+    for (int[] array : a) 
       multiplyBy(array, value); 
   } 
  
-  public static int partition(int [] a, int threshold) 
+  public static int partition(int[] a, int threshold) 
   { 
     int partitionPoint = 0; 
  
@@ -21587,7 +21587,7 @@ public class ArrayUtil {
     return partitionPoint; 
   } 
  
-  public static int partitionByEven(int [] a) 
+  public static int partitionByEven(int[] a) 
   { 
     int partitionPoint = 0; 
  
@@ -21604,22 +21604,22 @@ public class ArrayUtil {
     return partitionPoint; 
   } 
  
-  public static void print(int [] a) 
+  public static void print(int[] a) 
   { 
     print(a, ' ', '\n'); 
   } 
  
-  public static void print(int [] a, char sep, char end) 
+  public static void print(int[] a, char sep, char end) 
   { 
     print(a, 1, sep, end); 
   } 
  
-  public static void print(int [] a, int n) 
+  public static void print(int[] a, int n) 
   { 
     print(a, n, ' ', '\n'); 
   } 
  
-  public static void print(int [] a, int n, char sep, char end) 
+  public static void print(int[] a, int n, char sep, char end) 
   { 
     String fmt = String.format("%%0%dd%c", n, sep); 
  
@@ -21629,23 +21629,23 @@ public class ArrayUtil {
     System.out.print(end); 
   } 
  
-  public static void print(int [][] a) 
+  public static void print(int[][] a) 
   { 
     print(a, 1); 
   } 
  
-  public static void print(int [][] a, int n) 
+  public static void print(int[][] a, int n) 
   { 
-    for (int [] array : a) 
+    for (int[] array : a) 
       print(array, n, ' ', '\n'); 
   } 
  
-  public static void print(double [] a) 
+  public static void print(double[] a) 
   { 
     print(a, '\n', '\n'); 
   } 
  
-  public static void print(double [] a, char sep, char end) 
+  public static void print(double[] a, char sep, char end) 
   { 
     for (double val : a) 
       System.out.printf("%f%c", val, sep); 
@@ -21653,19 +21653,19 @@ public class ArrayUtil {
     System.out.print(end); 
   } 
  
-  public static void selectionSort(int [] a) 
+  public static void selectionSort(int[] a) 
   { 
     selectionSort(a, false); 
   } 
  
-  public static void selectionSort(int [] a, boolean descending) 
+  public static void selectionSort(int[] a, boolean descending) 
   { 
     if (descending) 
       selectionSortDescending(a); 
     else 
       selectionSortAscending(a); 
   } 
-  public static long sum(int [] a) 
+  public static long sum(int[] a) 
   { 
     long total = 0; 
  
@@ -21675,7 +21675,7 @@ public class ArrayUtil {
     return total; 
   } 
  
-  public static void swap(int [] a, int i, int k) 
+  public static void swap(int[] a, int i, int k) 
   { 
     int temp = a[i]; 
  
@@ -22462,7 +22462,7 @@ public class ExamSimulation {
  
   private static void drawHistogram(Classroom classroom, int maxGrade) 
   { 
-    int [] data = classroom.getHistogramData(maxGrade); 
+    int[] data = classroom.getHistogramData(maxGrade); 
     ArrayUtil.print(data); 
     ArrayUtil.drawHistogram(data, 20, '-'); 
   } 
@@ -22522,7 +22522,7 @@ public class ExamSimulation {
     } 
  
     System.out.printf("Histogram of %s lecture:%n", m_exam.getLectureName()); 
-    int [] data = m_exam.getHistogramData(); 
+    int[] data = m_exam.getHistogramData(); 
  
     ArrayUtil.print(data); 
     ArrayUtil.drawHistogram(data, 20, '-'); 
@@ -22554,8 +22554,8 @@ package org.csystem.app.simulation.grades;
  
 public class Exam { 
   private String m_lectureName; 
-  private final Classroom [] m_classrooms; 
-  private final double [] m_averages; 
+  private final Classroom[] m_classrooms; 
+  private final double[] m_averages; 
   private double m_average; 
   private final int m_maxGrade; 
  
@@ -22635,9 +22635,9 @@ public class Exam {
     return m_maxGrade; 
   } 
  
-  public int [] getHistogramData() 
+  public int[] getHistogramData() 
   { 
-    int [] data = new int[m_maxGrade + 1]; 
+    int[] data = new int[m_maxGrade + 1]; 
  
     for (Classroom classroom : m_classrooms) { 
       int nStudents = classroom.getNumberOfStudents(); 
@@ -22722,7 +22722,7 @@ public class GradeInfo {
 package org.csystem.app.simulation.grades; 
  
 public class Classroom { 
-  private final GradeInfo [] m_grades; 
+  private final GradeInfo[] m_grades; 
  
   //... 
  
@@ -22746,9 +22746,9 @@ public class Classroom {
     return m_grades.length; 
   } 
  
-  public int [] getHistogramData(int maxGrade) 
+  public int[] getHistogramData(int maxGrade) 
   { 
-    int [] data = new int[maxGrade + 1]; 
+    int[] data = new int[maxGrade + 1]; 
  
     for (GradeInfo gradeInfo : m_grades) 
       ++data[gradeInfo.getGrade()]; 
@@ -22870,7 +22870,7 @@ public class StringUtil {
  
   public static String generateRandomText(Random random, int count, String sourceText) 
   { 
-    char [] c = new char[count]; 
+    char[] c = new char[count]; 
  
     for (int i = 0; i < count; ++i) 
      c[i] = sourceText.charAt(random.nextInt(sourceText.length())); 
@@ -22888,9 +22888,9 @@ public class StringUtil {
     return generateRandomText(random, count, ALL_LETTERS_TR); 
   } 
  
-  public static String [] generateRandomTexts(Random random, int count, int origin, int bound, String sourceText) 
+  public static String[] generateRandomTexts(Random random, int count, int origin, int bound, String sourceText) 
   { 
-    String [] str = new String[count]; 
+    String[] str = new String[count]; 
  
     for (int i = 0; i < count; ++i) 
      str[i] = generateRandomText(random, random.nextInt(origin, bound), sourceText); 
@@ -22898,12 +22898,12 @@ public class StringUtil {
     return str; 
   } 
  
-  public static String [] generateRandomTextsEN(Random random, int count, int origin, int bound) 
+  public static String[] generateRandomTextsEN(Random random, int count, int origin, int bound) 
   { 
     return generateRandomTexts(random, count, origin, bound, ALL_LETTERS_EN); 
   } 
  
-  public static String [] generateRandomTextsTR(Random random, int count, int origin, int bound) 
+  public static String[] generateRandomTextsTR(Random random, int count, int origin, int bound) 
   { 
     return generateRandomTexts(random, count, origin, bound, ALL_LETTERS_TR); 
   } 
@@ -22959,7 +22959,7 @@ public class StringUtil {
     return isPangram(s.toLowerCase(), LETTERS_TR); 
   } 
  
-  public static String join(String [] s, String delimiter) 
+  public static String join(String[] s, String delimiter) 
   { 
     StringBuilder sb = new StringBuilder(); 
  
@@ -22969,7 +22969,7 @@ public class StringUtil {
     return sb.substring(0, sb.length() - delimiter.length()); 
   } 
  
-  public static String join(String [] s, char delimiter) 
+  public static String join(String[] s, char delimiter) 
   { 
     return join(s, String.valueOf(delimiter)); 
   } 
@@ -23003,12 +23003,12 @@ public class StringUtil {
     return new StringBuilder(s).reverse().toString(); 
   } 
  
-  public static String [] split(String s, String delimiters) 
+  public static String[] split(String s, String delimiters) 
   { 
     return split(s, delimiters, true); 
   } 
  
-  public static String [] split(String s, String delimiters, boolean removeEmptyEntries) 
+  public static String[] split(String s, String delimiters, boolean removeEmptyEntries) 
   { 
     StringBuilder pattern = new StringBuilder("["); 
  
@@ -23625,394 +23625,386 @@ public class NumberUtilNumToStrTRTest {
 
 ### Enum Sınıfları
 
-Enum sınıfları (enum/enumeration classes) birer UDT'dir. Aslında genel olarak bakıldığında kendine ait özellikleri olan bir sınıftır. Bu bölümde anlatılacak özellikleri dışında kalan özellikler klasik sınıflar ile aynıdır. Enum sınıfları *Java 5* ile dile eklenmiştir.
+Enum sınıfları (enum/enumeration classes) birer *UDT*'dir. Aslında genel olarak bakıldığında kendine ait özellikleri olan bir sınıftır. Bu bölümde anlatılacak özellikleri dışında kalan özellikler klasik sınıflar ile aynıdır. Enum sınıfları *Java 5* ile dile eklenmiştir.
 
-> Aşağıdaki demo örnekte `GameObject` sınıfının renk bilgisi ve `move` metodunun parametre isimleri bunların her birinin ne anlama geldiğine ilişkin bir fikir verse de, ilişkin oldukları türler hangi değerleri alabileceğine ilişkin bir fikir vermemektedir. Şüphesiz bunlar dokümanlardan anlaşılabilir, ancak ilgili metotlar çağrılırken geçilen değerler client code'ların okunabilirliğini/algılanabilirliğini olumsuz olarak etkileyebilmektedir. Bu anlamda `setColor` ve `move` metotları doğru çalışsalar da okunabilirlik/algılanabilirlik açısından iyi tasarlanmamış olarak düşünülebilir. buradayım
+> Aşağıdaki demo örnekte `GameObject` sınıfının renk bilgisi ve `move` metodunun parametre isimleri bunların her birinin ne anlama geldiğine ilişkin bir fikir verse de, ilişkin oldukları türler hangi değerleri alabileceğine ilişkin bir fikir vermemektedir. Şüphesiz bunlar dokümanlardan anlaşılabilir, ancak ilgili metotlar çağrılırken geçilen değerler client code'ların okunabilirliğini/algılanabilirliğini olumsuz olarak etkileyebilmektedir. Bu anlamda `setColor` ve `move` metotları doğru çalışsalar da okunabilirlik/algılanabilirlik açısından iyi tasarlanmamış olarak düşünülebilir.
 
 ```java
-package org.csystem.app; 
- 
-import org.csystem.util.thread.ThreadUtil; 
- 
-import java.util.Random; 
- 
-class App { 
-  public static void main(String[] args) 
-  { 
-    DemoGameApp.run(args); 
-  } 
-} 
- 
-class DemoGameApp { 
-  public static void run(String[] args) 
-  { 
-    Random random = new Random(); 
-    GameObject go1 = new GameObject("Player-1"); 
-    GameObject go2 = new GameObject("Player-2"); 
- 
-    go1.setColor(0); 
-    go2.setColor(2); 
- 
-    while (true) { 
-      int direction1 = random.nextInt(1, 5); 
-      int direction2 = random.nextInt(1, 5); 
- 
-      //... 
- 
-      go1.move(direction1); 
-      go2.move(direction2); 
- 
-      ThreadUtil.sleep(random.nextLong(300, 900)); 
-    } 
-  } 
-} 
- 
-class GameObject { 
-  private final String m_name; 
-  private int m_color; 
-  //... 
- 
-  public GameObject(String name) 
-  { 
-    m_name = name; 
-  } 
- 
-  public void move(int direction) 
-  { 
-    switch (direction) { 
-      case 1 -> System.out.printf("%s moves to right%n", m_name); 
-      case 2 -> System.out.printf("%s moves to top%n", m_name); 
-      case 3 -> System.out.printf("%s moves to left%n", m_name); 
-      case 4 -> System.out.printf("%s moves to bottom%n", m_name); 
-      default -> System.out.println("Invalid direction value"); 
-    } 
-  } 
- 
-  public void setColor(int color) 
-  { 
-    //... 
-    m_color = color; 
-  } 
- 
-  public int getColor() 
-  { 
-    return m_color; 
-  } 
- 
-  //... 
+package org.csystem.app;  
+  
+import org.csystem.util.thread.ThreadUtil;  
+  
+import java.util.Random;  
+  
+class App {  
+    public static void main(String[] args)  
+    {  
+        DemoGameApp.run(args);  
+    }  
+}  
+  
+class DemoGameApp {  
+    public static void run(String[] args)  
+    {  
+        Random random = new Random();  
+        GameObject go1 = new GameObject("Player-1");  
+        GameObject go2 = new GameObject("Player-2");  
+  
+        go1.setColor(0);  
+        go2.setColor(2);  
+  
+        while (true) {  
+            int direction1 = random.nextInt(1, 5);  
+            int direction2 = random.nextInt(1, 5);  
+  
+            go1.move(direction1);  
+            go2.move(direction2);  
+  
+            ThreadUtil.sleep(random.nextLong(300, 900));  
+        }  
+    }  
+}  
+  
+class GameObject {  
+    private final String m_name;  
+    private int m_color;  
+  
+    public GameObject(String name)  
+    {  
+        m_name = name;  
+    }  
+  
+    public void move(int direction)  
+    {  
+        switch (direction) {  
+            case 1 -> System.out.printf("%s moves to right%n", m_name);  
+            case 2 -> System.out.printf("%s moves to top%n", m_name);  
+            case 3 -> System.out.printf("%s moves to left%n", m_name);  
+            case 4 -> System.out.printf("%s moves to bottom%n", m_name);  
+            default -> System.out.println("Invalid direction value");  
+        }  
+    }  
+  
+    public void setColor(int color)  
+    {  
+        m_color = color;  
+    }  
+  
+    public int getColor()  
+    {  
+        return m_color;  
+    }  
 }
 ```
 
-> Yukarıdaki örnek aşağıdaki gibi daha okunabilir/algılanabilir hale getirilebilir ancak burada ilgili metotların parametre değişkenleri String türden yapıldığında geçilen değerler açısından okunabilir/algılanabilir olmaktadır ancak hata yapılması olasılığı da görece artmaktadır. Ayrıca unutulmamalıdır ki yazı karşılaştırması karakter karakter yapıldığınde tamsayı karşılaştırmasına göre yavaştır. Ayrıca yine ilgili metotların parametre değişkenleri geçilebilecek değerler açısından çok da fikir vermemektedir
+> Yukarıdaki örnek aşağıdaki gibi daha okunabilir/algılanabilir hale getirilebilir. İlgili metotların parametre değişkenleri `String` türden yapıldığından geçilen değerler açısından okunabilirlik/algılanabilirlik artmaktadır ancak hata yapılma olasılığı da görece artmaktadır. Ayrıca unutulmamalıdır ki yazı karşılaştırması karakter karakter yapıldığından dolayı tam sayı karşılaştırmasına göre yavaştır. Ek olarak, yine ilgili metotların parametre değişkenleri argüman olarak geçilebilecek değerlerin ne olabileceği açısından çok da fikir vermemektedir
 
 ```java
-package org.csystem.app; 
- 
-import org.csystem.util.thread.ThreadUtil; 
- 
-import java.util.Random; 
- 
-class App { 
-  public static void main(String[] args) 
-  { 
-    DemoGameApp.run(args); 
-  } 
-} 
- 
-class DemoGameApp { 
-  public static void run(String[] args) 
-  { 
-    String [] directions = {"", "right", "top", "left", "bottom"}; 
-    Random random = new Random(); 
-    GameObject go1 = new GameObject("Player-1"); 
-    GameObject go2 = new GameObject("Player-2"); 
- 
-    go1.setColor("red"); 
-    go2.setColor("blue"); 
- 
-    while (true) { 
- 
-      int direction1 = random.nextInt(1, 5); 
-      int direction2 = random.nextInt(1, 5); 
- 
-      //... 
- 
-      go1.move(directions[direction1]); 
-      go2.move(directions[direction2]); 
- 
-      ThreadUtil.sleep(random.nextLong(300, 900)); 
-    } 
-  } 
-} 
- 
-class GameObject { 
-  private final String m_name; 
-  private String m_color; 
-  //... 
- 
-  public GameObject(String name) 
-  { 
-    m_name = name; 
-  } 
- 
-  public void move(String direction) 
-  { 
-    switch (direction) { 
-      case "right" -> System.out.printf("%s moves to right%n", m_name); 
-      case "top" -> System.out.printf("%s moves to top%n", m_name); 
-      case "left" -> System.out.printf("%s moves to left%n", m_name); 
-      case "bottom" -> System.out.printf("%s moves to bottom%n", m_name); 
-      default -> System.out.println("Invalid direction value"); 
-    } 
-  } 
- 
-  public void setColor(String color) 
-  { 
-    //... 
-    m_color = color; 
-  } 
- 
-  public String getColor() 
-  { 
-    return m_color; 
-  } 
- 
-  //... 
+package org.csystem.app;  
+  
+import org.csystem.util.thread.ThreadUtil;  
+  
+import java.util.Random;  
+  
+class App {  
+    public static void main(String[] args)  
+    {  
+        DemoGameApp.run(args);  
+    }  
+}  
+  
+class DemoGameApp {  
+    public static void run(String[] args)  
+    {  
+        String[] directions = {"", "right", "top", "left", "bottom"};  
+        Random random = new Random();  
+        GameObject go1 = new GameObject("Player-1");  
+        GameObject go2 = new GameObject("Player-2");  
+  
+        go1.setColor("red");  
+        go2.setColor("blue");  
+  
+        while (true) {  
+            int direction1 = random.nextInt(1, 5);  
+            int direction2 = random.nextInt(1, 5);  
+  
+            //...  
+  
+            go1.move(directions[direction1]);  
+            go2.move(directions[direction2]);  
+  
+            ThreadUtil.sleep(random.nextLong(300, 900));  
+        }  
+    }  
+}  
+  
+class GameObject {  
+    private final String m_name;  
+    private String m_color;  
+    //...  
+  
+    public GameObject(String name)  
+    {  
+        m_name = name;  
+    }  
+  
+    public void move(String direction)  
+    {  
+        switch (direction) {  
+            case "right" -> System.out.printf("%s moves to right%n", m_name);  
+            case "top" -> System.out.printf("%s moves to top%n", m_name);  
+            case "left" -> System.out.printf("%s moves to left%n", m_name);  
+            case "bottom" -> System.out.printf("%s moves to bottom%n", m_name);  
+            default -> System.out.println("Invalid direction value");  
+        }  
+    }  
+  
+    public void setColor(String color)  
+    {  
+        //...  
+        m_color = color;  
+    }  
+  
+    public String getColor()  
+    {  
+        return m_color;  
+    }  
+  
+    //...  
 }
 ```
 
-> Yukarıdaki demo örnek aşağıdaki gibi geçilecek değer final veri elemanları ile görece okunabilir/algılanabilir hale getirilebilir. Ancak hala ilgili metotların parametre değişkenleri geçilecek değerlere ilişkin bir fikir vermemektedir.
+> Yukarıdaki demo örnek aşağıdaki gibi geçilecek değer `final` veri elemanları ile görece okunabilir/algılanabilir hale getirilebilir. Ancak hala ilgili metotların parametre değişkenleri geçilecek değerlere ilişkin bir fikir vermemektedir.
 
 ```java
-package org.csystem.app; 
- 
-import org.csystem.util.thread.ThreadUtil; 
- 
-import java.util.Random; 
- 
-class App { 
-  public static void main(String[] args) 
-  { 
-    DemoGameApp.run(args); 
-  } 
-} 
- 
-class DemoGameApp { 
-  public static void run(String[] args) 
-  { 
-    Random random = new Random(); 
-    GameObject go1 = new GameObject("Player-1"); 
-    GameObject go2 = new GameObject("Player-2"); 
- 
-    go1.setColor(Color.RED); 
-    go2.setColor(Color.BLUE); 
- 
-    while (true) { 
-      int direction1 = random.nextInt(1, 5); 
-      int direction2 = random.nextInt(1, 5); 
- 
-      //... 
- 
-      go1.move(direction1); 
-      go2.move(direction2); 
- 
-      ThreadUtil.sleep(random.nextLong(300, 900)); 
-    } 
-  } 
-} 
- 
-class Direction { 
-  private Direction() 
-  { 
-  } 
- 
-  public static final int RIGHT = 1; 
-  public static final int TOP = 2; 
-  public static final int LEFT = 3; 
-  public static final int BOTTOM = 4; 
-} 
- 
-class Color { 
-  private Color() 
-  { 
-  } 
- 
-  public static final int RED = 0; 
-  public static final int GREEN = 1; 
-  public static final int BLUE = 2; 
-  public static final int WHITE = 3; 
-  public static final int BLACK = 4; 
-} 
- 
-class GameObject { 
-  private final String m_name; 
-  private int m_color; 
-  //... 
- 
-  public GameObject(String name) 
-  { 
-    m_name = name; 
-  } 
- 
-  public void move(int direction) 
-  { 
-    switch (direction) { 
-      case 1 -> System.out.printf("%s moves to right%n", m_name); 
-      case 2 -> System.out.printf("%s moves to top%n", m_name); 
-      case 3 -> System.out.printf("%s moves to left%n", m_name); 
-      case 4 -> System.out.printf("%s moves to bottom%n", m_name); 
-      default -> System.out.println("Invalid direction value"); 
-    } 
-  } 
- 
-  public void setColor(int color) 
-  { 
-    //... 
-    m_color = color; 
-  } 
- 
-  public int getColor() 
-  { 
-    return m_color; 
-  } 
- 
-  //... 
+package org.csystem.app;  
+  
+import org.csystem.util.thread.ThreadUtil;  
+  
+import java.util.Random;  
+  
+class App {  
+    public static void main(String[] args)  
+    {  
+        DemoGameApp.run(args);  
+    }  
+}  
+  
+class DemoGameApp {  
+    public static void run(String[] args)  
+    {  
+        Random random = new Random();  
+        GameObject go1 = new GameObject("Player-1");  
+        GameObject go2 = new GameObject("Player-2");  
+  
+        go1.setColor(Color.RED);  
+        go2.setColor(Color.BLUE);  
+  
+        while (true) {  
+            int direction1 = random.nextInt(1, 5);  
+            int direction2 = random.nextInt(1, 5);  
+  
+            //...  
+  
+            go1.move(direction1);  
+            go2.move(direction2);  
+  
+            ThreadUtil.sleep(random.nextLong(300, 900));  
+        }  
+    }  
+}  
+  
+class Direction {  
+    private Direction()  
+    {  
+    }  
+  
+    public static final int RIGHT = 1;  
+    public static final int TOP = 2;  
+    public static final int LEFT = 3;  
+    public static final int BOTTOM = 4;  
+}  
+  
+class Color {  
+    private Color()  
+    {  
+    }  
+  
+    public static final int RED = 0;  
+    public static final int GREEN = 1;  
+    public static final int BLUE = 2;  
+    public static final int WHITE = 3;  
+    public static final int BLACK = 4;  
+}  
+  
+class GameObject {  
+    private final String m_name;  
+    private int m_color;  
+    //...  
+  
+    public GameObject(String name)  
+    {  
+        m_name = name;  
+    }  
+  
+    public void move(int direction)  
+    {  
+        switch (direction) {  
+            case 1 -> System.out.printf("%s moves to right%n", m_name);  
+            case 2 -> System.out.printf("%s moves to top%n", m_name);  
+            case 3 -> System.out.printf("%s moves to left%n", m_name);  
+            case 4 -> System.out.printf("%s moves to bottom%n", m_name);  
+            default -> System.out.println("Invalid direction value");  
+        }  
+    }  
+  
+    public void setColor(int color)  
+    {  
+        //...  
+        m_color = color;  
+    }  
+  
+    public int getColor()  
+    {  
+        return m_color;  
+    }  
+  
+    //...  
 }
 ```
 
-> Direction ve Color sınıfları yukarıdaki yazıldığında ve ilgili metotların parametre değişkenleri de bu türlerden olduğunda yukarıda anlatılan okunabilirlik/algılanabilirlik artırılmıştır
+> `Direction` ve `Color` sınıfları aşağıdaki gibi yazıldığında ve ilgili metotların parametre değişkenleri de bu türlerden olduğunda bir yukarıda anlatılan okunabilirlik/algılanabilirlik problemi giderilmiş olur.
 
 ```java
-package org.csystem.app; 
- 
-import org.csystem.util.thread.ThreadUtil; 
- 
-import java.util.Arrays; 
-import java.util.Random; 
- 
-class App { 
-  public static void main(String[] args) 
-  { 
-    DemoGameApp.run(args); 
-  } 
-} 
- 
-class DemoGameApp { 
-  public static void run(String[] args) 
-  { 
-    Direction [] directions = Direction.values(); 
-    Random random = new Random(); 
-    GameObject go1 = new GameObject("Player-1"); 
-    GameObject go2 = new GameObject("Player-2"); 
- 
-    go1.setColor(Color.RED); 
-    go2.setColor(Color.BLUE); 
- 
-    while (true) { 
-      int index1 = random.nextInt(0, 4); 
-      int index2 = random.nextInt(0, 4); 
- 
-      //... 
- 
-      go1.move(directions[index1]); 
-      go2.move(directions[index2]); 
- 
-      ThreadUtil.sleep(random.nextLong(300, 900)); 
-    } 
-  } 
- 
-} 
- 
-class Direction { 
-  private final int m_ordinal; 
- 
-  private Direction(int ordinal) 
-  { 
-    m_ordinal = ordinal; 
-  }
- 
-  private static final Direction [] m_values = {new Direction(0), new Direction(1), new Direction(2), new Direction(3),}; 
- 
-  public static final Direction RIGHT = m_values[0]; 
-  public static final Direction TOP = m_values[1]; 
-  public static final Direction LEFT = m_values[2]; 
-  public static final Direction BOTTOM = m_values[3]; 
- 
-  public static Direction [] values() 
-  { 
-    return Arrays.copyOf(m_values, m_values.length); 
-  } 
- 
-  public int ordinal() 
-  { 
-    return m_ordinal; 
-  } 
-} 
- 
-class Color { 
-  private final int m_ordinal; 
- 
-  private Color(int ordinal) 
-  { 
-    m_ordinal = ordinal; 
-  } 
- 
-  //... 
- 
-  public static final Color RED = new Color(0); 
-  public static final Color GREEN = new Color(1); 
-  public static final Color BLUE = new Color(2); 
-  public static final Color WHITE = new Color(3); 
-  public static final Color BLACK = new Color(4); 
- 
-  public int ordinal() 
-  { 
-    return m_ordinal; 
-  } 
- 
-  //... 
-} 
- 
-class GameObject { 
-  private final String m_name; 
-  private Color m_color; 
-  //... 
- 
-  public GameObject(String name) 
-  { 
-    m_name = name; 
-  } 
- 
-  public void move(Direction direction) 
-  { 
-    if (direction == Direction.RIGHT) 
-      System.out.printf("%s moves to right%n", m_name); 
-    else if (direction == Direction.TOP) 
-      System.out.printf("%s moves to top%n", m_name); 
-    else if (direction == Direction.LEFT) 
-      System.out.printf("%s moves to left%n", m_name); 
-    else if (direction == Direction.BOTTOM) 
-      System.out.printf("%s moves to bottom%n", m_name); 
-    else 
-      System.out.println("Invalid direction value"); 
-  } 
- 
-  public void setColor(Color color) 
-  { 
-    //... 
-    m_color = color; 
-  } 
- 
-  public Color getColor() 
-  { 
-    return m_color; 
-  } 
- 
-  //... 
+package org.csystem.app;  
+  
+import org.csystem.util.thread.ThreadUtil;  
+  
+import java.util.Arrays;  
+import java.util.Random;  
+  
+class App {  
+    public static void main(String[] args)  
+    {  
+        DemoGameApp.run(args);  
+    }  
+}  
+  
+class DemoGameApp {  
+    public static void run(String[] args)  
+    {  
+        Direction[] directions = Direction.values();  
+        Random random = new Random();  
+        GameObject go1 = new GameObject("Player-1");  
+        GameObject go2 = new GameObject("Player-2");  
+  
+        go1.setColor(Color.RED);  
+        go2.setColor(Color.BLUE);  
+  
+        while (true) {  
+            int index1 = random.nextInt(0, 4);  
+            int index2 = random.nextInt(0, 4);  
+  
+            //...  
+  
+            go1.move(directions[index1]);  
+            go2.move(directions[index2]);  
+  
+            ThreadUtil.sleep(random.nextLong(300, 900));  
+        }  
+    }  
+}  
+  
+class Direction {  
+    private final int m_ordinal;  
+  
+    private Direction(int ordinal)  
+    {  
+        m_ordinal = ordinal;  
+    }  
+  
+    private static final Direction[] VALUES = {new Direction(0), new Direction(1), new Direction(2), new Direction(3),};  
+  
+    public static final Direction RIGHT = VALUES[0];  
+    public static final Direction TOP = VALUES[1];  
+    public static final Direction LEFT = VALUES[2];  
+    public static final Direction BOTTOM = VALUES[3];  
+  
+    public static Direction[] values()  
+    {  
+        return Arrays.copyOf(VALUES, VALUES.length);  
+    }  
+  
+    public int ordinal()  
+    {  
+        return m_ordinal;  
+    }  
+}  
+  
+class Color {  
+    private final int m_ordinal;  
+  
+    private Color(int ordinal)  
+    {  
+        m_ordinal = ordinal;  
+    }  
+  
+    //...  
+  
+    public static final Color RED = new Color(0);  
+    public static final Color GREEN = new Color(1);  
+    public static final Color BLUE = new Color(2);  
+    public static final Color WHITE = new Color(3);  
+    public static final Color BLACK = new Color(4);  
+  
+    public int ordinal()  
+    {  
+        return m_ordinal;  
+    }  
+  
+    //...  
+}  
+  
+class GameObject {  
+    private final String m_name;  
+    private Color m_color;  
+    //...  
+  
+    public GameObject(String name)  
+    {  
+        m_name = name;  
+    }  
+  
+    public void move(Direction direction)  
+    {  
+        if (direction == Direction.RIGHT)  
+            System.out.printf("%s moves to right%n", m_name);  
+        else if (direction == Direction.TOP)  
+            System.out.printf("%s moves to top%n", m_name);  
+        else if (direction == Direction.LEFT)  
+            System.out.printf("%s moves to left%n", m_name);  
+        else if (direction == Direction.BOTTOM)  
+            System.out.printf("%s moves to bottom%n", m_name);  
+        else  
+            System.out.println("Invalid direction value");  
+    }  
+  
+    public void setColor(Color color)  
+    {  
+        //...  
+        m_color = color;  
+    }  
+  
+    public Color getColor()  
+    {  
+        return m_color;  
+    }  
+  
+    //...  
 }
 ```
 
-> Yukarıdaki örnekte Color ve Direction sınıfları enum sınıfları olarak bildirildiklerinde, hem daha kolay hem de yetenekli sınıflar olarak bildirilmiş olur. Yani bu iki sınıfın enum class olması yukarıdaki özellikle (hatta daha da fazlasına) otomatik olarak sahip olması anlamına gelir. Detaylar bölüm içerisinde ele alınacaktır
+> Yukarıdaki örnekte `Color` ve `Direction` sınıfları `enum` sınıfları olarak bildirildiğinde, hem daha kolay hem de daha yetenekli sınıflar olarak bildirilmiş olur. Yani bu iki sınıfın `enum` class olması yukarıdaki özelliklere (hatta daha da fazlasına) otomatik olarak sahip olması anlamına gelir. Detaylar bölüm içerisinde ele alınacaktır. buradayım
 
 ```java
 package org.csystem.app; 
@@ -24031,7 +24023,7 @@ class App {
 class DemoGameApp { 
   public static void run(String[] args) 
   { 
-    Direction [] directions = Direction.values(); 
+    Direction[] directions = Direction.values(); 
     Random random = new Random(); 
     GameObject go1 = new GameObject("Player-1"); 
     GameObject go2 = new GameObject("Player-2"); 
@@ -24184,8 +24176,8 @@ package org.csystem.game.card;
 import java.util.Random; 
  
 public class RandomCardGenerator { 
-  private static final CardType [] CARD_TYPES = CardType.values(); 
-  private static final CardValue [] CARD_VALUES = CardValue.values(); 
+  private static final CardType[] CARD_TYPES = CardType.values(); 
+  private static final CardValue[] CARD_VALUES = CardValue.values(); 
   private final Random m_random; 
  
   public RandomCardGenerator(Random random) 
@@ -24248,7 +24240,7 @@ public class Card {
   private CardType m_cardType; 
   private CardValue m_cardValue; 
  
-  private static void swap(Card [] cards, int i, int k) 
+  private static void swap(Card[] cards, int i, int k) 
   { 
     Card temp; 
  
@@ -24257,9 +24249,9 @@ public class Card {
     cards[k] = temp; 
   } 
  
-  public static Card [] newDeck() 
+  public static Card[] newDeck() 
   { 
-    Card [] deck = new Card[CARD_COUNT_OF_DECK]; 
+    Card[] deck = new Card[CARD_COUNT_OF_DECK]; 
     int idx = 0; 
  
     for (CardType cardType : CardType.values()) 
@@ -24269,14 +24261,14 @@ public class Card {
     return deck; 
   } 
  
-  public static Card [] newShuffledDeck(Random random) 
+  public static Card[] newShuffledDeck(Random random) 
   { 
     return newShuffledDeck(random, DEFAULT_SHUFFLE_COUNT); 
   } 
    
-  public static Card [] newShuffledDeck(Random random, int count) 
+  public static Card[] newShuffledDeck(Random random, int count) 
   { 
-    Card [] deck = newDeck(); 
+    Card[] deck = newDeck(); 
  
     for (int i = 0; i < count; ++i) 
       swap(deck, random.nextInt(deck.length), random.nextInt(deck.length)); 
@@ -24358,7 +24350,7 @@ class App {
  
 enum Color { 
   RED(), GREEN(), BLUE(), WHITE, BLACK; 
-  private static final Color [] VALUES = values(); 
+  private static final Color[] VALUES = values(); 
   Color() 
   { 
     System.out.println("I am a default ctor"); 
@@ -24402,7 +24394,7 @@ class App {
  
 enum Color { 
   RED(255, 0, 0), GREEN(0, 255, 0), BLUE(0, 0, 255), WHITE(255, 255, 255), BLACK; 
-  private static final Color [] VALUES = values(); 
+  private static final Color[] VALUES = values(); 
   public final int r, g, b; 
   Color() 
   { 
@@ -24438,7 +24430,7 @@ class App {
   { 
     Random random = new Random(); 
     Scanner kb = new Scanner(System.in); 
-    Month [] months = Month.values(); 
+    Month[] months = Month.values(); 
  
     System.out.print("Bir sayı giriniz:"); 
     int count = kb.nextInt(); 
@@ -24499,7 +24491,7 @@ class App {
   { 
     Random random = new Random(); 
     Scanner kb = new Scanner(System.in); 
-    Month [] months = Month.values(); 
+    Month[] months = Month.values(); 
  
     System.out.print("Bir sayı giriniz:"); 
     int count = kb.nextInt(); 
@@ -24534,7 +24526,7 @@ class App {
   { 
     Random random = new Random(); 
     Scanner kb = new Scanner(System.in); 
-    Month [] months = Month.values(); 
+    Month[] months = Month.values(); 
  
     System.out.print("Bir sayı giriniz:"); 
     int count = kb.nextInt(); 
@@ -24577,7 +24569,7 @@ class App {
   { 
     Random random = new Random(); 
     Scanner kb = new Scanner(System.in); 
-    Month [] months = Month.values(); 
+    Month[] months = Month.values(); 
  
     System.out.print("Bir sayı giriniz:"); 
     int count = kb.nextInt(); 
@@ -24648,7 +24640,7 @@ class App {
 class DemoGameApp { 
   public static void run(String[] args) 
   { 
-    Direction [] directions = Direction.values(); 
+    Direction[] directions = Direction.values(); 
     Random random = new Random(); 
     GameObject go1 = new GameObject("Player-1"); 
     GameObject go2 = new GameObject("Player-2"); 
@@ -24874,7 +24866,7 @@ class Fighter {
 ```java
 class Fighter { 
   private String m_name; 
-  private final int [] m_abilities = new int[4]; 
+  private final int[] m_abilities = new int[4]; 
  
   //... 
  
@@ -24950,7 +24942,7 @@ class Fighter {
   private static final int RANGE = 3; 
   private static final int COUNT = 4; 
   private String m_name; 
-  private final int [] m_abilities = new int[COUNT]; 
+  private final int[] m_abilities = new int[COUNT]; 
  
   //... 
  
@@ -25022,7 +25014,7 @@ class Fighter {
 class Fighter { 
   private enum Ability {HEALTH, STRENGTH, AGILITY, RANGE, COUNT} 
   private String m_name; 
-  private final int [] m_abilities = new int[Ability.COUNT.ordinal()]; 
+  private final int[] m_abilities = new int[Ability.COUNT.ordinal()]; 
  
   //... 
  
@@ -25284,7 +25276,7 @@ class DemoRaceApp {
  
     car.run(); 
  
-    Pilot [] pilots = {new Pilot(1, 10000, "Elif Kılıç"), new Pilot(2, 50000, "Günay Akıncı"), new Pilot(3, 2500, "İsmail Enes Doğru")}; 
+    Pilot[] pilots = {new Pilot(1, 10000, "Elif Kılıç"), new Pilot(2, 50000, "Günay Akıncı"), new Pilot(3, 2500, "İsmail Enes Doğru")}; 
     Plane plane = new Plane(4, pilots/*...*/); 
  
     plane.fly(); 
@@ -25292,12 +25284,12 @@ class DemoRaceApp {
 } 
  
 class Plane { 
-  private final Engine [] m_engines; 
-  private Pilot [] m_pilots; 
+  private final Engine[] m_engines; 
+  private Pilot[] m_pilots; 
  
   //... 
  
-  public Plane(int n, Pilot [] pilots/*...*/) 
+  public Plane(int n, Pilot[] pilots/*...*/) 
   { 
     m_engines = new Engine[n]; 
     m_pilots = pilots; 
@@ -26685,7 +26677,7 @@ public final class ArrayUtil {
     {  
     }  
   
-    private static void bubbleSortAscending(int [] a)  
+    private static void bubbleSortAscending(int[] a)  
     {  
         for (int i = 0; i < a.length - 1; ++i)  
             for (int k = 0; k < a.length - 1 - i; ++k)  
@@ -26693,7 +26685,7 @@ public final class ArrayUtil {
                     swap(a, k, k + 1);  
     }  
   
-    private static void bubbleSortDescending(int [] a)  
+    private static void bubbleSortDescending(int[] a)  
     {  
         for (int i = 0; i < a.length - 1; ++i)  
             for (int k = 0; k < a.length -1 - i; ++k)  
@@ -26701,7 +26693,7 @@ public final class ArrayUtil {
                     swap(a, k, k + 1);  
     }  
   
-    private static void selectionSortAscending(int [] a)  
+    private static void selectionSortAscending(int[] a)  
     {  
         int min, minIndex;  
   
@@ -26719,7 +26711,7 @@ public final class ArrayUtil {
         }  
     }  
   
-    private static void selectionSortDescending(int [] a)  
+    private static void selectionSortDescending(int[] a)  
     {  
         int max, maxIndex;  
   
@@ -26737,17 +26729,17 @@ public final class ArrayUtil {
         }  
     }  
   
-    public static double average(int [] a)  
+    public static double average(int[] a)  
     {  
         return sum(a) / (double)a.length;  
     }  
   
-    public static void bubbleSort(int [] a)  
+    public static void bubbleSort(int[] a)  
     {  
         bubbleSort(a, false);  
     }  
   
-    public static void bubbleSort(int [] a, boolean descending)  
+    public static void bubbleSort(int[] a, boolean descending)  
     {  
         if (descending)  
             bubbleSortDescending(a);  
@@ -26755,7 +26747,7 @@ public final class ArrayUtil {
             bubbleSortAscending(a);  
     }  
   
-    public static void drawHistogram(int [] data, int n, char ch)  
+    public static void drawHistogram(int[] data, int n, char ch)  
     {  
         int maxValue = ArrayUtil.max(data);  
   
@@ -26769,9 +26761,9 @@ public final class ArrayUtil {
         }  
     }  
   
-    public static int [] generateRandomArray(Random random, int count, int origin, int bound)  
+    public static int[] generateRandomArray(Random random, int count, int origin, int bound)  
     {  
-        int [] a = new int[count];  
+        int[] a = new int[count];  
   
         for (int i = 0; i < count; ++i)  
             a[i] = random.nextInt(origin, bound);  
@@ -26779,9 +26771,9 @@ public final class ArrayUtil {
         return a;  
     }  
   
-    public static double [] generateRandomArray(Random random, int count, double origin, double bound)  
+    public static double[] generateRandomArray(Random random, int count, double origin, double bound)  
     {  
-        double [] a = new double[count];  
+        double[] a = new double[count];  
   
         for (int i = 0; i < count; ++i)  
             a[i] = random.nextDouble(origin, bound);  
@@ -26789,9 +26781,9 @@ public final class ArrayUtil {
         return a;  
     }  
   
-    public static boolean [] generateRandomArray(Random random, int count)  
+    public static boolean[] generateRandomArray(Random random, int count)  
     {  
-        boolean [] a = new boolean[count];  
+        boolean[] a = new boolean[count];  
   
         for (int i = 0; i < count; ++i)  
             a[i] = random.nextBoolean();  
@@ -26799,9 +26791,9 @@ public final class ArrayUtil {
         return a;  
     }  
   
-    public static int [] histogramData(int [] a, int n)  
+    public static int[] histogramData(int[] a, int n)  
     {  
-        int [] data = new int[n + 1];  
+        int[] data = new int[n + 1];  
   
         for (int val : a)  
             ++data[val];  
@@ -26809,12 +26801,12 @@ public final class ArrayUtil {
         return data;  
     }  
   
-    public static int max(int [] a)  
+    public static int max(int[] a)  
     {  
         return max(a, 0);  
     }  
   
-    public static int max(int [] a, int startIndex)  
+    public static int max(int[] a, int startIndex)  
     {  
         int result = a[startIndex];  
   
@@ -26824,22 +26816,22 @@ public final class ArrayUtil {
         return result;  
     }  
   
-    public static int max(int [][] a)  
+    public static int max(int[][] a)  
     {  
         int result = Integer.MIN_VALUE;  
   
-        for (int [] array : a)  
+        for (int[] array : a)  
             result = Math.max(result, max(array));  
   
         return result;  
     }  
   
-    public static int min(int [] a)  
+    public static int min(int[] a)  
     {  
         return min(a, 0);  
     }  
   
-    public static int min(int [] a, int startIndex)  
+    public static int min(int[] a, int startIndex)  
     {  
         int result = a[startIndex];  
   
@@ -26849,29 +26841,29 @@ public final class ArrayUtil {
         return result;  
     }  
   
-    public static int min(int [][] a)  
+    public static int min(int[][] a)  
     {  
         int result = Integer.MAX_VALUE;  
   
-        for (int [] array : a)  
+        for (int[] array : a)  
             result = Math.min(result, min(array));  
   
         return result;  
     }  
   
-    public static void multiplyBy(int [] a, int value)  
+    public static void multiplyBy(int[] a, int value)  
     {  
         for (int i = 0; i < a.length; ++i)  
             a[i] *= value;  
     }  
   
-    public static void multiplyBy(int [][] a, int value)  
+    public static void multiplyBy(int[][] a, int value)  
     {  
-        for (int [] array : a)  
+        for (int[] array : a)  
             multiplyBy(array, value);  
     }  
   
-    public static int partition(int [] a, int threshold)  
+    public static int partition(int[] a, int threshold)  
     {  
         int partitionPoint = 0;  
   
@@ -26888,7 +26880,7 @@ public final class ArrayUtil {
         return partitionPoint;  
     }  
   
-    public static int partitionByEven(int [] a)  
+    public static int partitionByEven(int[] a)  
     {  
         int partitionPoint = 0;  
   
@@ -26905,22 +26897,22 @@ public final class ArrayUtil {
         return partitionPoint;  
     }  
   
-    public static void print(int [] a)  
+    public static void print(int[] a)  
     {  
         print(a, ' ', '\n');  
     }  
   
-    public static void print(int [] a, char sep, char end)  
+    public static void print(int[] a, char sep, char end)  
     {  
         print(a, 1, sep, end);  
     }  
   
-    public static void print(int [] a, int n)  
+    public static void print(int[] a, int n)  
     {  
         print(a, n, ' ', '\n');  
     }  
   
-    public static void print(int [] a, int n, char sep, char end)  
+    public static void print(int[] a, int n, char sep, char end)  
     {  
         String fmt = String.format("%%0%dd%c", n, sep);  
   
@@ -26930,23 +26922,23 @@ public final class ArrayUtil {
         System.out.print(end);  
     }  
   
-    public static void print(int [][] a)  
+    public static void print(int[][] a)  
     {  
         print(a, 1);  
     }  
   
-    public static void print(int [][] a, int n)  
+    public static void print(int[][] a, int n)  
     {  
-        for (int [] array : a)  
+        for (int[] array : a)  
             print(array, n, ' ', '\n');  
     }  
   
-    public static void print(double [] a)  
+    public static void print(double[] a)  
     {  
         print(a, '\n', '\n');  
     }  
   
-    public static void print(double [] a, char sep, char end)  
+    public static void print(double[] a, char sep, char end)  
     {  
         for (double val : a)  
             System.out.printf("%f%c", val, sep);  
@@ -26954,7 +26946,7 @@ public final class ArrayUtil {
         System.out.print(end);  
     }  
   
-    public static void reverse(int [] a)  
+    public static void reverse(int[] a)  
     {  
         int left = 0, right = a.length - 1;  
   
@@ -26962,7 +26954,7 @@ public final class ArrayUtil {
             swap(a, left++, right--);  
     }  
   
-    public static void reverse(char [] a)  
+    public static void reverse(char[] a)  
     {  
         int left = 0, right = a.length - 1;  
   
@@ -26970,19 +26962,19 @@ public final class ArrayUtil {
             swap(a, left++, right--);  
     }  
   
-    public static void selectionSort(int [] a)  
+    public static void selectionSort(int[] a)  
     {  
         selectionSort(a, false);  
     }  
   
-    public static void selectionSort(int [] a, boolean descending)  
+    public static void selectionSort(int[] a, boolean descending)  
     {  
         if (descending)  
             selectionSortDescending(a);  
         else  
             selectionSortAscending(a);  
     }  
-    public static long sum(int [] a)  
+    public static long sum(int[] a)  
     {  
         long total = 0;  
   
@@ -26992,7 +26984,7 @@ public final class ArrayUtil {
         return total;  
     }  
   
-    public static void swap(int [] a, int i, int k)  
+    public static void swap(int[] a, int i, int k)  
     {  
         int temp = a[i];  
   
@@ -27000,7 +26992,7 @@ public final class ArrayUtil {
         a[k] = temp;  
     }  
   
-    public static void swap(char [] a, int i, int k)  
+    public static void swap(char[] a, int i, int k)  
     {  
         char temp = a[i];  
   
@@ -27062,11 +27054,11 @@ public final class MatrixUtil {
     {  
     }  
   
-    public static int [][] add(int [][] a, int [][] b)  
+    public static int[][] add(int[][] a, int[][] b)  
     {  
         int m = a.length;  
         int n = a[0].length;  
-        int [][] r = new int[m][n];  
+        int[][] r = new int[m][n];  
   
         for (int i = 0; i < m; ++i)  
             for (int j = 0; j < n; ++j)  
@@ -27075,11 +27067,11 @@ public final class MatrixUtil {
         return r;  
     }  
   
-    public static double [][] add(double [][] a, double [][] b)  
+    public static double[][] add(double[][] a, double[][] b)  
     {  
         int m = a.length;  
         int n = a[0].length;  
-        double [][] r = new double[m][n];  
+        double[][] r = new double[m][n];  
   
         for (int i = 0; i < m; ++i)  
             for (int j = 0; j < n; ++j)  
@@ -27088,9 +27080,9 @@ public final class MatrixUtil {
         return r;  
     }  
   
-    public static int [][] generateRandomMatrix(Random random, int m, int n, int origin, int bound)  
+    public static int[][] generateRandomMatrix(Random random, int m, int n, int origin, int bound)  
     {  
-        int [][] result = new int[m][];  
+        int[][] result = new int[m][];  
   
         for (int i = 0; i < m; ++i)  
             result[i] = ArrayUtil.generateRandomArray(random, n, origin, bound);  
@@ -27098,12 +27090,12 @@ public final class MatrixUtil {
         return result;  
     }  
   
-    public static int [][] generateRandomSquareMatrix(Random random, int n, int origin, int bound)  
+    public static int[][] generateRandomSquareMatrix(Random random, int n, int origin, int bound)  
     {  
         return generateRandomMatrix(random, n, n, origin, bound);  
     }  
   
-    public static boolean isMatrix(int [][] a)  
+    public static boolean isMatrix(int[][] a)  
     {  
         for (int i = 1; i < a.length; ++i)  
             if (a[i].length != a[0].length)  
@@ -27112,27 +27104,27 @@ public final class MatrixUtil {
         return true;  
     }  
   
-    public static boolean isSquareMatrix(int [][] a)  
+    public static boolean isSquareMatrix(int[][] a)  
     {  
         return isMatrix(a) && a.length == a[0].length;  
     }  
   
-    public static int max(int [][] a)  
+    public static int max(int[][] a)  
     {  
         return ArrayUtil.max(a);  
     }  
   
-    public static int min(int [][] a)  
+    public static int min(int[][] a)  
     {  
         return ArrayUtil.min(a);  
     }  
   
-    public static int [][] multiply(int [][] a, int [][] b)  
+    public static int[][] multiply(int[][] a, int[][] b)  
     {  
         int m = a.length;  
         int n = a[0].length;  
         int p = b[0].length;  
-        int [][] r = new int[m][p];  
+        int[][] r = new int[m][p];  
   
         for (int i = 0; i < m; ++i)  
             for (int j = 0; j < n; ++j)  
@@ -27142,26 +27134,26 @@ public final class MatrixUtil {
         return r;  
     }  
   
-    public static void multiplyBy(int [][] a, int value)  
+    public static void multiplyBy(int[][] a, int value)  
     {  
         ArrayUtil.multiplyBy(a, value);  
     }  
   
-    public static void print(int [][] a)  
+    public static void print(int[][] a)  
     {  
         print(a, 1);  
     }  
   
-    public static void print(int [][] a, int n)  
+    public static void print(int[][] a, int n)  
     {  
         ArrayUtil.print(a, n);  
     }  
   
-    public static int [][] subtract(int [][] a, int [][] b)  
+    public static int[][] subtract(int[][] a, int[][] b)  
     {  
         int m = a.length;  
         int n = a[0].length;  
-        int [][] r = new int[m][n];  
+        int[][] r = new int[m][n];  
   
         for (int i = 0; i < m; ++i)  
             for (int j = 0; j < n; ++j)  
@@ -27170,17 +27162,17 @@ public final class MatrixUtil {
         return r;  
     }  
   
-    public static long sum(int [][] a)  
+    public static long sum(int[][] a)  
     {  
         long total = 0;  
   
-        for (int [] array : a)  
+        for (int[] array : a)  
             total += ArrayUtil.sum(array);  
   
         return total;  
     }  
   
-    public static long sumDiagonal(int [][] a)  
+    public static long sumDiagonal(int[][] a)  
     {  
         long total = 0;  
   
@@ -27190,11 +27182,11 @@ public final class MatrixUtil {
         return total;  
     }  
   
-    public static int [][] transpose(int [][] a)  
+    public static int[][] transpose(int[][] a)  
     {  
         int m = a.length;  
         int n = a[0].length;  
-        int [][] r = new int[n][m];  
+        int[][] r = new int[n][m];  
   
         for (int i = 0; i < n; ++i)  
             for (int j = 0; j < m; ++j)  
@@ -27215,22 +27207,22 @@ public final class NumberUtil {
   
     private static final String ZERO_TR = "sıfır";  
     private static final String MINUS_TR = "eksi";  
-    private static final String [] ONES_TR = {"", "bir", "iki", "üç", "dört", "beş", "altı", "yedi", "sekiz", "dokuz"};  
-    private static final String [] TENS_TR = {"", "on", "yirmi", "otuz", "kırk", "elli", "altmış", "yetmiş", "seksen", "doksan"};  
-    private static final String [] NUMBER_UNITS_TR = {"kentilyon", "katrilyon", "trilyon", "milyar", "milyon", "bin", ""};  
+    private static final String[] ONES_TR = {"", "bir", "iki", "üç", "dört", "beş", "altı", "yedi", "sekiz", "dokuz"};  
+    private static final String[] TENS_TR = {"", "on", "yirmi", "otuz", "kırk", "elli", "altmış", "yetmiş", "seksen", "doksan"};  
+    private static final String[] NUMBER_UNITS_TR = {"kentilyon", "katrilyon", "trilyon", "milyar", "milyon", "bin", ""};  
   
   
     private static final String ZERO_EN = "zero";  
     private static final String MINUS_EN= "minus";  
-    private static final String [] ONES_EN = {"", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};  
-    private static final String [] TENS_EN = {"", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};  
-    private static final String [] NUMBER_UNITS_EN = {"quintillion", "quadrillion", "trillion", "billion", "million", "thousand", ""};  
+    private static final String[] ONES_EN = {"", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};  
+    private static final String[] TENS_EN = {"", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};  
+    private static final String[] NUMBER_UNITS_EN = {"quintillion", "quadrillion", "trillion", "billion", "million", "thousand", ""};  
   
-    private static int [] getDigits(long a, int n)  
+    private static int[] getDigits(long a, int n)  
     {  
         int divider = (int)Math.pow(10, n);  
        a = Math.abs(a);  
-        int [] digits = new int[a == 0 ? 1 : (int)(Math.log10(a) / n) + 1];  
+        int[] digits = new int[a == 0 ? 1 : (int)(Math.log10(a) / n) + 1];  
   
         for (int i = digits.length - 1; i >= 0; digits[i--] = (int)(a % divider), a /= divider)  
             ;  
@@ -27312,17 +27304,17 @@ public final class NumberUtil {
        return result;  
     }  
   
-    public static int [] getDigits(long a)  
+    public static int[] getDigits(long a)  
     {  
        return getDigits(a, 1);  
     }  
   
-    public static int [] getDigitsInThrees(long a)  
+    public static int[] getDigitsInThrees(long a)  
     {  
         return getDigits(a, 3);  
     }  
   
-    public static int [] getDigitsInTwos(long a)  
+    public static int[] getDigitsInTwos(long a)  
     {  
         return getDigits(a, 2);  
     }  
@@ -27424,7 +27416,7 @@ public final class NumberUtil {
        if (a == 0)  
           return ZERO_TR;  
   
-       int [] threes = getDigitsInThrees(a);  
+       int[] threes = getDigitsInThrees(a);  
        StringBuilder sb = new StringBuilder();  
        int idx = NUMBER_UNITS_TR.length - 1;  
   
@@ -27443,7 +27435,7 @@ public final class NumberUtil {
        if (a == 0)  
           return ZERO_EN;  
   
-       int [] threes = getDigitsInThrees(a);  
+       int[] threes = getDigitsInThrees(a);  
        StringBuilder sb = new StringBuilder();  
        int idx = NUMBER_UNITS_EN.length - 1;  
   
@@ -27531,7 +27523,7 @@ public final class StringUtil {
   
     public static String generateRandomText(Random random, int count, String sourceText)  
     {  
-       char [] c = new char[count];  
+       char[] c = new char[count];  
   
        for (int i = 0; i < count; ++i)  
           c[i] = sourceText.charAt(random.nextInt(sourceText.length()));  
@@ -27549,9 +27541,9 @@ public final class StringUtil {
        return generateRandomText(random, count, ALL_LETTERS_TR);  
     }  
   
-    public static String [] generateRandomTexts(Random random, int count, int origin, int bound, String sourceText)  
+    public static String[] generateRandomTexts(Random random, int count, int origin, int bound, String sourceText)  
     {  
-       String [] str = new String[count];  
+       String[] str = new String[count];  
   
        for (int i = 0; i < count; ++i)  
           str[i] = generateRandomText(random, random.nextInt(origin, bound), sourceText);  
@@ -27559,12 +27551,12 @@ public final class StringUtil {
        return str;  
     }  
   
-    public static String [] generateRandomTextsEN(Random random, int count, int origin, int bound)  
+    public static String[] generateRandomTextsEN(Random random, int count, int origin, int bound)  
     {  
        return generateRandomTexts(random, count, origin, bound, ALL_LETTERS_EN);  
     }  
   
-    public static String [] generateRandomTextsTR(Random random, int count, int origin, int bound)  
+    public static String[] generateRandomTextsTR(Random random, int count, int origin, int bound)  
     {  
        return generateRandomTexts(random, count, origin, bound, ALL_LETTERS_TR);  
     }  
@@ -27620,7 +27612,7 @@ public final class StringUtil {
        return isPangram(s.toLowerCase(), LETTERS_TR);  
     }  
   
-    public static String join(String [] s, String delimiter)  
+    public static String join(String[] s, String delimiter)  
     {  
        StringBuilder sb = new StringBuilder();  
   
@@ -27630,7 +27622,7 @@ public final class StringUtil {
        return sb.substring(0, sb.length() - delimiter.length());  
     }  
   
-    public static String join(String [] s, char delimiter)  
+    public static String join(String[] s, char delimiter)  
     {  
        return join(s, String.valueOf(delimiter));  
     }  
@@ -27664,12 +27656,12 @@ public final class StringUtil {
        return new StringBuilder(s).reverse().toString();  
     }  
   
-    public static String [] split(String s, String delimiters)  
+    public static String[] split(String s, String delimiters)  
     {  
        return split(s, delimiters, true);  
     }  
   
-    public static String [] split(String s, String delimiters, boolean removeEmptyEntries)  
+    public static String[] split(String s, String delimiters, boolean removeEmptyEntries)  
     {  
        StringBuilder pattern = new StringBuilder("[");  
   
